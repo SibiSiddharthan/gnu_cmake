@@ -1,0 +1,194 @@
+
+/* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
+   */
+#cmakedefine HAVE_ALLOCA_H @HAVE_ALLOCA_H@
+
+/* Define to 1 if the compiler accepts gcc style __attribute__ ((const)) */
+#cmakedefine HAVE_ATTRIBUTE_CONST @HAVE_ATTRIBUTE_CONST@
+
+/* Define to 1 if the compiler accepts gcc style __attribute__ ((malloc)) */
+#cmakedefine HAVE_ATTRIBUTE_MALLOC @HAVE_ATTRIBUTE_MALLOC@
+
+/* Define to 1 if the compiler accepts gcc style __attribute__ ((mode (XX)))
+   */
+#cmakedefine HAVE_ATTRIBUTE_MODE @HAVE_ATTRIBUTE_MODE@
+
+/* Define to 1 if the compiler accepts gcc style __attribute__ ((noreturn)) */
+#cmakedefine HAVE_ATTRIBUTE_NORETURN @HAVE_ATTRIBUTE_NORETURN@
+
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define one of the following to 1 for the format of a `double'.
+   If your format is not among these choices, or you don't know what it is,
+   then leave all undefined.
+   IEEE_LITTLE_SWAPPED means little endian, but with the two 4-byte halves
+   swapped, as used by ARM CPUs in little endian mode.  */
+#cmakedefine HAVE_DOUBLE_IEEE_BIG_ENDIAN @HAVE_DOUBLE_IEEE_BIG_ENDIAN@
+#cmakedefine HAVE_BIG_ENDIAN @HAVE_BIG_ENDIAN@
+#cmakedefine HAVE_DOUBLE_IEEE_LITTLE_ENDIAN @HAVE_DOUBLE_IEEE_LITTLE_ENDIAN@
+#cmakedefine HAVE_LITTLE_ENDIAN @HAVE_LITTLE_ENDIAN@
+#cmakedefine HAVE_DOUBLE_IEEE_LITTLE_SWAPPED @HAVE_DOUBLE_IEEE_LITTLE_SWAPPED@
+#cmakedefine HAVE_DOUBLE_VAX_D @HAVE_DOUBLE_VAX_D@
+#cmakedefine HAVE_DOUBLE_VAX_G @HAVE_DOUBLE_VAX_G@
+#cmakedefine HAVE_DOUBLE_CRAY_CFP @HAVE_DOUBLE_CRAY_CFP@
+
+
+/* Define to 1 if you have the <float.h> header file. */
+#cmakedefine HAVE_FLOAT_H @HAVE_FLOAT_H@
+
+/* Define to 1 if you have `alloca' function. */
+#cmakedefine HAVE_ALLOCA @HAVE_ALLOCA@
+
+#cmakedefine HAVE_VA_LIST @HAVE_VA_LIST@
+#cmakedefine HAVE_MEMMOVE @HAVE_MEMMOVE@
+#cmakedefine HAVE_SETLOCALE @HAVE_SETLOCALE@
+#cmakedefine HAVE_STRTOL @HAVE_STRTOL@
+#cmakedefine HAVE_FLOOR @HAVE_FLOOR@
+#cmakedefine HAVE_CEIL @HAVE_CEIL@
+#cmakedefine HAVE_ROUND @HAVE_ROUND@
+#cmakedefine HAVE_TRUNC @HAVE_TRUNC@
+#cmakedefine HAVE_NEARBYINT @HAVE_NEARBYINT@
+#cmakedefine HAVE_SIGNAL @HAVE_SIGNAL@
+#cmakedefine HAVE_VA_COPY @HAVE_VA_COPY@
+
+/* Define to 1 if you have the `clock' function. */
+#cmakedefine HAVE_CLOCK @HAVE_CLOCK@
+
+/* Define to 1 if you have the `clock_gettime' function */
+#cmakedefine HAVE_CLOCK_GETTIME @HAVE_CLOCK_GETTIME@
+
+/* Define to 1 if you have the `cputime' function. */
+#cmakedefine HAVE_CPUTIME @HAVE_CPUTIME@
+
+/* Define to 1 if you have the `memset' function. */
+#cmakedefine HAVE_MEMSET @HAVE_MEMSET@
+
+/* Define to 1 if you have the `sigaction' function. */
+#cmakedefine HAVE_SIGACTION @HAVE_SIGACTION@
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#cmakedefine HAVE_GETTIMEOFDAY @HAVE_GETTIMEOFDAY@
+
+/* Define to 1 if the compiler accepts gcc style __attribute__ ((visibility))
+   and __attribute__ ((alias)) */
+#cmakedefine HAVE_HIDDEN_ALIAS @HAVE_HIDDEN_ALIAS@
+
+
+/* Define to 1 if the system has the type `intmax_t'. */
+#cmakedefine HAVE_INTMAX_T @HAVE_INTMAX_T@
+
+#cmakedefine HAVE_SIZE_T @HAVE_SIZE_T@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define to 1 if you have the <locale.h> header file. */
+#cmakedefine HAVE_LOCALE_H @HAVE_LOCALE_H@
+
+/* Define to 1 if the system has the type `long double'. */
+#cmakedefine HAVE_LONG_DOUBLE @HAVE_LONG_DOUBLE@
+
+/* Define to 1 if the system has the type `long long'. */
+#cmakedefine HAVE_LONG_LONG @HAVE_LONG_LONG@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_WCHAR_H @HAVE_WCHAR_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+#cmakedefine HAVE_STDARG @HAVE_STDARG@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the <limits.h> header file. */
+#cmakedefine HAVE_LIMITS_H @HAVE_LIMITS_H@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#cmakedefine HAVE_SYS_TIME_H @HAVE_SYS_TIME_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if you have the <sys/fpu.h> header file. */
+#cmakedefine HAVE_SYS_FPU_H @HAVE_SYS_FPU_H@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#cmakedefine TIME_WITH_SYS_TIME @TIME_WITH_SYS_TIME@
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+#cmakedefine HAVE_SIGNEDZ @HAVE_SIGNEDZ@
+#cmakedefine HAVE_DENORMS @HAVE_DENORMS@
+#cmakedefine HAVE_DENORMS_FLT @HAVE_DENORMS_FLT@	
+#cmakedefine MPFR_HAVE_NORETURN @MPFR_HAVE_NORETURN@
+#cmakedefine MPFR_HAVE_BUILTIN_UNREACHABLE @MPFR_HAVE_BUILTIN_UNREACHABLE@
+#cmakedefine MPFR_HAVE_CONSTRUCTOR_ATTR @MPFR_HAVE_CONSTRUCTOR_ATTR@
+#cmakedefine MPFR_HAVE_INTMAX_MAX @MPFR_HAVE_INTMAX_MAX@
+#cmakedefine MPFR_WANT_FLOAT128 @MPFR_WANT_FLOAT128@
+#cmakedefine MPFR_WANT_DECIMAL_FLOATS @MPFR_WANT_DECIMAL_FLOATS@
+#cmakedefine MPFR_USE_THREAD_SAFE @MPFR_USE_THREAD_SAFE@
+#cmakedefine MPFR_USE_C11_THREAD_SAFE @MPFR_USE_C11_THREAD_SAFE@
+#cmakedefine MPFR_HAVE_FESETROUND @MPFR_HAVE_FESETROUND@
+
+
+
+#cmakedefine NPRINTF_L @NPRINTF_L@ 
+#cmakedefine PRINTF_T @PRINTF_T@
+#cmakedefine HAVE___GMPN_SBPI1_DIVAPPR_Q @HAVE___GMPN_SBPI1_DIVAPPR_Q@
+#cmakedefine HAVE___GMPN_INVERT_LIMB @HAVE___GMPN_INVERT_LIMB@
+#cmakedefine HAVE___GMPN_RSBLSH_N @HAVE___GMPN_RSBLSH_N@
+#cmakedefine MPFR_LONG_WITHIN_LIMB @MPFR_LONG_WITHIN_LIMB@
+#cmakedefine HAVE_LDOUBLE_IEEE_EXT_LITTLE @HAVE_LDOUBLE_IEEE_EXT_LITTLE@
+#cmakedefine MPFR_USE_STATIC_ASSERT @MPFR_USE_STATIC_ASSERT@
+#cmakedefine MPFR_PRINTF_MAXLM @MPFR_PRINTF_MAXLM@
+
+#cmakedefine HAVE_STRUCT_LCONV_DECIMAL_POINT @HAVE_STRUCT_LCONV_DECIMAL_POINT@
+#cmakedefine HAVE_STRUCT_LCONV_THOUSANDS_SEP @HAVE_STRUCT_LCONV_THOUSANDS_SEP@
+

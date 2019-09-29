@@ -1,0 +1,223 @@
+/* isl_config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if HeaderSearchOptions::AddPath takes 4 arguments */
+#cmakedefine ADDPATH_TAKES_4_ARGUMENTS @ADDPATH_TAKES_4_ARGUMENTS@
+
+/* Clang installation prefix */
+#cmakedefine CLANG_PREFIX @CLANG_PREFIX@
+
+/* Define if CompilerInstance::createDiagnostics takes argc and argv */
+#cmakedefine CREATEDIAGNOSTICS_TAKES_ARG @CREATEDIAGNOSTICS_TAKES_ARG@
+
+/* Define if CompilerInstance::createPreprocessor takes TranslationUnitKind */
+#cmakedefine CREATEPREPROCESSOR_TAKES_TUKIND @CREATEPREPROCESSOR_TAKES_TUKIND@
+
+/* Define if TargetInfo::CreateTargetInfo takes pointer */
+#cmakedefine CREATETARGETINFO_TAKES_POINTER @CREATETARGETINFO_TAKES_POINTER@
+
+/* Define if TargetInfo::CreateTargetInfo takes shared_ptr */
+#cmakedefine CREATETARGETINFO_TAKES_SHARED_PTR @CREATETARGETINFO_TAKES_SHARED_PTR@
+
+/* Define if Driver constructor takes default image name */
+#cmakedefine DRIVER_CTOR_TAKES_DEFAULTIMAGENAME @DRIVER_CTOR_TAKES_DEFAULTIMAGENAME@
+
+/* Define to Diagnostic for older versions of clang */
+#cmakedefine DiagnosticsEngine @DiagnosticsEngine@
+
+/* most gcc compilers know a function __attribute__((__warn_unused_result__))
+   */
+#cmakedefine GCC_WARN_UNUSED_RESULT @GCC_WARN_UNUSED_RESULT@
+
+/* Define if llvm/ADT/OwningPtr.h exists */
+#cmakedefine HAVE_ADT_OWNINGPTR_H @HAVE_ADT_OWNINGPTR_H@
+
+/* Define if clang/Basic/DiagnosticOptions.h exists */
+#cmakedefine HAVE_BASIC_DIAGNOSTICOPTIONS_H @HAVE_BASIC_DIAGNOSTICOPTIONS_H@
+
+/* define if the compiler supports basic C++11 syntax */
+#cmakedefine HAVE_CXX11 @HAVE_CXX11@
+
+/* Define if Driver constructor takes CXXIsProduction argument */
+#cmakedefine HAVE_CXXISPRODUCTION @HAVE_CXXISPRODUCTION@
+
+/* Define to 1 if you have the declaration of `ffs', and to 0 if you don't. */
+#cmakedefine01 HAVE_DECL_FFS
+
+/* Define to 1 if you have the declaration of `mp_get_memory_functions', and
+   to 0 if you don't. */
+#cmakedefine01 HAVE_DECL_MP_GET_MEMORY_FUNCTIONS
+
+/* Define to 1 if you have the declaration of `snprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_SNPRINTF
+
+/* Define to 1 if you have the declaration of `strcasecmp', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_STRCASECMP
+
+/* Define to 1 if you have the declaration of `strncasecmp', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_STRNCASECMP
+
+/* Define to 1 if you have the declaration of `_BitScanForward', and to 0 if
+   you don't. */
+#cmakedefine01 HAVE_DECL__BITSCANFORWARD
+
+/* Define to 1 if you have the declaration of `_snprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL__SNPRINTF
+
+/* Define to 1 if you have the declaration of `_stricmp', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL__STRICMP
+
+/* Define to 1 if you have the declaration of `_strnicmp', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL__STRNICMP
+
+/* Define to 1 if you have the declaration of `__builtin_ffs', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL___BUILTIN_FFS
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define if Driver constructor takes IsProduction argument */
+#cmakedefine HAVE_ISPRODUCTION @HAVE_ISPRODUCTION@
+
+/* Define if clang/Lex/PreprocessorOptions.h exists */
+#cmakedefine HAVE_LEX_PREPROCESSOROPTIONS_H @HAVE_LEX_PREPROCESSOROPTIONS_H@
+
+/* Define to 1 if you have the `gmp' library (-lgmp). */
+#cmakedefine HAVE_LIBGMP @HAVE_LIBGMP@
+
+/* Define if llvm/Option/Arg.h exists */
+#cmakedefine HAVE_LLVM_OPTION_ARG_H @HAVE_LLVM_OPTION_ARG_H@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define if SourceManager has a setMainFileID method */
+#cmakedefine HAVE_SETMAINFILEID @HAVE_SETMAINFILEID@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* define if your compiler has __attribute__ */
+#cmakedefine HAVE___ATTRIBUTE__ @HAVE___ATTRIBUTE__@
+
+/* Return type of HandleTopLevelDeclReturn */
+#cmakedefine HandleTopLevelDeclContinue @HandleTopLevelDeclContinue@
+
+/* Return type of HandleTopLevelDeclReturn */
+#cmakedefine HandleTopLevelDeclReturn @HandleTopLevelDeclReturn@
+
+/* Define to InputKind::C for newer versions of clang */
+#cmakedefine IK_C @IK_C@
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* Defined if CompilerInstance::setInvocation takes a shared_ptr */
+#cmakedefine SETINVOCATION_TAKES_SHARED_PTR @SETINVOCATION_TAKES_SHARED_PTR@
+
+/* Define if CompilerInvocation::setLangDefaults takes 5 arguments */
+#cmakedefine SETLANGDEFAULTS_TAKES_5_ARGUMENTS @SETLANGDEFAULTS_TAKES_5_ARGUMENTS@
+
+/* The size of `char', as computed by sizeof. */
+#cmakedefine SIZEOF_CHAR @SIZEOF_CHAR@
+
+/* The size of `int', as computed by sizeof. */
+#cmakedefine SIZEOF_INT @SIZEOF_INT@
+
+/* The size of `long', as computed by sizeof. */
+#cmakedefine SIZEOF_LONG @SIZEOF_LONG@
+
+/* The size of `short', as computed by sizeof. */
+#cmakedefine SIZEOF_SHORT @SIZEOF_SHORT@
+
+/* The size of `void*', as computed by sizeof. */
+#cmakedefine SIZEOF_VOIDP @SIZEOF_VOIDP@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* Define if Driver::BuildCompilation takes ArrayRef */
+#cmakedefine USE_ARRAYREF @USE_ARRAYREF@
+
+/* use gmp to implement isl_int */
+#cmakedefine USE_GMP_FOR_MP @USE_GMP_FOR_MP@
+
+/* use imath to implement isl_int */
+#cmakedefine USE_IMATH_FOR_MP @USE_IMATH_FOR_MP@
+
+/* Use small integer optimization */
+#cmakedefine USE_SMALL_INT_OPT @USE_SMALL_INT_OPT@
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+/* Define to getParamType for newer versions of clang */
+#cmakedefine getArgType @getArgType@
+
+/* Define to getHostTriple for older versions of clang */
+#cmakedefine getDefaultTargetTriple @getDefaultTargetTriple@
+
+/* Define to getInstantiationLineNumber for older versions of clang */
+#cmakedefine getExpansionLineNumber @getExpansionLineNumber@
+
+/* Define to getImmediateInstantiationRange for older versions of clang */
+#cmakedefine getImmediateExpansionRange @getImmediateExpansionRange@
+
+/* Define to getNumParams for newer versions of clang */
+#cmakedefine getNumArgs @getNumArgs@
+
+/* Define to getResultType for older versions of clang */
+#cmakedefine getReturnType @getReturnType@
+
+/* Define to InitializeBuiltins for older versions of clang */
+#cmakedefine initializeBuiltins @initializeBuiltins@
+
+#include <isl_config_post.h>
