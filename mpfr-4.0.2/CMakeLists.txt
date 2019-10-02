@@ -11,6 +11,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
 	message(FATAL_ERROR "In-source builds not allowed. Please make a new directory")
 endif()
 
+if(NOT DEFINED BUILDING_ALL)
 if(NOT DEFINED GMP_PATH)
 message(FATAL_ERROR "GMP is required\nSet GMP_PATH")
 else()
@@ -18,7 +19,14 @@ find_file(GMP_HEADER gmp.h ${GMP_PATH}/include)
 find_library(GMP_LIB gmp ${GMP_PATH}/lib)
 if(GMP_HEADER STREQUAL "GMP_HEADER-NOTFOUND" OR GMP_LIB STREQUAL "GMP_LIB-NOTFOUND")
 message(FATAL_ERROR "GMP path is invalid")
+else()
+set(GMP_HEADER_PATH ${GMP_PATH}/include)
+set(GMP_LIB_PATH ${GMP_PATH}/lib)
 endif()
+endif()
+else()
+set(GMP_HEADER_PATH ${GMP_PATH})
+set(GMP_LIB_PATH ${GMP_PATH})
 endif()
 
 set(PACKAGE_NAME \"MPFR\")
@@ -391,6 +399,7 @@ set(HAVE_LDOUBLE_IEEE_EXT_LITTLE 1)
 set(MPFR_USE_STATIC_ASSERT 1)
 
 configure_file(mpfr-config.h.in config.h)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/src/mpfr.h mpfr.h)
 
 set(mpfr_SOURCES
 src/mpfr.h src/mpf2mpfr.h src/mpfr-cvers.h src/mpfr-gmp.h
@@ -458,7 +467,7 @@ add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/mparam.h
 add_custom_target(mparam
 					DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/mparam.h)
 
-add_library(mpfr ${mpfr_SOURCES})
+add_library(mpfr ${mpfr_SOURCES} src/mpfr.h src/mpf2mpfr.h)
 #[[
 target_compile_options(mpfr PRIVATE 
 						-DHAVE_INTTYPES_H=1    #done  
@@ -510,8 +519,13 @@ target_compile_options(mpfr PRIVATE
 							  -Wall -Wmissing-prototypes -Wc++-compat -Wpointer-arith -O2 -fomit-frame-pointer -m64)
 							  ]]
 target_compile_options(mpfr PRIVATE -Wall -Wmissing-prototypes -Wc++-compat -Wpointer-arith -O2 -fomit-frame-pointer -m64 -include ${CMAKE_CURRENT_BINARY_DIR}/config.h)
-target_include_directories(mpfr PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src ${GMP_PATH}/include )
+target_include_directories(mpfr PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src ${GMP_HEADER_PATH} )
 add_dependencies(mpfr mparam)
+set_target_properties(mpfr PROPERTIES PUBLIC_HEADER "src/mpfr.h;src/mpf2mpfr.h")
+
+INSTALL(TARGETS mpfr
+		LIBRARY DESTINATION lib
+		PUBLIC_HEADER DESTINATION include/)
 
 include(CTest)
 enable_testing()
@@ -566,7 +580,7 @@ set(tests
 foreach(t ${tests})
 	add_executable(${t} tests/${t}.c)
 	add_dependencies(${t} mpfr-tests)
-	target_link_directories(${t} PRIVATE ${GMP_PATH}/lib)
+	target_link_directories(${t} PRIVATE ${GMP_LIB_PATH})
 	target_link_libraries(${t} PRIVATE mpfr-tests mpfr gmp)
 	target_compile_options(${t} PRIVATE -Wall -Wmissing-prototypes -Wc++-compat -Wpointer-arith -O2 -fomit-frame-pointer -m64 -include ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 	target_include_directories(${t} PRIVATE ${GMP_PATH}/include ${CMAKE_CURRENT_SOURCE_DIR}/src)

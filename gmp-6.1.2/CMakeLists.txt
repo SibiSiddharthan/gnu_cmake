@@ -680,6 +680,7 @@ set(DEFN_LONG_LONG_LIMB "#define _LONG_LONG_LIMB 1")
 set(LIBGMP_DLL 0)#Building static library only
 configure_file(gmp-h.in gmp.h @ONLY)
 configure_file(gmp-config.h.in config.h ESCAPE_QUOTES )
+set(CONFIG_TOP_SRCDIR ${CMAKE_CURRENT_SOURCE_DIR})
 configure_file(m4-config.in config.m4 @ONLY NEWLINE_STYLE LF)
 
 set(HELPER_SOURCES

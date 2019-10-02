@@ -9,7 +9,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
 	message(FATAL_ERROR "In-source builds not allowed. Please make a new directory")
 endif()
 
-
+if(NOT DEFINED BUILDING_ALL)
 if(NOT DEFINED GMP_PATH)
 message(FATAL_ERROR "GMP is required")
 else()
@@ -17,6 +17,9 @@ find_file(GMP_HEADER gmp.h ${GMP_PATH}/include)
 find_library(GMP_LIB gmp ${GMP_PATH}/lib)
 if(GMP_HEADER STREQUAL "GMP_HEADER-NOTFOUND" OR GMP_LIB STREQUAL "GMP_LIB-NOTFOUND")
 message(FATAL_ERROR "GMP path is invalid")
+else()
+set(GMP_HEADER_PATH ${GMP_PATH}/include)
+set(GMP_LIB_PATH ${GMP_PATH}/lib)
 endif()
 endif()
 
@@ -27,7 +30,16 @@ find_file(MPFR_HEADER NAMES mpfr.h mpf2mpfr.h PATHS ${MPFR_PATH}/include)
 find_library(MPFR_LIB mpfr ${MPFR_PATH}/lib)
 if(MPFR_HEADER STREQUAL "MPFR_HEADER-NOTFOUND" OR MPFR_LIB STREQUAL "MPFR_LIB-NOTFOUND")
 message(FATAL_ERROR "MPFR path is invalid")
+else()
+set(MPFR_HEADER_PATH ${MPFR_PATH}/include)
+set(MPFR_LIB_PATH ${MPFR_PATH}/lib)
 endif()
+endif()
+else()
+set(GMP_HEADER_PATH ${GMP_PATH})
+set(GMP_LIB_PATH ${GMP_PATH})
+set(MPFR_HEADER_PATH ${MPFR_PATH})
+set(MPFR_LIB_PATH ${MPFR_PATH})
 endif()
 
 set(PACKAGE \"mpc\")
@@ -111,7 +123,7 @@ check_functions(functions)
 #works with gcc,clang msvc on windows
 set(HAVE_ALLOCA 1)
 
-set(header complex.h dlfcn.h inttypes.h limits.h memory.h locale.h stdint.h
+set(header dlfcn.h inttypes.h limits.h memory.h locale.h stdint.h
      stdlib.h strings.h string.h   sys/resource.h sys/stat.h 
 	 sys/time.h sys/types.h
 	unistd.h )
@@ -120,6 +132,21 @@ check_headers(header)
 
 set(types_presence intptr_t)
 check_types_presence(types_presence)
+
+check_c_source_compiles("
+               #include <complex.h>
+int
+main ()
+{
+complex double x = 1.0 + 2.0 * I; return (creal (x) + cimag (x));
+
+  ;
+  return 0;
+}"
+HAVE_COMPLEX_H)
+if(HAVE_COMPLEX_H)
+set(HAVE_COMPLEX_H 1)
+endif()
 
 check_c_source_compiles("
 #include <sys/types.h>
@@ -167,7 +194,7 @@ src/swap.c src/tan.c src/tanh.c src/uceil_log2.c src/ui_div.c src/ui_ui_sub.c)
 
 add_library(mpc STATIC ${mpc_SOURCES})
 target_compile_options(mpc PRIVATE -DHAVE_CONFIG_H -O2 -pedantic -fomit-frame-pointer -m64)
-target_include_directories(mpc PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${GMP_PATH}/include )
+target_include_directories(mpc PRIVATE ${CMAKE_CURRENT_BINARY_DIR}  ${GMP_HEADER_PATH} ${MPFR_HEADER_PATH} )
 set_target_properties(mpc PROPERTIES PUBLIC_HEADER ${CMAKE_CURRENT_SOURCE_DIR}/src/mpc.h)
 
 include(CTest)
@@ -207,28 +234,29 @@ foreach(i ${dsc_files})
 	list(APPEND cpdsc ${CMAKE_CURRENT_BINARY_DIR}/tests/${i})
 endforeach()
 
-add_custom_target(res DEPENDS ${cpdat} ${cpdsc})
+add_custom_target(mpc-res DEPENDS ${cpdat} ${cpdsc})
 add_library(mpc-tests STATIC ${mpc-test_SOURCES})
-add_dependencies(mpc-tests mpc res)
-target_include_directories(mpc-tests PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${GMP_PATH}/include ${MPFR_PATH}/include )
+add_dependencies(mpc-tests mpc mpc-res)
+target_include_directories(mpc-tests PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src ${GMP_HEADER_PATH} ${MPFR_HEADER_PATH} )
 
 set(tests
-	tabs tacos tacosh tadd tadd_fr tadd_si tadd_ui targ	
-  tasin tasinh tatan tatanh tcmp_abs tconj tcos tcosh                   
-  tdiv tdiv_2si tdiv_2ui	                                        
-  tdiv_fr tdiv_ui texp tfma tfr_div tfr_sub timag tio_str tlog tlog10	
-  tmul tmul_2si tmul_2ui tmul_fr tmul_i tmul_si tmul_ui tneg tnorm tpow	
-  tpow_d tpow_fr tpow_ld tpow_si tpow_ui tpow_z tprec tproj treal	
-  treimref trootofunity                                                
-  tset tsin tsin_cos tsinh tsqr tsqrt tstrtoc tsub tsub_fr	        
-  tsub_ui tswap ttan ttanh tui_div tui_ui_sub tget_version exceptions)
+  mpc-tabs mpc-tacos mpc-tacosh mpc-tadd mpc-tadd_fr mpc-tadd_si mpc-tadd_ui mpc-targ	
+  mpc-tasin mpc-tasinh mpc-tatan mpc-tatanh mpc-tcmp_abs mpc-tconj mpc-tcos mpc-tcosh                   
+  mpc-tdiv mpc-tdiv_2si mpc-tdiv_2ui	                                        
+  mpc-tdiv_fr mpc-tdiv_ui mpc-texp mpc-tfma mpc-tfr_div mpc-tfr_sub mpc-timag mpc-tio_str mpc-tlog mpc-tlog10	
+  mpc-tmul mpc-tmul_2si mpc-tmul_2ui mpc-tmul_fr mpc-tmul_i mpc-tmul_si mpc-tmul_ui mpc-tneg mpc-tnorm mpc-tpow	
+  mpc-tpow_d mpc-tpow_fr mpc-tpow_ld mpc-tpow_si mpc-tpow_ui mpc-tpow_z mpc-tprec mpc-tproj mpc-treal	
+  mpc-treimref mpc-trootofunity                                                
+  mpc-tset mpc-tsin mpc-tsin_cos mpc-tsinh mpc-tsqr mpc-tsqrt mpc-tstrtoc mpc-tsub mpc-tsub_fr	        
+  mpc-tsub_ui mpc-tswap mpc-ttan mpc-ttanh mpc-tui_div mpc-tui_ui_sub mpc-tget_version mpc-exceptions)
 
 foreach(t ${tests})
-	add_executable(${t} tests/${t}.c)
+	string(REPLACE "mpc-" "" s ${t})
+	add_executable(${t} tests/${s}.c)
 	add_dependencies(${t} mpc-tests)
 	target_compile_options(${t} PRIVATE -DHAVE_CONFIG_H -O2 -pedantic -fomit-frame-pointer -m64)
-	target_include_directories(${t} PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${GMP_PATH}/include ${MPFR_PATH}/include )
-	target_link_directories(${t} PRIVATE ${GMP_PATH}/lib ${MPFR_PATH}/lib)
+	target_include_directories(${t} PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src ${GMP_HEADER_PATH} ${MPFR_HEADER_PATH} )
+	target_link_directories(${t} PRIVATE ${GMP_LIB_PATH} ${MPFR_LIB_PATH})
 	target_link_libraries(${t} mpc-tests mpc mpfr gmp)
 	set_target_properties(${t} PROPERTIES
 							RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/tests")

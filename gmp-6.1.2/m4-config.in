@@ -1,6 +1,6 @@
 changequote(<,>)
 ifdef(<__CONFIG_M4_INCLUDED__>,,<
-define(<CONFIG_TOP_SRCDIR>,<`../.'>)
+define(<CONFIG_TOP_SRCDIR>,<`@CONFIG_TOP_SRCDIR@'>)
 define(<WANT_ASSERT>,0)
 define(<WANT_PROFILING>,<`no'>)
 define(<M4WRAP_SPURIOUS>,<no>)
