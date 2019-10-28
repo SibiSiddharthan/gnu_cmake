@@ -1,0 +1,2303 @@
+set(libm_SOURCES libm_dummy.c)
+set(libmoldname_SOURCES libm_dummy.c)
+
+set(dfp_math_SOURCES
+	math/DFP/__fpclassifyd32.c math/DFP/__fpclassifyd64.c math/DFP/__fpclassifyd128.c 
+	math/DFP/__isnand32.c math/DFP/__isnand64.c math/DFP/__isnand128.c 
+	math/DFP/__signbitd32.c math/DFP/__signbitd64.c math/DFP/__signbitd128.c 
+	math/DFP/isinfd32.c math/DFP/isinfd64.c math/DFP/isinfd128.c)
+
+set(libshell32_SOURCES 
+	libsrc/shell32.c)
+
+set(libdinput_SOURCES 
+	libsrc/dinput_kbd.c libsrc/dinput_joy.c libsrc/dinput_joy2.c libsrc/dinput_mouse.c libsrc/dinput_mouse2.c)
+
+set(libdinput8_SOURCES 
+	libsrc/dinput_private.h libsrc/dinput_joy.c libsrc/dinput_joy2.c
+	libsrc/dinput_mouse.c libsrc/dinput_mouse2.c libsrc/dinput_kbd.c)
+
+set(libdmoguids_SOURCES 
+	libsrc/dmoguids.c)
+
+set(libdxerr8_SOURCES 
+	libsrc/dxerr8.c libsrc/dxerr8w.c)
+
+set(libdxerr9_SOURCES 
+	libsrc/dxerr9.c libsrc/dxerr9w.c)
+
+set(libmfuuid_SOURCES 
+	libsrc/mfuuid.c)
+
+set(libamstrmid_SOURCES 
+	libsrc/amstrmid.c)
+
+set(libwbemuuid_SOURCES 
+	libsrc/wbemuuid.c)
+
+set(libwmcodecdspuuid_SOURCES 
+	libsrc/wmcodecdspuuid.c)
+
+set(libwindowscodecs_SOURCES 
+	libsrc/windowscodecs.c)
+
+set(libdxguid_SOURCES 
+	libsrc/dxguid.c)
+
+set(libksuser_SOURCES 
+	libsrc/ksuser.c)
+
+set(libksguid_SOURCES 
+	libsrc/ksuser.c)
+
+set(liblargeint_SOURCES 
+	libsrc/largeint.c)
+
+set(liblocationapi_SOURCES 
+	libsrc/locationapi.c)
+
+set(libsapi_SOURCES 
+	libsrc/sapi.c)
+
+set(libsensorsapi_SOURCES 
+	libsrc/sensorsapi.c)
+
+set(libportabledeviceguids_SOURCES 
+	libsrc/portabledeviceguids.c)
+
+set(libtaskschd_SOURCES 
+	libsrc/taskschd.c)
+
+set(libmingw32_SOURCES 
+	include/oscalls.h include/internal.h include/sect_attribs.h 
+  crt/crt0_c.c        crt/dll_argv.c  crt/gccmain.c     crt/natstart.c  crt/pseudo-reloc-list.c  crt/wildcard.c 
+  crt/charmax.c       crt/crt0_w.c         crt/dllargv.c   crt/gs_support.c  crt/_newmode.c  crt/tlssup.c    crt/xncommod.c 
+  crt/cinitexe.c      crt/crt0_w.c         crt/merr.c      crt/pesect.c      crt/udllargc.c  crt/xthdloc.c   crt/CRT_fp10.c 
+  crt/mingw_custom.c  crt/mingw_helpers.c   crt/pseudo-reloc.c  crt/udll_argv.c      
+  crt/xtxtmode.c      crt/crt_handler.c     crt/tlsthrd.c       crt/tlsmthread.c     crt/tlsmcrt.c   crt/cxa_atexit.c)
+
+set(libscrnsave_SOURCES libsrc/scrnsave.c)
+set(libscrnsavw_SOURCES libsrc/scrnsave.c)
+set(libstrmiids_SOURCES libsrc/strmiids.c)
+set(libmingwthrd_SOURCES libsrc/mingwthrd_mt.c)
+set(libgdiplus_SOURCES libsrc/gdiplus.c)
+
+set(libuuid_SOURCES
+  libsrc/ativscp-uuid.c   libsrc/atsmedia-uuid.c    libsrc/bth-uuid.c       libsrc/cguid-uuid.c     libsrc/comcat-uuid.c  
+  libsrc/devguid.c        libsrc/docobj-uuid.c      libsrc/dxva-uuid.c      libsrc/exdisp-uuid.c    libsrc/extras-uuid.c  
+  libsrc/fwp-uuid.c       libsrc/guid_nul.c         libsrc/hlguids-uuid.c   libsrc/hlink-uuid.c     libsrc/mlang-uuid.c   
+  libsrc/msctf-uuid.c     libsrc/mshtmhst-uuid.c    libsrc/mshtml-uuid.c    libsrc/msxml-uuid.c     libsrc/netcon-uuid.c  
+  libsrc/ntddkbd-uuid.c   libsrc/ntddmou-uuid.c     libsrc/ntddpar-uuid.c   libsrc/ntddscsi-uuid.c  libsrc/ntddser-uuid.c 
+  libsrc/ntddstor-uuid.c  libsrc/ntddvdeo-uuid.c    libsrc/oaidl-uuid.c     libsrc/objidl-uuid.c    libsrc/objsafe-uuid.c 
+  libsrc/ocidl-uuid.c     libsrc/oleacc-uuid.c      libsrc/olectlid-uuid.c  libsrc/oleidl-uuid.c    libsrc/power-uuid.c   
+  libsrc/powrprof-uuid.c  libsrc/uianimation-uuid.c libsrc/usbcamdi-uuid.c  libsrc/usbiodef-uuid.c  libsrc/uuid.c         
+  libsrc/vds-uuid.c       libsrc/virtdisk-uuid.c    libsrc/wia-uuid.c)
+
+set(libws2_32_SOURCES 
+  libsrc/ws2_32.c 
+  libsrc/ws2tcpip/in6_addr_equal.c           libsrc/ws2tcpip/in6addr_isany.c           libsrc/ws2tcpip/in6addr_isloopback.c       
+  libsrc/ws2tcpip/in6addr_setany.c           libsrc/ws2tcpip/in6addr_setloopback.c     libsrc/ws2tcpip/in6_is_addr_linklocal.c    
+  libsrc/ws2tcpip/in6_is_addr_loopback.c     libsrc/ws2tcpip/in6_is_addr_mc_global.c   libsrc/ws2tcpip/in6_is_addr_mc_linklocal.c 
+  libsrc/ws2tcpip/in6_is_addr_mc_nodelocal.c libsrc/ws2tcpip/in6_is_addr_mc_orglocal.c libsrc/ws2tcpip/in6_is_addr_mc_sitelocal.c 
+  libsrc/ws2tcpip/in6_is_addr_multicast.c    libsrc/ws2tcpip/in6_is_addr_sitelocal.c   libsrc/ws2tcpip/in6_is_addr_unspecified.c  
+  libsrc/ws2tcpip/in6_is_addr_v4compat.c     libsrc/ws2tcpip/in6_is_addr_v4mapped.c    libsrc/ws2tcpip/in6_set_addr_loopback.c    
+  libsrc/ws2tcpip/in6_set_addr_unspecified.c libsrc/ws2tcpip/gai_strerrorA.c           libsrc/ws2tcpip/gai_strerrorW.c            
+  
+  libsrc/wspiapi/WspiapiStrdup.c             libsrc/wspiapi/WspiapiParseV4Address.c    libsrc/wspiapi/WspiapiNewAddrInfo.c        
+  libsrc/wspiapi/WspiapiQueryDNS.c           libsrc/wspiapi/WspiapiLookupNode.c        libsrc/wspiapi/WspiapiClone.c              
+  libsrc/wspiapi/WspiapiLegacyFreeAddrInfo.c libsrc/wspiapi/WspiapiLegacyGetAddrInfo.c libsrc/wspiapi/WspiapiLegacyGetNameInfo.c  
+  libsrc/wspiapi/WspiapiLoad.c               libsrc/wspiapi/WspiapiGetAddrInfo.c       libsrc/wspiapi/WspiapiGetNameInfo.c        
+  libsrc/wspiapi/WspiapiFreeAddrInfo.c)
+
+set(msvcrt_common_SOURCES
+  misc/onexit_table.c 
+  misc/register_tls_atexit.c 
+  stdio/acrt_iob_func.c)
+
+set(msvcrt_SOURCES
+  ${msvcrt_common_SOURCES} 
+  misc/_configthreadlocale.c 
+  misc/_get_current_locale.c 
+  misc/invalid_parameter_handler.c 
+  misc/output_format.c 
+  misc/purecall.c 
+  secapi/_access_s.c 
+  secapi/_cgets_s.c 
+  secapi/_cgetws_s.c 
+  secapi/_chsize_s.c 
+  secapi/_controlfp_s.c 
+  secapi/_cprintf_s.c 
+  secapi/_cprintf_s_l.c 
+  secapi/_ctime32_s.c 
+  secapi/_ctime64_s.c 
+  secapi/_cwprintf_s.c 
+  secapi/_cwprintf_s_l.c 
+  secapi/_gmtime32_s.c 
+  secapi/_gmtime64_s.c 
+  secapi/_localtime32_s.c 
+  secapi/_localtime64_s.c 
+  secapi/_mktemp_s.c 
+  secapi/_sopen_s.c 
+  secapi/_strdate_s.c 
+  secapi/_strtime_s.c 
+  secapi/_umask_s.c 
+  secapi/_vcprintf_s.c 
+  secapi/_vcprintf_s_l.c 
+  secapi/_vcwprintf_s.c 
+  secapi/_vcwprintf_s_l.c 
+  secapi/_vscprintf_p.c 
+  secapi/_vscwprintf_p.c 
+  secapi/_vswprintf_p.c 
+  secapi/_waccess_s.c 
+  secapi/_wasctime_s.c 
+  secapi/_wctime32_s.c 
+  secapi/_wctime64_s.c 
+  secapi/_wstrtime_s.c 
+  secapi/_wmktemp_s.c 
+  secapi/_wstrdate_s.c 
+  secapi/asctime_s.c 
+  secapi/memcpy_s.c 
+  secapi/memmove_s.c 
+  secapi/rand_s.c 
+  secapi/sprintf_s.c 
+  secapi/strerror_s.c 
+  secapi/vsprintf_s.c 
+  secapi/wmemcpy_s.c 
+  secapi/wmemmove_s.c 
+  stdio/mingw_lock.c)
+
+set(ucrtbase_SOURCES 
+  crt/ucrtbase_compat.c 
+  stdio/ucrt_fprintf.c 
+  stdio/ucrt_printf.c 
+  stdio/ucrt_snprintf.c 
+  stdio/ucrt_sprintf.c 
+  stdio/ucrt__vsnprintf.c 
+  stdio/ucrt__vsnwprintf.c 
+  stdio/ucrt_vfprintf.c 
+  stdio/ucrt_vprintf.c 
+  stdio/ucrt_vsnprintf.c 
+  stdio/ucrt_vsprintf.c)
+
+set(msvcrt32_SOURCES 
+  ${msvcrt_SOURCES} 
+  misc/lc_locale_func.c)
+
+set(msvcrt64_SOURCES 
+  ${msvcrt_SOURCES} 
+  misc/__p___argv.c 
+  misc/__p__acmdln.c 
+  misc/__p__fmode.c 
+  misc/__p__wcmdln.c)
+
+set(msvcrtarm32_SOURCES 
+  ${msvcrt_SOURCES} 
+  misc/__p___argv.c 
+  misc/__p__acmdln.c 
+  misc/__p__fmode.c 
+  misc/__p__wcmdln.c)
+
+set(msvcrtarm64_SOURCES 
+  ${msvcrt_SOURCES} 
+  misc/__p___argv.c 
+  misc/__p__acmdln.c 
+  misc/__p__fmode.c 
+  misc/__p__wcmdln.c)
+
+set(msvcr80_64_SOURCES 
+  ${msvcrt_common_SOURCES} 
+  misc/__p___argv.c 
+  misc/__p__acmdln.c 
+  misc/__p__fmode.c 
+  misc/__p__wcmdln.c)
+
+set(libmingwex_SOURCES 
+  crt/dllentry.c        crt/dllmain.c 
+  
+  complex/_cabs.c    complex/cabs.c   complex/cabsf.c   complex/cabsl.c   complex/cacos.c   complex/cacosf.c   
+  complex/cacosl.c   complex/carg.c   complex/cargf.c   complex/cargl.c   complex/casin.c   complex/casinf.c   
+  complex/casinl.c   complex/catan.c  complex/catanf.c  complex/catanl.c  complex/ccos.c    complex/ccosf.c    
+  complex/ccosl.c    complex/cexp.c   complex/cexpf.c   complex/cexpl.c   complex/cimag.c   complex/cimagf.c   
+  complex/cimagl.c   complex/clog.c   complex/clogf.c   complex/clogl.c   complex/clog10.c  complex/clog10f.c  
+  complex/clog10l.c  complex/conj.c   complex/conjf.c   complex/conjl.c   complex/cpow.c    complex/cpowf.c    
+  complex/cpowl.c    complex/cproj.c  complex/cprojf.c  complex/cprojl.c  complex/creal.c   complex/crealf.c   
+  complex/creall.c   complex/csin.c   complex/csinf.c   complex/csinl.c   complex/csqrt.c   complex/csqrtf.c   
+  complex/csqrtl.c   complex/ctan.c   complex/ctanf.c   complex/ctanl.c   
+  complex/cabs.def.h    complex/cacos.def.h  complex/cacosh.def.h  complex/carg.def.h    complex/casin.def.h         
+  complex/casinh.def.h  complex/catan.def.h  complex/catanh.def.h  complex/ccos.def.h    complex/ccosh.def.h         
+  complex/cexp.def.h    complex/cimag.def.h  complex/clog.def.h    complex/clog10.def.h  complex/complex_internal.h  
+  complex/conj.def.h    complex/cpow.def.h   complex/cproj.def.h   complex/creal.def.h   complex/csin.def.h          
+  complex/csinh.def.h   complex/csqrt.def.h  complex/ctan.def.h    complex/ctanh.def.h   
+  
+  gdtoa/gd_arith.h  gdtoa/gd_qnan.h  gdtoa/gdtoa.h  gdtoa/gdtoaimp.h 
+  gdtoa/arithchk.c  gdtoa/dmisc.c    gdtoa/dtoa.c   gdtoa/g_dfmt.c   gdtoa/gdtoa.c      gdtoa/gethex.c     
+  gdtoa/g_ffmt.c    gdtoa/g__fmt.c   gdtoa/gmisc.c  gdtoa/g_xfmt.c   gdtoa/hd_init.c    gdtoa/hexnan.c     
+  gdtoa/misc.c      gdtoa/qnan.c     gdtoa/smisc.c  gdtoa/strtodg.c  gdtoa/strtodnrp.c  gdtoa/strtof.c     
+  gdtoa/strtopx.c   gdtoa/sum.c      gdtoa/ulp.c    
+  
+  math/cbrt.c           
+  math/cbrtf.c          math/cbrtl.c       math/cephes_emath.c   math/copysign.c      math/copysignf.c     
+  math/coshf.c          math/coshl.c       math/erfl.c           
+  math/expf.c           
+  math/fabs.c           math/fabsf.c       math/fabsl.c          math/fdim.c          math/fdimf.c         math/fdiml.c         
+  math/fma.c            math/fmaf.c        math/fmal.c           
+  math/fmax.c           math/fmaxf.c       math/fmaxl.c          math/fmin.c          math/fminf.c         
+  math/fminl.c          math/fp_consts.c   math/fp_constsf.c     
+  math/fp_constsl.c     math/fpclassify.c  math/fpclassifyf.c    math/fpclassifyl.c   math/frexpf.c        
+  math/hypotf.c         math/hypot.c  math/hypotl.c      math/isnan.c          math/isnanf.c        math/isnanl.c        
+  math/ldexpf.c         math/lgamma.c      math/lgammaf.c        math/lgammal.c       math/llrint.c        
+  math/signgam.c 
+  math/llrintf.c        math/llrintl.c     math/llround.c        math/llroundf.c      math/llroundl.c      
+  math/log10f.c         math/logf.c        
+  math/lrint.c          math/lrintf.c      math/lrintl.c         math/lround.c        math/lroundf.c       math/lroundl.c       
+  math/modf.c           math/modff.c       math/modfl.c          math/nextafterf.c    math/nextafterl.c    math/nexttoward.c    
+  math/nexttowardf.c    math/powf.c        math/powi.c           math/powif.c         math/powil.c         
+  math/rint.c           math/rintf.c       math/rintl.c          math/round.c         math/roundf.c        
+  math/roundl.c         math/s_erf.c       math/sf_erf.c         math/signbit.c       math/signbitf.c      math/signbitl.c      
+  math/sinhf.c          math/sinhl.c       math/sqrt.c           
+  math/sqrtf.c          math/sqrtl.c       math/tanhf.c          math/tanhl.c         math/tgamma.c        
+  math/tgammaf.c        math/tgammal.c     math/truncl.c         
+  math/powi.def.h       math/sqrt.def.h       
+  math/cephes_emath.h   math/cephes_mconf.h math/fp_consts.h     math/abs64.c 
+  
+  misc/mb_wc_common.h 
+  misc/mingw_getsp.S 
+  misc/alarm.c 
+  misc/assert.c          misc/basename.c            misc/btowc.c            misc/delay-f.c               misc/delay-n.c         
+  misc/delayimp.c        misc/difftime.c            misc/difftime32.c       misc/difftime64.c            misc/dirent.c          
+  misc/dirname.c         misc/execv.c               misc/execve.c           misc/execvp.c                misc/execvpe.c         
+  misc/feclearexcept.c   misc/fegetenv.c            misc/fegetexceptflag.c  misc/fegetround.c            misc/feholdexcept.c    
+  misc/feraiseexcept.c   misc/fesetenv.c            misc/fesetexceptflag.c  misc/fesetround.c            misc/fetestexcept.c    
+  misc/feupdateenv.c     misc/ftruncate.c           misc/fwide.c            misc/getlogin.c              misc/getopt.c          
+  misc/gettimeofday.c    misc/imaxabs.c             misc/imaxdiv.c          misc/isblank.c               misc/iswblank.c        
+  misc/mbrtowc.c         misc/mbsinit.c             misc/mempcpy.c          misc/mingw-aligned-malloc.c  misc/mingw-fseek.c     
+  misc/mingw_matherr.c   misc/mingw_mbwc_convert.c  misc/mingw_usleep.c     misc/mingw_wcstod.c          misc/mingw_wcstof.c    
+  misc/mingw_wcstold.c   misc/mkstemp.c             misc/seterrno.c         misc/sleep.c                 misc/spawnv.c          
+  misc/spawnve.c         misc/spawnvp.c             misc/spawnvpe.c         misc/strnlen.c               misc/strsafe.c         
+  misc/strtoimax.c       misc/strtold.c             misc/strtoumax.c        misc/tdelete.c               misc/tfind.c           
+  misc/tsearch.c         misc/twalk.c               misc/uchar_c16rtomb.c   misc/uchar_c32rtomb.c        misc/uchar_mbrtoc16.c  
+  misc/uchar_mbrtoc32.c  misc/wassert.c             misc/wcrtomb.c          misc/wcsnlen.c               misc/wcstof.c          
+  misc/wcstoimax.c       misc/wcstold.c             misc/wcstoumax.c        misc/wctob.c                 misc/wctrans.c         
+  misc/wctype.c          misc/wdirent.c             misc/winbs_uint64.c     misc/winbs_ulong.c           misc/winbs_ushort.c    
+  misc/wmemchr.c         misc/wmemcmp.c             misc/wmemcpy.c          misc/wmemmove.c              misc/wmempcpy.c        
+  misc/wmemset.c         misc/ftw.c                 misc/ftw64.c          
+  
+  stdio/mingw_pformat.h    
+  stdio/vfscanf2.S         stdio/vfwscanf2.S         stdio/vscanf2.S          stdio/vsscanf2.S          stdio/vswscanf2.S 
+  stdio/vwscanf2.S         stdio/strtok_r.c          stdio/scanf.S 
+  stdio/_Exit.c            stdio/_findfirst64i32.c   stdio/_findnext64i32.c   stdio/_fstat.c 
+  stdio/_fstat64i32.c      stdio/_ftime.c            stdio/_getc_nolock.c     stdio/_getwc_nolock.c     stdio/_putc_nolock.c    
+  stdio/_putwc_nolock.c    stdio/_stat.c             stdio/_stat64i32.c       stdio/_wfindfirst64i32.c  stdio/_wfindnext64i32.c 
+  stdio/_wstat.c           stdio/_wstat64i32.c       stdio/asprintf.c         stdio/atoll.c             stdio/fgetpos64.c       
+  stdio/fopen64.c          stdio/fseeko32.c          stdio/fseeko64.c         stdio/fsetpos64.c         stdio/ftello.c          
+  stdio/ftello64.c         stdio/ftruncate64.c       stdio/lltoa.c            stdio/lltow.c             stdio/lseek64.c         
+  stdio/mingw_fprintf.c    stdio/mingw_fprintfw.c    stdio/mingw_fscanf.c     stdio/mingw_fwscanf.c     stdio/mingw_pformat.c   
+  stdio/mingw_pformatw.c   stdio/mingw_printf.c      stdio/mingw_printfw.c    stdio/mingw_scanf.c       stdio/mingw_snprintf.c  
+  stdio/mingw_snprintfw.c  stdio/mingw_sprintf.c     stdio/mingw_sprintfw.c   stdio/mingw_sscanf.c      stdio/mingw_swscanf.c   
+  stdio/mingw_vfprintf.c   stdio/mingw_vfprintfw.c   stdio/mingw_vfscanf.c    stdio/mingw_vprintf.c     stdio/mingw_vprintfw.c  
+  stdio/mingw_vsnprintf.c  stdio/mingw_vsnprintfw.c  stdio/mingw_vsprintf.c   stdio/mingw_vsprintfw.c   stdio/mingw_wscanf.c    
+  stdio/mingw_wvfscanf.c   stdio/snprintf.c          stdio/snwprintf.c        stdio/strtof.c            stdio/truncate.c        
+  stdio/ulltoa.c           stdio/ulltow.c            stdio/vasprintf.c        stdio/vfscanf.c           stdio/vfwscanf.c        
+  stdio/vscanf.c           stdio/vsnprintf.c         stdio/vsnwprintf.c        stdio/vsscanf.c         
+  stdio/vswscanf.c         stdio/vwscanf.c           stdio/wtoll.c            stdio/mingw_asprintf.c    stdio/mingw_vasprintf.c)
+
+# these go into both 32 and 64 bit x86 versions:
+set(libmingwex_x86_SOURCES 
+  math/x86/_chgsignl.S      math/x86/acosf.c          math/x86/acosh.c          math/x86/acosl.c          math/x86/acosh.def.h      
+  math/x86/acoshf.c         math/x86/acoshl.c         math/x86/asinf.c          math/x86/asinh.c          math/x86/asinl.c          
+  math/x86/asinhf.c         math/x86/asinhl.c         math/x86/atan2f.c         math/x86/atan2.c          math/x86/atan2l.c         
+  math/x86/atanf.c          math/x86/atanh.c          math/x86/atanl.c          math/x86/atanhf.c         math/x86/atanhl.c         
+  math/x86/ceil.S           math/x86/ceilf.S          math/x86/ceill.S          math/x86/copysignl.S      math/x86/cos.c            
+  math/x86/cos.def.h        math/x86/cosf.c           math/x86/cosl.c           math/x86/cosl_internal.S  math/x86/cossin.c         
+  math/x86/exp.c            math/x86/exp.def.h        math/x86/expl.c           math/x86/exp2.S           math/x86/exp2f.S          
+  math/x86/exp2l.S          math/x86/expm1.c          math/x86/expm1.def.h      math/x86/expm1f.c         math/x86/expm1l.c         
+  math/x86/fastmath.h       math/x86/floor.S          math/x86/floorf.S         math/x86/floorl.S         math/x86/fmod.c           
+  math/x86/fmodf.c          math/x86/fmodl.c          math/x86/frexpl.S         math/x86/fucom.c          math/x86/ilogb.S          
+  math/x86/ilogbf.S         math/x86/ilogbl.S         math/x86/internal_logl.S  math/x86/ldexp.c          math/x86/ldexpl.c         
+  math/x86/log.c            math/x86/log.def.h        math/x86/log10l.S         math/x86/log1p.S          math/x86/log1pf.S         
+  math/x86/log1pl.S         math/x86/log2.S           math/x86/log2f.S          math/x86/log2l.S          math/x86/logb.c           
+  math/x86/logbf.c          math/x86/logbl.c          math/x86/logl.c           math/x86/nearbyint.S      math/x86/nearbyintf.S     
+  math/x86/nearbyintl.S     math/x86/pow.c            math/x86/pow.def.h        math/x86/powl.c           math/x86/remainder.S      
+  math/x86/remainderf.S     math/x86/remainderl.S     math/x86/remquo.S         math/x86/remquof.S        math/x86/remquol.S        
+  math/x86/scalbn.S         math/x86/scalbnf.S        math/x86/scalbnl.S        math/x86/sin.c            math/x86/sin.def.h        
+  math/x86/sinf.c           math/x86/sinl.c           math/x86/sinl_internal.S  math/x86/tanf.c           math/x86/tanl.S        
+  math/x86/trunc.S          math/x86/truncf.S)
+
+
+set(libmingwex32_SOURCES ${libmingwex_x86_SOURCES})
+set(libmingwex64_SOURCES ${libmingwex_x86_SOURCES})
+
+# these only go into the ARM32 version:
+set(libmingwexarm32_SOURCES 
+  math/arm/_chgsignl.S      math/arm/ceil.S           math/arm/ceilf.S          math/arm/ceill.S          math/arm/copysignl.c      
+  math/arm/floor.S          math/arm/floorf.S         math/arm/floorl.S         math/arm/nearbyint.S      math/arm/nearbyintf.S     
+  math/arm/nearbyintl.S     math/arm/trunc.S          math/arm/truncf.S)
+
+set(libmingwexarm32_SOURCES ${libmingwexarm32_SOURCES}
+  math/softmath/e_fmod.c    math/softmath/e_fmodf.c   math/softmath/e_powf.c    math/softmath/e_pow.c 
+  math/softmath/acosf.c     math/softmath/acosh.c     math/softmath/acosl.c     math/softmath/acoshf.c    math/softmath/acoshl.c    
+  math/softmath/asinf.c     math/softmath/asinh.c     math/softmath/asinl.c     math/softmath/asinhf.c    math/softmath/asinhl.c    
+  math/softmath/atan2f.c    math/softmath/atan2l.c    math/softmath/atanf.c     math/softmath/atanh.c     math/softmath/atanl.c     
+  math/softmath/atanhf.c    math/softmath/atanhl.c    math/softmath/cos.c       math/softmath/cosf.c      math/softmath/cosl.c      
+  math/softmath/exp.c       math/softmath/expl.c      math/softmath/exp2.c      math/softmath/exp2f.c     math/softmath/exp2l.c     
+  math/softmath/expm1.c     math/softmath/expm1f.c    math/softmath/expm1l.c    math/softmath/fmod.c      math/softmath/fmodf.c     
+  math/softmath/fmodl.c     math/softmath/frexpl.c    math/softmath/ilogb.c     math/softmath/ilogbf.c    math/softmath/ilogbl.c    
+  math/softmath/ldexp.c     math/softmath/ldexpl.c    math/softmath/log.c       math/softmath/log10l.c    math/softmath/log1p.c     
+  math/softmath/log1pf.c    math/softmath/log1pl.c    math/softmath/log2.c      math/softmath/log2f.c     math/softmath/log2l.c     
+  math/softmath/logb.c      math/softmath/logbf.c     math/softmath/logbl.c     math/softmath/logl.c      math/softmath/pow.c       
+  math/softmath/powl.c      
+  math/softmath/remainder.c math/softmath/remainderf.c math/softmath/remainderl.c 
+  math/softmath/remquo.c    math/softmath/remquof.c   math/softmath/remquol.c   math/softmath/scalbn.c    math/softmath/scalbnf.c   
+  math/softmath/scalbnl.c   math/softmath/sin.c       math/softmath/sincos.c    math/softmath/sincosf.c   math/softmath/sincosl.c   
+  math/softmath/sinf.c      math/softmath/sinl.c      math/softmath/tanf.c      math/softmath/tanl.c)
+
+
+set(libmingwexarm64_SOURCES 
+  math/arm64/_chgsignl.S    math/arm64/ceil.S         math/arm64/ceilf.S        math/arm64/ceill.S        math/arm64/copysignl.c    
+  math/arm64/exp2.S         math/arm64/exp2f.S        math/arm64/floor.S        math/arm64/floorf.S       math/arm64/floorl.S       
+  math/arm64/ldexpl.c 
+  math/arm64/log2.c         math/arm64/nearbyint.S    math/arm64/nearbyintf.S   math/arm64/nearbyintl.S   math/arm64/scalbn.c       
+  math/arm64/sincos.c       math/arm64/trunc.S        math/arm64/truncf.S)
+
+
+# These intrinsics are target independent:
+set(intrincs_SOURCES  
+  intrincs/__movsb.c        intrincs/__movsd.c        intrincs/__movsw.c         intrincs/__stosb.c       intrincs/__stosd.c        
+  intrincs/__stosw.c        intrincs/_rotl64.c        intrincs/_rotr64.c         intrincs/bitscanfwd.c    intrincs/bitscanrev.c     
+  intrincs/bittest.c        intrincs/bittestc.c       intrincs/bittestci.c       intrincs/bittestr.c      intrincs/bittestri.c      
+  intrincs/bittests.c       intrincs/bittestsi.c      intrincs/cpuid.c           
+  intrincs/ilockadd.c       intrincs/ilockand.c        intrincs/ilockand64.c 
+  intrincs/ilockcxch.c      
+  intrincs/ilockcxch16.c    intrincs/ilockcxch64.c    intrincs/ilockcxchptr.c    intrincs/ilockdec.c      intrincs/ilockdec16.c     
+  intrincs/ilockdec64.c     intrincs/ilockexch.c      intrincs/ilockexch64.c     intrincs/ilockexchadd.c  intrincs/ilockexchadd64.c 
+  intrincs/ilockexchptr.c   intrincs/ilockinc.c       intrincs/ilockinc16.c      intrincs/ilockinc64.c    intrincs/ilockor.c        
+  intrincs/ilockor64.c      intrincs/ilockxor.c       intrincs/ilockxor64.c      intrincs/inbyte.c        intrincs/inbytestring.c   
+  intrincs/indword.c        intrincs/indwordstring.c  intrincs/inword.c          intrincs/inwordstring.c  intrincs/outbyte.c        
+  intrincs/outbytestring.c  intrincs/outdword.c       intrincs/outdwordstring.c  intrincs/outword.c       intrincs/outwordstring.c  
+  intrincs/readcr0.c        intrincs/readcr2.c        intrincs/readcr3.c         intrincs/readcr4.c       
+  intrincs/readmsr.c        intrincs/writecr0.c        intrincs/writecr2.c      intrincs/writecr3.c       
+  intrincs/writecr4.c       intrincs/writemsr.c        intrincs/__int2c.c       intrincs/RtlSecureZeroMemory.c)
+
+# these only go into the 64 bit version:
+set(intrincs64_SOURCES 
+  intrincs/bittest64.c    intrincs/bittestc64.c   intrincs/bittestr64.c   intrincs/bittestri64.c     
+  intrincs/bittests64.c   intrincs/bittestsi64.c  intrincs/bitscanfwd64.c intrincs/bitscanrev64.c    
+  intrincs/ilockadd64.c   intrincs/rdtsc.c        intrincs/readgsbyte.c   intrincs/readgsword.c      intrincs/readgsdword.c 
+  intrincs/readgsqword.c  intrincs/writegsbyte.c  intrincs/writegsword.c  intrincs/writegsdword.c    
+  intrincs/writegsqword.c intrincs/mul128ex.c     intrincs/umul128ex.c    intrincs/_mul128.c         
+  intrincs/_umul128.c     intrincs/__movsq.c      intrincs/__stosq.c      intrincs/__shiftright128.c 
+  intrincs/bittestci64.c  intrincs/__faststorefence.c    intrincs/__shiftleft128.c                   
+  intrincs/readcr8.c      intrincs/writecr8.c)
+
+# these only go into the 32 bit version:
+set(intrincs32_SOURCES 
+  intrincs/rdtsc.c        intrincs/readfsbyte.c   intrincs/readfsword.c   intrincs/readfsdword.c  
+  intrincs/writefsbyte.c  intrincs/writefsword.c  intrincs/writefsdword.c)
+
+set(libgmon_SOURCES
+	 profile/mcount.c 
+  profile/profil.h profile/profil.c        
+  profile/gmon.h   profile/gmon.c 
+  profile/mcountFunc.S)
+
+set(COMPILE32 -m32)
+set(COMPILE64 -m64)
+set(FLAGS -DHAVE_CONFIG_H -pipe -std=gnu99 -D_CRTBLD -D_WIN32_WINNT=0x0f00 -D__MSVCRT_VERSION__=0x700 -Wall -Wextra -Wformat -Wstrict-aliasing 
+		-Wshadow -Wpacked -Winline -Wimplicit-function-declaration -Wmissing-noreturn -Wmissing-prototypes -Wno-expansion-to-defined)
+
+set(DLLTOOL_32 --as-flags=--32 -m i386 -k --as=as)
+set(DLLTOOL_64 --as-flags=--64 -m i386:x86-64 -k --as=as)
+
+#[[
+add_library(lib32-crt1 OBJECT crt/crtexe.c)
+target_compile_options(lib32-crt1 PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+target_include_directories(lib32-crt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-crt2 OBJECT crt/crtexe.c)
+target_compile_options(lib32-crt2 PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+target_include_directories(lib32-crt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-crt1u OBJECT crt/ucrtexe.c)
+target_compile_options(lib32-crt1u PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+target_include_directories(lib32-crt1u PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-crt2u OBJECT crt/ucrtexe.c)
+target_compile_options(lib32-crt2u PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+target_include_directories(lib32-crt2u PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-dllcrt1 OBJECT crt/crtdll.c)
+target_compile_options(lib32-dllcrt1 PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+target_include_directories(lib32-dllcrt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-dllcrt2 OBJECT crt/crtdll.c)
+target_compile_options(lib32-dllcrt2 PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+target_include_directories(lib32-dllcrt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+
+add_library(lib32-gcrt0 OBJECT profile/gcrt0.c)
+target_compile_options(lib32-gcrt0 PRIVATE ${FLAGS} ${COMPILE32} )
+target_include_directories(lib32-gcrt0 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-gcrt1 OBJECT profile/gcrt0.c)
+target_compile_options(lib32-gcrt1 PRIVATE ${FLAGS} ${COMPILE32} -U__MSVCRT__)
+target_include_directories(lib32-gcrt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+add_library(lib32-gcrt2 OBJECT profile/gcrt0.c)
+target_compile_options(lib32-gcrt2 PRIVATE ${FLAGS} ${COMPILE32} -D__MSVCRT__)
+target_include_directories(lib32-gcrt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+
+set(lib32-common_SOURCES
+	crt/CRT_fp8.c crt/CRT_fp10.c crt/txtmode.c crt/binmode.c 
+	crt/crtbegin.c crt/crtend.c crt/CRT_glob.c crt/CRT_noglob.c)
+
+add_library(lib32-c OBJECT ${lib32-common_SOURCES})
+target_compile_options(lib32-c PRIVATE ${FLAGS} ${COMPILE32})
+target_include_directories(lib32-c PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+
+add_library(lib32-kernel32 STATIC ${intrincs_SOURCES} ${intrincs32_SOURCES} )
+set_target_properties(lib32-kernel32 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "kernel32")	
+target_compile_options(lib32-kernel32 PRIVATE ${FLAGS} ${COMPILE32})
+target_include_directories(lib32-kernel32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib32-kernel32 POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libkernel32-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/kernel32.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/libkernel32-tmp.a $<TARGET_FILE_DIR:lib32-kernel32>/$<TARGET_FILE_NAME:lib32-kernel32> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/libkernel32-tmp.a  $<TARGET_FILE_DIR:lib32-kernel32>/$<TARGET_FILE_NAME:lib32-kernel32>)	
+
+
+add_library(lib32-msvcrt STATIC ${msvcrt_SOURCES})
+set_target_properties(lib32-msvcrt PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "msvcrt")	
+target_compile_options(lib32-msvcrt PRIVATE ${FLAGS} ${COMPILE32} -D__LIBMSVCRT__)
+target_include_directories(lib32-msvcrt PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib32-msvcrt PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/msvcrt.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_I386 > ${CMAKE_CURRENT_BINARY_DIR}/lib32/msvcrt.def)
+add_custom_command(TARGET lib32-msvcrt POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcrt-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib32/msvcrt.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcrt-tmp.a $<TARGET_FILE_DIR:lib32-msvcrt>/$<TARGET_FILE_NAME:lib32-msvcrt> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcrt-tmp.a  $<TARGET_FILE_DIR:lib32-msvcrt>/$<TARGET_FILE_NAME:lib32-msvcrt>)
+
+function(add_library_x86_32_imp libs)
+foreach(l ${${libs}})
+add_library(lib32-${l} STATIC ${lib${l}_SOURCES})
+set_target_properties(lib32-${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "${l}")
+target_compile_options(lib32-${l} PRIVATE ${FLAGS} ${COMPILE32})
+target_include_directories(lib32-${l} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib32-${l} POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/lib${l}-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/${l}.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/lib${l}-tmp.a $<TARGET_FILE_DIR:lib32-${l}>/$<TARGET_FILE_NAME:lib32-${l}> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/lib${l}-tmp.a  $<TARGET_FILE_DIR:lib32-${l}>/$<TARGET_FILE_NAME:lib32-${l}>)	
+endforeach()
+endfunction()
+
+function(add_library_x86_32 libs)
+foreach(l ${${libs}})
+add_library(lib32-${l} STATIC ${lib${l}_SOURCES})
+set_target_properties(lib32-${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "${l}")
+target_compile_options(lib32-${l} PRIVATE ${FLAGS} ${COMPILE32})
+target_include_directories(lib32-${l} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+endforeach()
+endfunction()
+
+set(lib32_imp_LIBRARIES
+	shell32 dinput dinput8 windowscodecs ksuser gdiplus ws2_32)
+set(lib32_LIBRARIES
+	dmoguids dxerr8 dxerr9 mfuuid
+	amstrmid wmcodecdspuuid wbemuuid dxguid 
+	ksguid locationapi sapi sensorsapi portabledeviceguids scrnsave
+	strmiids uuid  taskschd largeint 
+	mingwthrd m moldname gmon)
+
+add_library_x86_32_imp(lib32_imp_LIBRARIES)
+add_library_x86_32(lib32_LIBRARIES)
+
+add_library(lib32-scrnsavw STATIC ${libscrnsavw_SOURCES})
+set_target_properties(lib32-scrnsavw PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "scrnsavw")
+target_compile_options(lib32-scrnsavw PRIVATE ${FLAGS} ${COMPILE32} -DUNICODE)
+target_include_directories(lib32-scrnsavw PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib32-mingw32 STATIC ${libmingw32_SOURCES})
+set_target_properties(lib32-mingw32 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "mingw32")
+target_compile_options(lib32-mingw32 PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1)
+target_include_directories(lib32-mingw32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib32-mingwex STATIC ${libmingwex_SOURCES} ${libmingwex32_SOURCES} ${dfp_math_SOURCES})
+set_target_properties(lib32-mingwex PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "mingwex")
+target_compile_options(lib32-mingwex PRIVATE ${FLAGS} ${COMPILE32} -D_SYSCRT=1 -DCRTDLL=1)
+target_include_directories(lib32-mingwex PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_library(msvcrt_common_objs32 OBJECT ${msvcrt_common_SOURCES})
+target_compile_options(msvcrt_common_objs32 PRIVATE ${FLAGS} ${COMPILE32} -D__LIBMSVCRT__)
+target_include_directories(msvcrt_common_objs32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib32-crtdll STATIC )
+set_target_properties(lib32-crtdll PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "crtdll")
+#target_compile_options(lib32-crtdll PRIVATE ${FLAGS} ${COMPILE32} -D__LIBMSVCRT__)
+#target_include_directories(lib32-crtdll PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+target_link_libraries(lib32-crtdll msvcrt_common_objs32)
+add_custom_command(TARGET lib32-crtdll POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libcrtdll-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/crtdll.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/libcrtdll-tmp.a $<TARGET_FILE_DIR:lib32-crtdll>/$<TARGET_FILE_NAME:lib32-crtdll> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/libcrtdll-tmp.a  $<TARGET_FILE_DIR:lib32-crtdll>/$<TARGET_FILE_NAME:lib32-crtdll>)
+
+set(msvcrt_LIBS 80 90 90d 100 110 120 120d 120_app)
+
+foreach(l ${msvcrt_LIBS})
+add_library(lib32-msvcr${l} STATIC )
+set_target_properties(lib32-msvcr${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "msvcr${l}")	
+#target_compile_options(lib32-msvcr${l} PRIVATE ${FLAGS} ${COMPILE32} -D__LIBMSVCRT__)
+#target_include_directories(lib32-msvcr${l} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+target_link_libraries(lib32-msvcr${l} msvcrt_common_objs32)
+add_custom_command(TARGET lib32-msvcr${l} PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib32/msvcr${l}.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_I386 > ${CMAKE_CURRENT_BINARY_DIR}/lib32/msvcr${l}.def)
+add_custom_command(TARGET lib32-msvcr${l} POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcr${l}-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib32/msvcr${l}.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcr${l}-tmp.a $<TARGET_FILE_DIR:lib32-msvcr${l}>/$<TARGET_FILE_NAME:lib32-msvcr${l}> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvcr${l}-tmp.a  $<TARGET_FILE_DIR:lib32-msvcr${l}>/$<TARGET_FILE_NAME:lib32-msvcr${l}>)	
+endforeach()
+
+add_library(lib32-ucrtbase_obj OBJECT ${ucrtbase_SOURCES})
+target_compile_options(lib32-ucrtbase_obj PRIVATE ${FLAGS} ${COMPILE32} -D__LIBMSVCRT__)
+target_include_directories(lib32-ucrtbase_obj PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib32-ucrtbase STATIC)
+set_target_properties(lib32-ucrtbase PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "ucrtbase")
+target_link_libraries(lib32-ucrtbase lib32-ucrtbase_obj)
+add_custom_command(TARGET lib32-ucrtbase PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/ucrtbase.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_I386 > ${CMAKE_CURRENT_BINARY_DIR}/lib32/ucrtbase.def)
+add_custom_command(TARGET lib32-ucrtbase POST_BUILD
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrtbase-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib32/ucrtbase.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrtbase-tmp.a $<TARGET_FILE_DIR:lib32-ucrtbase>/$<TARGET_FILE_NAME:lib32-ucrtbase> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrtbase-tmp.a  $<TARGET_FILE_DIR:lib32-ucrtbase>/$<TARGET_FILE_NAME:lib32-ucrtbase>)
+
+add_library(lib32-ucrt_extra STATIC)
+set_target_properties(lib32-ucrt_extra PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib32"
+									OUTPUT_NAME "ucrt_extra")
+target_link_libraries(lib32-ucrt_extra lib32-ucrtbase_obj)
+
+set(lib32-LIBS-IN
+	api-ms-win-crt-math-l1-1-0.def.in api-ms-win-crt-private-l1-1-0.def.in api-ms-win-crt-runtime-l1-1-0.def.in)
+foreach(i ${lib32-LIBS-IN})
+	string(REPLACE ".in" "" d ${i})
+	string(REPLACE ".def" ".a" a ${d})
+	string(PREPEND a "lib")
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/${a}
+						COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i} -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_I386 > ${CMAKE_CURRENT_BINARY_DIR}/lib32/${d}
+						&& dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/${a} -d ${CMAKE_CURRENT_BINARY_DIR}/lib32/${d})
+	#list(APPEND lib32-defs ${CMAKE_CURRENT_BINARY_DIR}/lib32/${d})
+	list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/${a})
+	#message(${a})
+endforeach()
+
+
+set(lib32-LIBS
+	libaclui.a libactiveds.a libadsldpc.a libadvapi32.a libapcups.a
+    libauthz.a libavicap32.a
+libavifil32.a libavrt.a libbcrypt.a libbootvid.a libbrowcli.a
+libbthprops.a libcabinet.a libcap.a libcfgmgr32.a libclasspnp.a
+libclfsw32.a libclusapi.a libcmutil.a libcomctl32.a libcomdlg32.a
+libconnect.a libcredui.a libcrypt32.a libcryptnet.a
+libcryptsp.a libcryptxml.a libcscapi.a libctl3d32.a libd2d1.a
+libd3d8.a libd3d9.a libd3d11.a libd3dcompiler_33.a libd3dcompiler_34.a
+libd3dcompiler_35.a libd3dcompiler_36.a libd3dcompiler_37.a libd3dcompiler_38.a
+libd3dcompiler_39.a libd3dcompiler_40.a libd3dcompiler_41.a libd3dcompiler_42.a
+libd3dcompiler_43.a libd3dcompiler_46.a libd3dcompiler_47.a libd3dcsx_46.a
+libd3dcsxd_43.a
+libd3dim.a
+libd3drm.a
+libd3dx10_33.a
+libd3dx10_34.a
+libd3dx10_35.a
+libd3dx10_36.a
+libd3dx10_37.a
+libd3dx10_38.a
+libd3dx10_39.a
+libd3dx10_40.a
+libd3dx10_41.a
+libd3dx10_42.a
+libd3dx10_43.a
+libd3dx11_42.a
+libd3dx11_43.a
+libd3dx8d.a
+libd3dx9_24.a
+libd3dx9_25.a
+libd3dx9_26.a
+libd3dx9_27.a
+libd3dx9_28.a
+libd3dx9_29.a
+libd3dx9_30.a
+libd3dx9_31.a
+libd3dx9_32.a
+libd3dx9_33.a
+libd3dx9_34.a
+libd3dx9_35.a
+libd3dx9_36.a
+libd3dx9_37.a
+libd3dx9_38.a
+libd3dx9_39.a
+libd3dx9_40.a
+libd3dx9_41.a
+libd3dx9_42.a
+libd3dx9_43.a
+libd3dx9d.a
+libd3dxof.a
+libdavclnt.a
+libdavhlpr.a
+libdbgeng.a
+libdbghelp.a
+libddraw.a
+libdevmgr.a
+libdevobj.a
+libdevrtl.a
+libdfscli.a
+libdhcpcsvc.a
+libdhcpcsvc6.a
+libdhcpsapi.a
+libdlcapi.a
+libdnsapi.a
+libdpapi.a
+libdplayx.a
+libdpnaddr.a
+libdpnet.a
+libdpnlobby.a
+libdpvoice.a
+libdsetup.a
+libdsound.a
+libdsrole.a
+libdssec.a
+libdwmapi.a
+libdwrite.a
+libdxapi.a
+libdxgi.a
+libdxva2.a
+libeappcfg.a
+libeappgnui.a
+libeapphost.a
+libeappprxy.a
+libelscore.a
+libesent.a
+libevr.a
+libfaultrep.a
+libfwpuclnt.a
+libgdi32.a
+libglaux.a
+libglu32.a
+libglut32.a
+libgpapi.a
+libgpedit.a
+libgpprefcl.a
+libgpscript.a
+libgptext.a
+libhal.a
+libhid.a
+libhidclass.a
+libhidparse.a
+libhttpapi.a
+libicmui.a
+libigmpagnt.a
+libimagehlp.a
+libimm32.a
+libiphlpapi.a
+libiscsidsc.a
+libks.a
+libksproxy.a
+libktmw32.a
+liblogoncli.a
+liblz32.a
+libmapi32.a
+libmcd.a
+libmf.a
+libmfcuia32.a
+libmfplat.a
+libmgmtapi.a
+libmpr.a
+libmprapi.a
+libmqrt.a
+libmsacm32.a
+libmscms.a
+libmsctf.a
+libmsctfmonitor.a
+libmsdmo.a
+libmsdrm.a
+libmshtml.a
+libmshtmled.a
+libmsi.a
+libmsimg32.a
+libmstask.a
+libmsvfw32.a
+libmswsock.a
+libncrypt.a
+libnddeapi.a
+libndfapi.a
+libndis.a
+libnetapi32.a
+libnetjoin.a
+libnetutils.a
+libnewdev.a
+libnormaliz.a
+libntdll.a
+libntdsapi.a
+libntmsapi.a
+libntoskrnl.a
+libodbc32.a
+libodbccp32.a
+libole32.a
+liboleacc.a
+liboleaut32.a
+libolecli32.a
+liboledlg.a
+libolepro32.a
+libolesvr32.a
+libolethk32.a
+libopengl32.a
+libp2p.a
+libp2pcollab.a
+libp2pgraph.a
+libpcwum.a
+libpdh.a
+libpdhui.a
+libpenwin32.a
+libpkpd32.a
+libpowrprof.a
+libpsapi.a
+libquartz.a
+libqutil.a
+libqwave.a
+librapi.a
+librasapi32.a
+librasdlg.a
+libresutil.a
+librpcdce4.a
+librpcdiag.a
+librpchttp.a
+librpcns4.a
+librpcrt4.a
+librstrmgr.a
+librtm.a
+librtutils.a
+libsamcli.a
+libschannel.a
+libschedcli.a
+libscsiport.a
+libsecur32.a
+libsecurity.a
+libsetupapi.a
+libshfolder.a
+libshlwapi.a
+libslc.a
+libslcext.a
+libslwga.a
+libsnmpapi.a
+libspoolss.a
+libsrvcli.a
+libsspicli.a
+libsvrapi.a
+libsxs.a
+libt2embed.a
+libtapi32.a
+libtbs.a
+libtdh.a
+libtdi.a
+libtxfw32.a
+liburl.a
+liburlmon.a
+libusbcamd.a
+libusbcamd2.a
+libusbd.a
+libusbport.a
+libuser32.a
+libuserenv.a
+libusp10.a
+libuxtheme.a
+libvdmdbg.a
+libversion.a
+libvideoprt.a
+libvirtdisk.a
+libvss_ps.a
+libvssapi.a
+libwdsclient.a
+libwdsclientapi.a
+libwdscore.a
+libwdscsl.a
+libwdsimage.a
+libwdstptc.a
+libwdsupgcompl.a
+libwdsutil.a
+libwecapi.a
+libwer.a
+libwevtapi.a
+libwevtfwd.a
+libwiadss.a
+libwin32k.a
+libwin32spl.a
+libwinhttp.a
+libwininet.a
+libwinmm.a
+libwinscard.a
+libwinspool.a
+libwinstrm.a
+libwintrust.a
+libwinusb.a
+libwkscli.a
+libwlanapi.a
+libwlanui.a
+libwlanutil.a
+libwldap32.a
+#libwmilib.a
+libwow32.a
+libwsdapi.a
+libwsnmp32.a
+libwsock32.a
+libwst.a
+libwtsapi32.a
+libx3daudio1_2.a
+libx3daudio1_3.a
+libx3daudio1_4.a
+libx3daudio1_5.a
+libx3daudio1_6.a
+libx3daudio1_7.a
+libx3daudiod1_7.a
+libxapofx1_0.a
+libxapofx1_1.a
+libxapofx1_2.a
+libxapofx1_3.a
+libxapofx1_4.a
+libxapofx1_5.a
+libxapofxd1_5.a
+libxaudio2_8.a
+libxinput1_1.a
+libxinput1_2.a
+libxinput1_3.a
+libxinput1_4.a
+libxinput9_1_0.a
+#runtimeobject
+libapi-ms-win-core-winrt-string-l1-1-0.a libapi-ms-win-core-winrt-l1-1-0.a
+#windowsapp
+libapi-ms-win-core-com-l1-1-1.a libapi-ms-win-core-com-l2-1-1.a libapi-ms-win-core-com-midlproxystub-l1-1-0.a 
+libapi-ms-win-core-datetime-l1-1-1.a libapi-ms-win-core-datetime-l1-1-2.a libapi-ms-win-core-debug-l1-1-1.a 
+libapi-ms-win-core-delayload-l1-1-1.a libapi-ms-win-core-errorhandling-l1-1-1.a libapi-ms-win-core-errorhandling-l1-1-3.a 
+libapi-ms-win-core-featurestaging-l1-1-0.a libapi-ms-win-core-fibers-l1-1-1.a libapi-ms-win-core-fibers-l2-1-1.a 
+libapi-ms-win-core-file-ansi-l2-1-0.a libapi-ms-win-core-file-l1-2-1.a libapi-ms-win-core-file-l2-1-1.a 
+libapi-ms-win-core-handle-l1-1-0.a libapi-ms-win-core-heap-l1-2-0.a libapi-ms-win-core-heap-l2-1-0.a 
+libapi-ms-win-core-heap-obsolete-l1-1-0.a libapi-ms-win-core-interlocked-l1-2-0.a libapi-ms-win-core-io-l1-1-1.a 
+libapi-ms-win-core-kernel32-legacy-l1-1-1.a libapi-ms-win-core-largeinteger-l1-1-0.a libapi-ms-win-core-localization-ansi-l1-1-0.a libapi-ms-win-core-localization-l1-2-1.a
+libapi-ms-win-core-localization-l1-2-2.a libapi-ms-win-core-localization-l2-1-0.a libapi-ms-win-core-memory-l1-1-2.a 
+libapi-ms-win-core-memory-l1-1-4.a libapi-ms-win-core-normalization-l1-1-0.a libapi-ms-win-core-processenvironment-l1-2-0.a 
+libapi-ms-win-core-processthreads-l1-1-2.a libapi-ms-win-core-processthreads-l1-1-3.a libapi-ms-win-core-profile-l1-1-0.a 
+libapi-ms-win-core-psapi-l1-1-0.a libapi-ms-win-core-realtime-l1-1-0.a libapi-ms-win-core-realtime-l1-1-1.a 
+libapi-ms-win-core-rtlsupport-l1-2-0.a libapi-ms-win-core-slapi-l1-1-0.a libapi-ms-win-core-string-l1-1-0.a 
+libapi-ms-win-core-synch-ansi-l1-1-0.a libapi-ms-win-core-synch-l1-2-0.a libapi-ms-win-core-synch-l1-2-1.a 
+libapi-ms-win-core-sysinfo-l1-2-1.a libapi-ms-win-core-sysinfo-l1-2-3.a libapi-ms-win-core-threadpool-l1-2-0.a 
+libapi-ms-win-core-timezone-l1-1-0.a libapi-ms-win-core-util-l1-1-0.a libapi-ms-win-core-windowsceip-l1-1-0.a 
+libapi-ms-win-core-windowserrorreporting-l1-1-0.a libapi-ms-win-core-winrt-error-l1-1-1.a libapi-ms-win-core-winrt-l1-1-0.a 
+libapi-ms-win-core-winrt-registration-l1-1-0.a libapi-ms-win-core-winrt-robuffer-l1-1-0.a libapi-ms-win-core-winrt-roparameterizediid-l1-1-0.a 
+libapi-ms-win-core-winrt-string-l1-1-0.a libapi-ms-win-core-xstate-l2-1-0.a libapi-ms-win-eventing-classicprovider-l1-1-0.a 
+libapi-ms-win-eventing-consumer-l1-1-0.a libapi-ms-win-eventing-controller-l1-1-0.a libapi-ms-win-eventing-legacy-l1-1-0.a 
+libapi-ms-win-eventing-provider-l1-1-0.a libapi-ms-win-gaming-tcui-l1-1-2.a libapi-ms-win-ro-typeresolution-l1-1-0.a 
+libapi-ms-win-security-base-l1-2-1.a libapi-ms-win-security-cryptoapi-l1-1-0.a libapi-ms-win-shcore-stream-winrt-l1-1-0.a
+#extra
+
+)
+
+set(lib32_common_LIBS
+#ucrt
+libapi-ms-win-crt-conio-l1-1-0.a libapi-ms-win-crt-convert-l1-1-0.a libapi-ms-win-crt-environment-l1-1-0.a 
+libapi-ms-win-crt-filesystem-l1-1-0.a libapi-ms-win-crt-heap-l1-1-0.a libapi-ms-win-crt-locale-l1-1-0.a 
+libapi-ms-win-crt-multibyte-l1-1-0.a libapi-ms-win-crt-process-l1-1-0.a  libapi-ms-win-crt-stdio-l1-1-0.a 
+libapi-ms-win-crt-string-l1-1-0.a libapi-ms-win-crt-time-l1-1-0.a libapi-ms-win-crt-utility-l1-1-0.a)
+
+foreach(l ${lib32-LIBS})
+	string(REPLACE "lib" "" i ${l})
+	string(REPLACE ".a" "" i ${i})
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l}
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/${i}.def)	
+	list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l})		
+endforeach()
+
+foreach(l ${lib32-LIBS})
+	string(REPLACE "lib" "" i ${l})
+	string(REPLACE ".a" "" i ${i})
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l}
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/${i}.def)	
+	list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l})		
+endforeach()
+
+foreach(l ${lib32_common_LIBS})
+	string(REPLACE "lib" "" i ${l})
+	string(REPLACE ".a" "" i ${i})
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l}
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def)	
+	list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/${l})		
+endforeach()
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwmilib.a
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwmilib.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/wmilib.def)	
+list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwmilib.a )	
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l1-2-0.a
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l1-2-0.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/api-ms-win-core-libraryloader-l1-2-0.def)	
+list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l1-2-0.a )
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l2-1-0.a
+						COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l2-1-0.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/api-ms-win-core-libraryloader-l2-1-0.def)	
+list(APPEND lib32-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l2-1-0.a )
+
+add_custom_target(lib32-PLIBS DEPENDS ${lib32-processed-LIBS})
+
+
+set(lib32-vfw32_LIBS
+ ${CMAKE_CURRENT_BINARY_DIR}/lib32/libmsvfw32.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libavifil32.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libavicap32.a)
+
+set(lib32-runtimeobject_LIBS
+${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-l1-1-0.a)
+
+set(lib32-synchronization_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-synch-l1-2-0.a)
+
+set(lib32-windowsapp_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-com-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-com-l2-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-com-midlproxystub-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-datetime-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-datetime-l1-1-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-debug-l1-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-delayload-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-errorhandling-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-errorhandling-l1-1-3.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-featurestaging-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-fibers-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-fibers-l2-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-file-ansi-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-file-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-file-l2-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-handle-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-heap-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-heap-l2-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-heap-obsolete-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-interlocked-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-io-l1-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-kernel32-legacy-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-largeinteger-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l1-2-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-libraryloader-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-localization-ansi-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-localization-l1-2-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-localization-l1-2-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-localization-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-memory-l1-1-2.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-memory-l1-1-4.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-normalization-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-processenvironment-l1-2-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-processthreads-l1-1-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-processthreads-l1-1-3.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-profile-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-psapi-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-realtime-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-realtime-l1-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-rtlsupport-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-slapi-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-string-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-synch-ansi-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-synch-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-synch-l1-2-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-sysinfo-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-sysinfo-l1-2-3.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-threadpool-l1-2-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-timezone-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-util-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-windowsceip-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-windowserrorreporting-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-error-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-l1-1-0.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-registration-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-robuffer-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-roparameterizediid-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-winrt-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-core-xstate-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-eventing-classicprovider-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-eventing-consumer-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-eventing-controller-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-eventing-legacy-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-eventing-provider-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-gaming-tcui-l1-1-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-ro-typeresolution-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-security-base-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-security-cryptoapi-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-shcore-stream-winrt-l1-1-0.a)
+
+set(lib32-ucrt_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrt_extra.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-conio-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-convert-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-environment-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-filesystem-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-heap-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-locale-l1-1-0.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-math-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-multibyte-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-private-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-process-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-runtime-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-stdio-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-time-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libapi-ms-win-crt-utility-l1-1-0.a)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libvfw32.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib32/vfw32.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib32/libvfw32.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib32/vfw32.mri ${lib32-vfw32_LIBS} lib32-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libruntimeobject.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib32/runtimeobject.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib32/libruntimeobject.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib32/runtimeobject.mri ${lib32-runtimeobject_LIBS} lib32-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libsynchronization.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib32/synchronization.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib32/libsynchronization.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib32/synchronization.mri ${lib32-synchronization_LIBS} lib32-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwindowsapp.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib32/windowsapp.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwindowsapp.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib32/windowsapp.mri ${lib32-windowsapp_LIBS} lib32-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrt.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib32/ucrt.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrt.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib32/ucrt.mri ${lib32-ucrt_LIBS} lib32-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libxinput.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libxinput.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/xinput1_3.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libxapofx.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libxapofx.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/xapofx1_5.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libx3daudio.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libx3daudio.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/x3daudio1_7.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx9.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx9.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/d3dx9_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx10.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx10.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/d3dx10_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx11.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx11.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/d3dx11_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcsxd.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcsxd.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/d3dcsxd_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcompiler.a
+					COMMAND dlltool ${DLLTOOL_32} -l ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcompiler.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib32/d3dcompiler_43.def)
+
+add_custom_target(lib32 ALL DEPENDS 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libvfw32.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libruntimeobject.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libsynchronization.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libwindowsapp.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libucrt.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libxinput.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libxapofx.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libx3daudio.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx9.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx9.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx10.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dx11.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcsxd.a ${CMAKE_CURRENT_BINARY_DIR}/lib32/libd3dcompiler.a)
+
+#]]
+####################################################
+############        LIB64   ########################
+####################################################
+
+#add_library(lib64-crt1 OBJECT crt/crtexe.c)
+#target_compile_options(lib64-crt1 PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+#target_include_directories(lib64-crt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-crt2 OBJECT crt/crtexe.c)
+#target_compile_options(lib64-crt2 PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+#target_include_directories(lib64-crt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-crt1u OBJECT crt/ucrtexe.c)
+#target_compile_options(lib64-crt1u PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+#target_include_directories(lib64-crt1u PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-crt2u OBJECT crt/ucrtexe.c)
+#target_compile_options(lib64-crt2u PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+#target_include_directories(lib64-crt2u PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-dllcrt1 OBJECT crt/crtdll.c)
+#target_compile_options(lib64-dllcrt1 PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__)
+#target_include_directories(lib64-dllcrt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-dllcrt2 OBJECT crt/crtdll.c)
+#target_compile_options(lib64-dllcrt2 PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__)
+#target_include_directories(lib64-dllcrt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#
+#add_library(lib64-gcrt0 OBJECT profile/gcrt0.c)
+#target_compile_options(lib64-gcrt0 PRIVATE ${FLAGS} ${COMPILE64} )
+#target_include_directories(lib64-gcrt0 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-gcrt1 OBJECT profile/gcrt0.c)
+#target_compile_options(lib64-gcrt1 PRIVATE ${FLAGS} ${COMPILE64} -U__MSVCRT__)
+#target_include_directories(lib64-gcrt1 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+#add_library(lib64-gcrt2 OBJECT profile/gcrt0.c)
+#target_compile_options(lib64-gcrt2 PRIVATE ${FLAGS} ${COMPILE64} -D__MSVCRT__)
+#target_include_directories(lib64-gcrt2 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+
+set(lib64-common_SOURCES
+	CRT_fp8 CRT_fp10 txtmode binmode
+	crtbegin crtend CRT_glob CRT_noglob)
+
+#add_library(lib64-c OBJECT ${lib64-common_SOURCES})
+#target_compile_options(lib64-c PRIVATE ${FLAGS} ${COMPILE64})
+#target_include_directories(lib64-c PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/crtexe.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1.o)	
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/crtexe.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2.o)	
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1u.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/ucrtexe.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1u.o)			
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2u.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/ucrtexe.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2u.o)	
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt1.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/crtdll.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt1.o)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt2.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -U__CRTDLL__ -D__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/crtdll.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt2.o)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt0.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/profile/gcrt0.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt0.o)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt1.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -U__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/profile/gcrt0.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt1.o)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt2.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/profile/gcrt0.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt2.o)
+
+foreach(i ${lib64-common_SOURCES})
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.o
+					COMMAND ${CMAKE_C_COMPILER} ${FLAGS} ${COMPILE64} -I${CMAKE_CURRENT_BINARY_DIR}/../ -I${CMAKE_CURRENT_SOURCE_DIR}/include -D_SYSCRT=1 -DCRTDLL=1 -D__CRTDLL__ -U__MSVCRT__ -c 
+						${CMAKE_CURRENT_SOURCE_DIR}/crt/${i}.c -o ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.o)
+		list(APPEND lib64_c_objs ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.o)	
+endforeach()
+
+add_custom_target(lib64_c ALL DEPENDS ${lib64_c_objs} ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/crt1u.o
+				${CMAKE_CURRENT_BINARY_DIR}/lib64/crt2u.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt1.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/dllcrt2.o
+				${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt0.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt1.o ${CMAKE_CURRENT_BINARY_DIR}/lib64/gcrt2.o)
+
+add_library(lib64-kernel32 STATIC ${intrincs_SOURCES} ${intrincs64_SOURCES} )
+set_target_properties(lib64-kernel32 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "kernel32")	
+target_compile_options(lib64-kernel32 PRIVATE ${FLAGS} ${COMPILE64})
+target_include_directories(lib64-kernel32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-kernel32 PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/kernel32.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/kernel32.def)
+add_custom_command(TARGET lib64-kernel32 POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libkernel32-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/kernel32.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libkernel32-tmp.a $<TARGET_FILE_DIR:lib64-kernel32>/$<TARGET_FILE_NAME:lib64-kernel32> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libkernel32-tmp.a  $<TARGET_FILE_DIR:lib64-kernel32>/$<TARGET_FILE_NAME:lib64-kernel32>)	
+
+
+add_library(lib64-msvcrt STATIC ${msvcrt_SOURCES})
+set_target_properties(lib64-msvcrt PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "msvcrt")	
+target_compile_options(lib64-msvcrt PRIVATE ${FLAGS} ${COMPILE64} -D__LIBMSVCRT__)
+target_include_directories(lib64-msvcrt PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-msvcrt PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/msvcrt.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcrt.def)
+add_custom_command(TARGET lib64-msvcrt POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcrt-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcrt.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcrt-tmp.a $<TARGET_FILE_DIR:lib64-msvcrt>/$<TARGET_FILE_NAME:lib64-msvcrt> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcrt-tmp.a  $<TARGET_FILE_DIR:lib64-msvcrt>/$<TARGET_FILE_NAME:lib64-msvcrt>)
+
+function(add_library_x86_64_imp libs)
+foreach(l ${${libs}})
+add_library(lib64-${l} STATIC ${lib${l}_SOURCES})
+set_target_properties(lib64-${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "${l}")
+target_compile_options(lib64-${l} PRIVATE ${FLAGS} ${COMPILE64})
+target_include_directories(lib64-${l} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-${l} POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l}-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${l}.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l}-tmp.a $<TARGET_FILE_DIR:lib64-${l}>/$<TARGET_FILE_NAME:lib64-${l}> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l}-tmp.a  $<TARGET_FILE_DIR:lib64-${l}>/$<TARGET_FILE_NAME:lib64-${l}>)	
+endforeach()
+endfunction()
+
+function(add_library_x86_64 libs)
+foreach(l ${${libs}})
+add_library(lib64-${l} STATIC ${lib${l}_SOURCES})
+set_target_properties(lib64-${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "${l}")
+target_compile_options(lib64-${l} PRIVATE ${FLAGS} ${COMPILE64})
+target_include_directories(lib64-${l} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+endforeach()
+endfunction()
+
+set(lib64_imp_LIBRARIES
+	shell32 windowscodecs ksuser gdiplus) #ws2_32)dinput dinput8
+set(lib64_LIBRARIES
+	dmoguids dxerr8 dxerr9 mfuuid
+	amstrmid wmcodecdspuuid wbemuuid dxguid 
+	ksguid locationapi sapi sensorsapi portabledeviceguids scrnsave
+	strmiids uuid  taskschd largeint 
+	mingwthrd m moldname gmon)
+
+add_library_x86_64_imp(lib64_imp_LIBRARIES)
+add_library_x86_64(lib64_LIBRARIES)
+
+add_library(lib64-dinput STATIC ${libdinput_SOURCES})
+set_target_properties(lib64-dinput PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "dinput")
+target_compile_options(lib64-dinput PRIVATE ${FLAGS} ${COMPILE64} -DUNICODE)
+target_include_directories(lib64-dinput PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-dinput POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/dinput.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput-tmp.a $<TARGET_FILE_DIR:lib64-dinput>/$<TARGET_FILE_NAME:lib64-dinput> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput-tmp.a  $<TARGET_FILE_DIR:lib64-dinput>/$<TARGET_FILE_NAME:lib64-dinput>)	
+
+add_library(lib64-dinput8 STATIC ${libdinput8_SOURCES})
+set_target_properties(lib64-dinput8 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "dinput8")
+target_compile_options(lib64-dinput8 PRIVATE ${FLAGS} ${COMPILE64} -DUNICODE)
+target_include_directories(lib64-dinput8 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-dinput8 POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput8-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/dinput8.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput8-tmp.a $<TARGET_FILE_DIR:lib64-dinput8>/$<TARGET_FILE_NAME:lib64-dinput8> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libdinput8-tmp.a  $<TARGET_FILE_DIR:lib64-dinput8>/$<TARGET_FILE_NAME:lib64-dinput8>)	
+
+add_library(lib64-ws2_32 STATIC ${libws2_32_SOURCES})
+set_target_properties(lib64-ws2_32 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "ws2_32")
+target_compile_options(lib64-ws2_32 PRIVATE ${FLAGS} ${COMPILE64} -DUNICODE)
+target_include_directories(lib64-ws2_32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+add_custom_command(TARGET lib64-ws2_32 PRE_BUILD
+					COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/ws2_32.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/ws2_32.def)
+add_custom_command(TARGET lib64-ws2_32 POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libws2_32-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/ws2_32.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libws2_32-tmp.a $<TARGET_FILE_DIR:lib64-ws2_32>/$<TARGET_FILE_NAME:lib64-ws2_32> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libws2_32-tmp.a  $<TARGET_FILE_DIR:lib64-ws2_32>/$<TARGET_FILE_NAME:lib64-ws2_32>)	
+
+add_library(lib64-scrnsavw STATIC ${libscrnsavw_SOURCES})
+set_target_properties(lib64-scrnsavw PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "scrnsavw")
+target_compile_options(lib64-scrnsavw PRIVATE ${FLAGS} ${COMPILE64} -DUNICODE)
+target_include_directories(lib64-scrnsavw PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib64-mingw32 STATIC ${libmingw32_SOURCES})
+set_target_properties(lib64-mingw32 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "mingw32")
+target_compile_options(lib64-mingw32 PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1)
+target_include_directories(lib64-mingw32 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib64-mingwex STATIC ${libmingwex_SOURCES} ${libmingwex64_SOURCES} ${dfp_math_SOURCES})
+set_target_properties(lib64-mingwex PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "mingwex")
+target_compile_options(lib64-mingwex PRIVATE ${FLAGS} ${COMPILE64} -D_SYSCRT=1 -DCRTDLL=1)
+target_include_directories(lib64-mingwex PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_library(msvcrt_common_objs64 OBJECT ${msvcrt_common_SOURCES})
+target_compile_options(msvcrt_common_objs64 PRIVATE ${FLAGS} ${COMPILE64} -D__LIBMSVCRT__)
+target_include_directories(msvcrt_common_objs64 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib64-crtdll STATIC )
+set_target_properties(lib64-crtdll PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "crtdll")
+target_link_libraries(lib64-crtdll msvcrt_common_objs64)
+add_custom_command(TARGET lib64-crtdll POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libcrtdll-tmp.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/crtdll.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libcrtdll-tmp.a $<TARGET_FILE_DIR:lib64-crtdll>/$<TARGET_FILE_NAME:lib64-crtdll> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libcrtdll-tmp.a  $<TARGET_FILE_DIR:lib64-crtdll>/$<TARGET_FILE_NAME:lib64-crtdll>)
+
+set(msvcrt_LIBS 90 90d 100 110 120 120d 120_app)
+
+foreach(l ${msvcrt_LIBS})
+add_library(lib64-msvcr${l} STATIC )
+set_target_properties(lib64-msvcr${l} PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "msvcr${l}")	
+target_link_libraries(lib64-msvcr${l} msvcrt_common_objs64)
+add_custom_command(TARGET lib64-msvcr${l} PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib64/msvcr${l}.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcr${l}.def)
+add_custom_command(TARGET lib64-msvcr${l} POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr${l}-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcr${l}.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr${l}-tmp.a $<TARGET_FILE_DIR:lib64-msvcr${l}>/$<TARGET_FILE_NAME:lib64-msvcr${l}> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr${l}-tmp.a  $<TARGET_FILE_DIR:lib64-msvcr${l}>/$<TARGET_FILE_NAME:lib64-msvcr${l}>)	
+endforeach()
+
+add_library(lib64-msvcr80 STATIC ${msvcr80_64_SOURCES})
+target_compile_options(lib64-msvcr80 PRIVATE ${FLAGS} ${COMPILE64} -D__LIBMSVCRT__)
+target_include_directories(lib64-msvcr80 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+set_target_properties(lib64-msvcr80 PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "msvcr80")	
+add_custom_command(TARGET lib64-msvcr80 PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib64/msvcr80.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcr80.def)
+add_custom_command(TARGET lib64-msvcr80 POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr80-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcr80.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr80-tmp.a $<TARGET_FILE_DIR:lib64-msvcr80>/$<TARGET_FILE_NAME:lib64-msvcr80> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcr80-tmp.a  $<TARGET_FILE_DIR:lib64-msvcr80>/$<TARGET_FILE_NAME:lib64-msvcr80>)	
+
+add_library(lib64-ucrtbase_obj OBJECT ${ucrtbase_SOURCES})
+target_compile_options(lib64-ucrtbase_obj PRIVATE ${FLAGS} ${COMPILE64} -D__LIBMSVCRT__)
+target_include_directories(lib64-ucrtbase_obj PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../ include ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/crt ${CMAKE_CURRENT_SOURCE_DIR}/../mingw-w64-headers/include)
+
+add_library(lib64-ucrtbase STATIC)
+set_target_properties(lib64-ucrtbase PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "ucrtbase")
+target_link_libraries(lib64-ucrtbase lib64-ucrtbase_obj)
+add_custom_command(TARGET lib64-ucrtbase PRE_BUILD
+				COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/ucrtbase.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64> ${CMAKE_CURRENT_BINARY_DIR}/lib64/ucrtbase.def)
+add_custom_command(TARGET lib64-ucrtbase POST_BUILD
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrtbase-tmp.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/ucrtbase.def
+						&& ar crus ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrtbase-tmp.a $<TARGET_FILE_DIR:lib64-ucrtbase>/$<TARGET_FILE_NAME:lib64-ucrtbase> 
+						&& mv ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrtbase-tmp.a  $<TARGET_FILE_DIR:lib64-ucrtbase>/$<TARGET_FILE_NAME:lib64-ucrtbase>)
+
+add_library(lib64-ucrt_extra STATIC)
+set_target_properties(lib64-ucrt_extra PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/lib64"
+									OUTPUT_NAME "ucrt_extra")
+target_link_libraries(lib64-ucrt_extra lib64-ucrtbase_obj)
+
+set(lib64-vfw32_LIBS
+ ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvfw32.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libavifil32.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libavicap32.a)
+
+set(lib64-runtimeobject_LIBS
+${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-l1-1-0.a)
+
+set(lib64-synchronization_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-synch-l1-2-0.a)
+
+set(lib64-windowsapp_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-com-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-com-l2-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-com-midlproxystub-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-datetime-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-datetime-l1-1-2.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-debug-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-delayload-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-errorhandling-l1-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-errorhandling-l1-1-3.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-fibers-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-fibers-l2-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-file-ansi-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-file-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-file-l2-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-handle-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-heap-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-interlocked-l1-2-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-io-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-kernel32-legacy-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-largeinteger-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-libraryloader-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-libraryloader-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-localization-ansi-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-localization-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-localization-l1-2-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-localization-l2-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-memory-l1-1-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-memory-l1-1-3.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-normalization-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-processenvironment-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-processthreads-l1-1-2.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-processthreads-l1-1-3.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-profile-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-realtime-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-realtime-l1-1-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-rtlsupport-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-synch-ansi-l1-1-0.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-synch-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-synch-l1-2-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-sysinfo-l1-2-1.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-sysinfo-l1-2-3.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-threadpool-l1-2-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-timezone-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-util-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-windowsceip-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-windowserrorreporting-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-error-l1-1-1.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-registration-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-robuffer-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-roparameterizediid-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-winrt-string-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-xstate-l2-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-eventing-classicprovider-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-eventing-consumer-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-eventing-controller-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-eventing-legacy-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-eventing-provider-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-gaming-tcui-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-ro-typeresolution-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-security-cryptoapi-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-shcore-stream-winrt-l1-1-0.a)
+
+set(lib64-ucrt_common_LIBS
+	#${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrt_extra.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-conio-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-convert-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-environment-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-filesystem-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-heap-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-locale-l1-1-0.a 
+	 ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-multibyte-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-process-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-stdio-l1-1-0.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-string-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-time-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-utility-l1-1-0.a)
+
+set(lib64-ucrt_LIBS
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-runtime-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-private-l1-1-0.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-crt-math-l1-1-0.a)
+
+foreach(l ${lib64-vfw32_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/${d})
+endforeach()
+
+foreach(l ${lib64-runtimeobject_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${d})
+endforeach()
+
+foreach(l ${lib64-synchronization_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${d})
+endforeach()
+
+foreach(l ${lib64-windowsapp_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${d})
+endforeach()
+
+foreach(l ${lib64-ucrt_common_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${d})
+endforeach()
+
+foreach(l ${lib64-ucrt_LIBS})
+	string(REPLACE "${CMAKE_CURRENT_BINARY_DIR}/lib64/lib" "" d ${l})
+	string(REPLACE ".a" ".def" d ${d})
+	add_custom_command(OUTPUT ${l}
+					COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${d}.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/${d}
+					&& dlltool ${DLLTOOL_64} -l ${l} -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/${d})
+endforeach()
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libvfw32.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib64/vfw32.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libvfw32.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib64/vfw32.mri ${lib64-vfw32_LIBS} )#lib64-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libruntimeobject.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib64/runtimeobject.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libruntimeobject.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib64/runtimeobject.mri ${lib64-runtimeobject_LIBS})# lib64-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libsynchronization.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib64/synchronization.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libsynchronization.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib64/synchronization.mri ${lib64-synchronization_LIBS} )#lib64-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libwindowsapp.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib64/windowsapp.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libwindowsapp.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib64/windowsapp.mri ${lib64-windowsapp_LIBS} )#lib64-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrt.a
+					COMMAND ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib64/ucrt.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrt.a
+					DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/lib64/ucrt.mri ${lib64-ucrt_common_LIBS} ${lib64-ucrt_LIBS} ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrt_extra.a )#lib64-PLIBS)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libxinput.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libxinput.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/xinput1_3.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libxapofx.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libxapofx.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/xapofx1_5.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libx3daudio.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libx3daudio.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/x3daudio1_7.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx9.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx9.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/d3dx9_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx10.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx10.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/d3dx10_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx11.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx11.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/d3dx11_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcsxd.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcsxd.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/d3dcsxd_43.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcompiler.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcompiler.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/d3dcompiler_43.def)
+
+set(lib64-LIBS
+	libwinusb.a
+libavrt.a
+libacledit.a
+libaclui.a
+libactiveds.a
+libadmparse.a
+libadmwprox.a
+libadptif.a
+libadsiisex.a
+libadsldpc.a
+libadvpack.a
+libagentanm.a
+libakscoinst.a
+libalrsvc.a
+libapcups.a
+libapphelp.a
+libappmgmts.a
+libappmgr.a
+libaqueue.a
+libasp.a
+libaspperf.a
+libasycfilt.a
+libatkctrs.a
+libatl.a
+libatrace.a
+libaudiosrv.a
+libauthz.a
+libautodisc.a
+libavicap32.a
+libavifil32.a
+libazroles.a
+libbasesrv.a
+libbatmeter.a
+libbatt.a
+libbootvid.a
+libbrowser.a
+libbthci.a
+libcabinet.a
+libcabview.a
+libcards.a
+libcatsrv.a
+libcatsrvut.a
+libccfgnt.a
+libcdfview.a
+libcdm.a
+libcertcli.a
+libcfgbkend.a
+libcfgmgr32.a
+libchtskdic.a
+libcimwin32.a
+libCINTIME.a
+libclb.a
+libcliconfg.a
+libclasspnp.a
+libclusapi.a
+libcmcfg32.a
+libcmdial32.a
+libcmpbk32.a
+libcmutil.a
+libcnetcfg.a
+libcnvfat.a
+libcoadmin.a
+libcolbact.a
+libcomctl32.a
+libcomdlg32.a
+libcompstui.a
+libcomres.a
+libcomsetup.a
+libcomsnap.a
+libcomsvcs.a
+libcomuid.a
+libconsole.a
+libcorpol.a
+libcredui.a
+libcrypt32.a
+libcryptdlg.a
+libcryptdll.a
+libcryptext.a
+libcryptnet.a
+libcryptsvc.a
+libcryptui.a
+libcscdll.a
+libcscui.a
+libcsrsrv.a
+libd3d8thk.a
+libd3d9.a
+libd3dxof.a
+libdavclnt.a
+libdbgeng.a
+libdbghelp.a
+libdbnmpntw.a
+libdciman32.a
+libddraw.a
+libdevmgr.a
+libdevobj.a
+libdevrtl.a
+libdhcpcsvc.a
+libdhcpsapi.a
+libdigest.a
+libdimsntfy.a
+libdimsroam.a
+libdiskcopy.a
+libdmconfig.a
+libdmdskmgr.a
+libdmivcitf.a
+libdmutil.a
+libdmvdsitf.a
+libdnsapi.a
+libdnsrslvr.a
+libdpapi.a
+libdpnaddr.a
+libdpnet.a
+libdpnhupnp.a
+libdpnlobby.a
+libdpvoice.a
+libdrprov.a
+libds32gt.a
+libdsauth.a
+libdskquota.a
+libdsound3d.a
+libdsound.a
+libdsprop.a
+libdsquery.a
+libdssec.a
+libdssenh.a
+libdsuiext.a
+libduser.a
+libefsadu.a
+libes.a
+libesent.a
+libesentprf.a
+libeventlog.a
+libevntagnt.a
+libexstrace.a
+libfastprox.a
+libfaultrep.a
+libfcachdll.a
+libfdeploy.a
+libfeclient.a
+libfilemgmt.a
+libfldrclnr.a
+libfmifs.a
+libfontsub.a
+libframedyn.a
+libftpctrs2.a
+libftpmib.a
+libfxsapi.a
+libfxscfgwz.a
+libfxsdrv.a
+libfxsocm.a
+libfxsperf.a
+libfxsroute.a
+libfxsst.a
+libfxst30.a
+libfxstiff.a
+libfxsui.a
+libfxswzrd.a
+libgdi32.a
+libgetuname.a
+libglmf32.a
+libglu32.a
+libgpedit.a
+libgpkcsp.a
+libgptext.a
+libguitrn.a
+libhal.a
+libhbaapi.a
+libhgfs.a
+libhid.a
+libhidclass.a
+libhidparse.a
+libhlink.a
+libhmmapi.a
+libhnetcfg.a
+libhnetwiz.a
+libhostmib.a
+libhotplug.a
+libhtrn_jis.a
+libhttpapi.a
+libhttpext.a
+libhttpmib.a
+libhttpodbc.a
+libhtui.a
+libhypertrm.a
+libiashlpr.a
+libiaspolcy.a
+libiassam.a
+libiassvcs.a
+libicaapi.a
+libicfgnt5.a
+libicm32.a
+libicmp.a
+libicmui.a
+libicwconn.a
+libicwdial.a
+libicwdl.a
+libicwphbk.a
+libicwutil.a
+libidq.a
+libieakeng.a
+libiedkcs32.a
+libieencode.a
+libiernonce.a
+libiesetup.a
+libigmpagnt.a
+libiisadmin.a
+libiiscfg.a
+libiis.a
+libiisrtl.a
+libiissuba.a
+libiisui.a
+libiisutil.a
+libiiswmi.a
+libimagehlp.a
+libimeshare.a
+libimgutil.a
+libimjp81k.a
+libimjpcus.a
+libimjpdct.a
+libimjputyc.a
+libimm32.a
+libimsinsnt.a
+libimskdic.a
+libinetcfg.a
+libinetcomm.a
+libinetmib1.a
+libinfoadmn.a
+libinfocomm.a
+libinfoctrs.a
+libinfosoft.a
+libinitpki.a
+libinput.a
+libinseng.a
+libiphlpapi.a
+libipmontr.a
+libipnathlp.a
+libiprop.a
+libiprtprio.a
+libiprtrmgr.a
+libipsecsvc.a
+libipxsap.a
+libirclass.a
+libisatq.a
+libiscomlog.a
+libisign32.a
+libiyuv_32.a
+libjet500.a
+libjsproxy.a
+libkd1394.a
+libkdcom.a
+libkerberos.a
+libkeymgr.a
+liblinkinfo.a
+liblmmib2.a
+libloadperf.a
+liblocalspl.a
+liblog.a
+libloghours.a
+liblonsint.a
+liblpk.a
+liblprhelp.a
+liblsasrv.a
+liblz32.a
+libmag_hook.a
+libmapi32.a
+libmapistub.a
+libmcastmib.a
+libmcd32.a
+libmcdsrv32.a
+libmchgrcoi.a
+libmciavi32.a
+libmcicda.a
+libmciole32.a
+libmciqtz32.a
+libmciseq.a
+libmciwave.a
+libmdminst.a
+libmf3216.a
+libmfc42.a
+libmfc42u.a
+libmgmtapi.a
+libmidimap.a
+libmigism.a
+libmlang.a
+libmll_hp.a
+libmll_mtf.a
+libmll_qic.a
+libmmfutil.a
+libmmutilse.a
+libmobsync.a
+libmodemui.a
+libmofd.a
+libmprapi.a
+libmprddm.a
+libmpr.a
+libmprmsg.a
+libmprui.a
+libmqad.a
+libmqcertui.a
+libmqdscli.a
+libmqise.a
+libmqlogmgr.a
+libmqperf.a
+libmqrt.a
+libmqrtdep.a
+libmqsec.a
+libmqupgrd.a
+libmqutil.a
+libmsacm32.a
+libmsadcs.a
+libmsado15.a
+libmsafd.a
+libmsasn1.a
+libmscat32.a
+libmscms.a
+libmsdadiag.a
+libmsdart.a
+libmsdmo.a
+libmsdtclog.a
+libmsdtcprx.a
+libmsdtcstp.a
+libmsdtctm.a
+libmsdtcuiu.a
+libmsftedit.a
+libmsgina.a
+libmsgr3en.a
+libmsgrocm.a
+libmsgsvc.a
+libmshtml.a
+libmsi.a
+libmsimg32.a
+libmsimtf.a
+libmsir3jp.a
+libmsisip.a
+libmslbui.a
+libmsls31.a
+libmsmqocm.a
+libmsobdl.a
+libmsobmain.a
+libmsoeacct.a
+libmsoe.a
+libmsoert2.a
+libmspatcha.a
+libmsports.a
+libmsrating.a
+libmsrle32.a
+libmssign32.a
+libmssip32.a
+libmstask.a
+libmstlsapi.a
+libmsutb.a
+libmsv1_0.a
+libmsvcirt.a
+libmsvfw32.a
+libmsvidc32.a
+libmsw3prt.a
+libmswsock.a
+libmsyuv.a
+libmtxclu.a
+libmtxdm.a
+libmtxex.a
+libmtxoci.a
+libmydocs.a
+libncobjapi.a
+libncxpnt.a
+libnddeapi.a
+libnddenb32.a
+libndisnpp.a
+libnetapi32.a
+libnetcfgx.a
+libnetid.a
+libnetlogon.a
+libnetman.a
+libnetoc.a
+libnetplwiz.a
+libnetrap.a
+libnetshell.a
+libnetui0.a
+libnetui1.a
+libnetui2.a
+libnewdev.a
+libnntpapi.a
+libnpptools.a
+libnshipsec.a
+libntdll.a
+libntdsapi.a
+libntdsbcli.a
+libntlanman.a
+libntlanui.a
+libntlsapi.a
+libntmarta.a
+libntmsapi.a
+libntoc.a
+libntprint.a
+libntshrui.a
+libntvdm64.a
+libnwprovau.a
+liboakley.a
+liboccache.a
+libocgen.a
+libocmanage.a
+libocmsn.a
+libodbc32.a
+libodbc32gt.a
+libodbcbcp.a
+libodbcconf.a
+libodbccp32.a
+libodbccr32.a
+libodbccu32.a
+libodbctrac.a
+liboeimport.a
+liboleacc.a
+libolecli32.a
+libolecnv32.a
+liboledb32.a
+liboledlg.a
+libolesvr32.a
+libopengl32.a
+libosuninst.a
+libpautoenr.a
+libpdh.a
+libperfctrs.a
+libperfdisk.a
+libperfnet.a
+libperfos.a
+libperfproc.a
+libperfts.a
+libphotowiz.a
+libpidgen.a
+libpintlcsd.a
+libpolicman.a
+libpolstore.a
+libpowrprof.a
+libprintui.a
+libprofmap.a
+libPS5UI.a
+libpsapi.a
+libpsbase.a
+libpschdprf.a
+libPSCRIPT5.a
+libpstorec.a
+libpstorsvc.a
+libqmgr.a
+libqosname.a
+libquartz.a
+libquery.a
+librasadhlp.a
+librasapi32.a
+librasauto.a
+libraschap.a
+librasctrs.a
+librasdlg.a
+librasman.a
+librasmans.a
+librasmontr.a
+librasmxs.a
+librasppp.a
+librasrad.a
+librassapi.a
+librasser.a
+librastapi.a
+librastls.a
+librdpcfgex.a
+librdpsnd.a
+librdpwsx.a
+libregapi.a
+libregsvc.a
+libresutils.a
+libriched20.a
+librnr20.a
+libroutetab.a
+librpcns4.a
+librpcref.a
+librpcrt4.a
+librpcss.a
+librsaenh.a
+librtm.a
+librtutils.a
+libsamsrv.a
+libscarddlg.a
+libsccbase.a
+libscecli.a
+libscesrv.a
+libschannel.a
+libschedsvc.a
+libsclgntfy.a
+libscredir.a
+libscript.a
+libscrobj.a
+libscrrun.a
+libsdhcinst.a
+libseclogon.a
+libsecur32.a
+libsecurity.a
+libsensapi.a
+libsenscfg.a
+libsens.a
+libseo.a
+libserialui.a
+libserwvdrv.a
+libsetupapi.a
+libsetupqry.a
+libsfc.a
+libsfcfiles.a
+libsfc_os.a
+libsfmapi.a
+libshdocvw.a
+libshfolder.a
+libshimeng.a
+libshimgvw.a
+libshlwapi.a
+libshscrap.a
+libshsvcs.a
+libsigtab.a
+libsisbkup.a
+libskdll.a
+libslbcsp.a
+libsmtpapi.a
+libsmtpctrs.a
+libsnmpapi.a
+libsnmpmib.a
+libsnprfdll.a
+libsoftpub.a
+libspoolss.a
+libsqlsrv32.a
+libsqlxmlx.a
+libsrchctls.a
+libsrclient.a
+libsrrstr.a
+libsrvsvc.a
+libssdpapi.a
+libssinc.a
+libstaxmem.a
+libsti_ci.a
+libsti.a
+libstorprop.a
+libstreamci.a
+libstrmfilt.a
+libsvcpack.a
+libsxs.a
+libsynceng.a
+libsyncui.a
+libsysinv.a
+libsysmod.a
+libsyssetup.a
+libt2embed.a
+libtapi32.a
+libtapiperf.a
+libtcpmib.a
+libtraffic.a
+libtsappcmp.a
+libtsbyuv.a
+libtsd32.a
+libtsoc.a
+libudhisapi.a
+libufat.a
+libumandlg.a
+libumdmxfrm.a
+libumpnpmgr.a
+libUNIDRV.a
+libUNIDRVUI.a
+libuniime.a
+libunimdmat.a
+libuniplat.a
+libuntfs.a
+libupnp.a
+libupnpui.a
+liburlauth.a
+liburl.a
+liburlmon.a
+libusbcamd2.a
+libusbd.a
+libusbport.a
+libuserenv.a
+libusp10.a
+libutildll.a
+libuxtheme.a
+libvdsutil.a
+libverifier.a
+libversion.a
+libvgx.a
+libvmx_mode.a
+libvssapi.a
+libw32time.a
+libw32topl.a
+libw3core.a
+libw3ctrs.a
+libw3dt.a
+libw3isapi.a
+libw3ssl.a
+libw3tp.a
+libwab32.a
+libwabimp.a
+libwamreg.a
+libwbemcore.a
+libwbemupgd.a
+libwdigest.a
+libwdmaud.a
+libwebcheck.a
+libwebclnt.a
+libwebhits.a
+libwiadss.a
+libwiarpc.a
+libwiaservc.a
+libwiashext.a
+libwinfax.a
+libwininet.a
+libwinipsec.a
+libwinmm.a
+libwinrnr.a
+libwinscard.a
+libwinspool.a
+libwinsrv.a
+libwinsta.a
+libwintrust.a
+libwkssvc.a
+libwldap32.a
+libwlnotify.a
+libwlstore.a
+libwmi2xml.a
+libwmiaprpl.a
+libwmi.a
+libwmiprop.a
+libwmisvc.a
+libwow64cpu.a
+libwow64.a
+libwow64mib.a
+libwow64win.a
+libwpd_ci.a
+libws2help.a
+libwscsvc.a
+libwshatm.a
+libwshbth.a
+libwsock32.a
+libzoneoc.a
+libnormaliz.a
+libclfsw32.a
+libdwmapi.a
+libntoskrnl.a
+libuxtheme.a
+libwtsapi32.a
+libbcrypt.a
+libbthprops.a
+libdhcpcsvc6.a
+libdxva2.a
+libeappcfg.a
+libeappgnui.a
+libeapphost.a
+libeappprxy.a
+libevr.a
+libiscsidsc.a
+libktmw32.a
+libmf.a
+libmfplat.a
+libmsdrm.a
+libncrypt.a
+libwecapi.a
+libwevtapi.a
+libwevtfwd.a
+libqutil.a
+libconnect.a
+libfwpuclnt.a
+libndfapi.a
+libp2p.a
+libp2pcollab.a
+libp2pgraph.a
+libwdstptc.a
+libcscapi.a
+librstrmgr.a
+libqwave.a
+libwsdapi.a
+libks.a
+librpcdiag.a
+librpchttp.a
+libresutil.a
+libslwga.a
+libslc.a
+libslcext.a
+libmsctfmonitor.a
+libtbs.a
+libtdh.a
+libtxfw32.a
+libwlanui.a
+libwlanapi.a
+libwlanutil.a
+libwer.a
+libndis.a
+libd2d1.a
+libwdscsl.a
+libpcwum.a
+libwdscore.a
+libcryptsp.a
+libwdsclient.a
+libwdsupgcompl.a
+libwdsclientapi.a
+libwdsutil.a
+libwdsimage.a
+libvirtdisk.a
+libcryptxml.a
+libsspicli.a
+libd3dcompiler_33.a
+libd3dcompiler_34.a
+libd3dcompiler_35.a
+libd3dcompiler_36.a
+libd3dcompiler_37.a
+libd3dcompiler_38.a
+libd3dcompiler_39.a
+libd3dcompiler_40.a
+libd3dcompiler_41.a
+libd3dcompiler_42.a
+libd3dcompiler_43.a
+libd3dcsxd_43.a
+libd3dx10_33.a
+libd3dx10_34.a
+libd3dx10_35.a
+libd3dx10_36.a
+libd3dx10_37.a
+libd3dx10_38.a
+libd3dx10_39.a
+libd3dx10_40.a
+libd3dx10_41.a
+libd3dx10_42.a
+libd3dx10_43.a
+libd3dx11_42.a
+libd3dx11_43.a
+libd3dx9_24.a
+libd3dx9_25.a
+libd3dx9_26.a
+libd3dx9_27.a
+libd3dx9_28.a
+libd3dx9_29.a
+libd3dx9_30.a
+libd3dx9_31.a
+libd3dx9_32.a
+libd3dx9_33.a
+libd3dx9_34.a
+libd3dx9_35.a
+libd3dx9_36.a
+libd3dx9_37.a
+libd3dx9_38.a
+libd3dx9_39.a
+libd3dx9_40.a
+libd3dx9_41.a
+libd3dx9_42.a
+libd3dx9_43.a
+libdwrite.a
+libdxgi.a
+libx3daudio1_2.a
+libx3daudio1_3.a
+libx3daudio1_4.a
+libx3daudio1_5.a
+libx3daudio1_6.a
+libx3daudio1_7.a
+libx3daudiod1_7.a
+libxapofx1_0.a
+libxapofx1_1.a
+libxapofx1_2.a
+libxapofx1_3.a
+libxapofx1_4.a
+libxapofx1_5.a
+libxapofxd1_5.a
+libxinput1_1.a
+libxinput1_2.a
+libxinput1_3.a
+libxinput1_4.a
+libxinput9_1_0.a
+libxaudio2_8.a
+libd3dcompiler_46.a
+libd3dcsx_46.a
+libd3d11.a
+libd3dcompiler_47.a
+libwinhttp.a
+libwscapi.a)
+
+foreach(l ${lib64-LIBS})
+	string(REPLACE "lib" "" i ${l})
+	string(REPLACE ".a" "" i ${i})
+	if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def")
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l}
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def)
+	elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def")	
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l}
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def)
+	endif()
+	list(APPEND lib64-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l})		
+endforeach()
+
+set(lib64-LIBS_ex
+wmilib.a samlib.a oemiglib.a miglibnt.a fltlib.a dbnetlib.a atmlib.a)
+
+foreach(l ${lib64-LIBS_ex})
+	string(REPLACE ".a" "" i ${i})
+	if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def")
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l}
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def)
+	elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def")	
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l}
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l} -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def)
+	endif()
+	list(APPEND lib64-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib64/lib${l})		
+endforeach()
+
+set(lib64-LIBS_sp
+libuser32.a liboleaut32.a libole32.a libclbcatq.a libadvapi32.a)
+
+foreach(l ${lib64-LIBS_sp})
+	string(REPLACE "lib" "" i ${l})
+	string(REPLACE ".a" "" i ${i})
+	if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def.in")
+	add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l}
+						COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib64/${i}.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.def
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l} -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.def)
+	elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def.in")
+		add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l}
+						COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/${i}.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.def
+						COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l} -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/${i}.def)
+	endif()
+	list(APPEND lib64-processed-LIBS ${CMAKE_CURRENT_BINARY_DIR}/lib64/${l})		
+endforeach()
+
+set(lib64-mincore_deps
+	libapi-ms-win-core-com-l1-1-1.a libapi-ms-win-core-com-midlproxystub-l1-1-0.a libapi-ms-win-core-datetime-l1-1-1.a 
+libapi-ms-win-core-datetime-l1-1-2.a libapi-ms-win-core-debug-l1-1-1.a libapi-ms-win-core-delayload-l1-1-1.a 
+libapi-ms-win-core-errorhandling-l1-1-1.a libapi-ms-win-core-errorhandling-l1-1-3.a libapi-ms-win-core-fibers-l1-1-1.a libapi-ms-win-core-file-l1-2-1.a 
+libapi-ms-win-core-file-l2-1-1.a libapi-ms-win-core-handle-l1-1-0.a libapi-ms-win-core-interlocked-l1-2-0.a libapi-ms-win-core-io-l1-1-1.a 
+libapi-ms-win-core-libraryloader-l1-2-0.a libapi-ms-win-core-libraryloader-l2-1-0.a libapi-ms-win-core-localization-l1-2-1.a 
+libapi-ms-win-core-localization-l1-2-2.a libapi-ms-win-core-localization-l2-1-0.a libapi-ms-win-core-memory-l1-1-2.a 
+libapi-ms-win-core-memory-l1-1-3.a libapi-ms-win-core-processenvironment-l1-2-0.a libapi-ms-win-core-processthreads-l1-1-2.a 
+libapi-ms-win-core-processthreads-l1-1-3.a libapi-ms-win-core-profile-l1-1-0.a libapi-ms-win-core-realtime-l1-1-0.a libapi-ms-win-core-realtime-l1-1-1.a 
+libapi-ms-win-core-rtlsupport-l1-2-0.a libapi-ms-win-core-string-l1-1-0.a libapi-ms-win-core-synch-l1-2-0.a libapi-ms-win-core-synch-l1-2-1.a 
+libapi-ms-win-core-sysinfo-l1-2-1.a libapi-ms-win-core-sysinfo-l1-2-3.a libapi-ms-win-core-threadpool-l1-2-0.a libapi-ms-win-core-timezone-l1-1-0.a 
+libapi-ms-win-core-util-l1-1-0.a libapi-ms-win-core-winrt-error-l1-1-1.a libapi-ms-win-core-winrt-l1-1-0.a 
+libapi-ms-win-core-winrt-string-l1-1-0.a libapi-ms-win-core-xstate-l2-1-0.a libapi-ms-win-eventing-classicprovider-l1-1-0.a 
+libapi-ms-win-eventing-consumer-l1-1-0.a libapi-ms-win-eventing-controller-l1-1-0.a 
+libapi-ms-win-eventing-provider-l1-1-0.a libauthz.a libbcrypt.a libcabinet.a libcrypt32.a libcryptnet.a libdnsapi.a libiphlpapi.a libmpr.a 
+libmswsock.a libncrypt.a liboleaut32.a librpcrt4.a libsspicli.a libuserenv.a libwinhttp.a libwldap32.a libws2_32.a)
+
+list(TRANSFORM lib64-mincore_deps PREPEND "${CMAKE_CURRENT_BINARY_DIR}/lib64/")
+
+set(lib64-mincore_bdep
+ libapi-ms-win-core-version-l1-1-1.a )
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmincore.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libapi-ms-win-core-version-l1-1-1.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/api-ms-win-core-version-l1-1-1.def
+					COMMAND cd ${CMAKE_CURRENT_BINARY_DIR}/lib64/ && ar -M < ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/mincore.mri && ranlib ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmincore.a
+					DEPENDS ${lib64-mincore_deps})
+
+add_custom_target(lib64_extra ALL DEPENDS ${lib64-processed-LIBS} ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmincore.a)
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp60.a
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp60.a -d ${CMAKE_CURRENT_SOURCE_DIR}/lib64/msvcp60.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp120_app.a
+					COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib64/msvcp120_app.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcp120_app.def
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp120_app.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/msvcp120_app.def)
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/lib64/libvcruntime140_app.a
+					COMMAND ${CMAKE_C_COMPILER} -E -x c ${CMAKE_CURRENT_SOURCE_DIR}/lib-common/vcruntime140_app.def.in -Wp,-w -undef -P -I${CMAKE_CURRENT_SOURCE_DIR}/def-include -DDEF_X64 > ${CMAKE_CURRENT_BINARY_DIR}/lib64/vcruntime140_app.def
+					COMMAND dlltool ${DLLTOOL_64} -l ${CMAKE_CURRENT_BINARY_DIR}/lib64/libvcruntime140_app.a -d ${CMAKE_CURRENT_BINARY_DIR}/lib64/vcruntime140_app.def)
+
+add_custom_target(lib64 ALL DEPENDS 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libvfw32.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libruntimeobject.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libsynchronization.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libwindowsapp.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libucrt.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libxinput.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libxapofx.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libx3daudio.a 
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx9.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx9.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx10.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dx11.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcsxd.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libd3dcompiler.a
+	${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp60.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libmsvcp120_app.a ${CMAKE_CURRENT_BINARY_DIR}/lib64/libvcruntime140_app.a)
+
+file(GLOB lib64_archive_all "${CMAKE_CURRENT_BINARY_DIR}/lib64/*.a")
+file(GLOB lib64_objs "${CMAKE_CURRENT_BINARY_DIR}/lib64/*.o")
+#message("${lib64_installs}")
+
+foreach(i ${lib64_archive_all})
+	string(FIND ${i} "libapi-ms" api_ms)
+	if( api_ms EQUAL -1)
+	list(APPEND lib64_installs ${i})
+	endif()
+endforeach()
+
+
+#message("${lib64_installs}")
+
+#file(INSTALL ${lib64_installs} DESTINATION "mingw/lib")
+install(FILES ${lib64_installs} DESTINATION "mingw/lib")
+install(FILES ${lib64_objs} DESTINATION "mingw/lib")
+#install(TARGETS lib64-c DESTINATION "mingw/lib")
+

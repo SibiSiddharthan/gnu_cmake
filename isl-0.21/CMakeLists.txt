@@ -199,7 +199,7 @@ set(isl_HEADERS
 	include/isl/stream.h include/isl/stride_info.h include/isl/union_map.h 
 	include/isl/union_map_type.h include/isl/union_set.h include/isl/union_set_type.h 
 	include/isl/val.h include/isl/val_type.h include/isl/vec.h include/isl/version.h 
-	include/isl/vertices.h)
+	include/isl/vertices.h include/isl/stdint.h)
 
 add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/gitversion.h
 					COMMAND echo "#define GIT_HEAD_ID \"isl-0.21\"" > gitversion.h)

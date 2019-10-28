@@ -1,0 +1,298 @@
+/* config.in.  Generated from configure.ac by autoheader.  */
+
+/* Check that config.h is #included before system headers
+   (this works only for glibc, but that should be enough).  */
+#if defined(__GLIBC__) && !defined(__FreeBSD_kernel__) && !defined(__CONFIG_H__)
+#  error config.h must be #included before system headers
+#endif
+#define __CONFIG_H__ 1
+
+/* Define if building universal (internal helper macro) */
+#cmakedefine AC_APPLE_UNIVERSAL_BUILD @AC_APPLE_UNIVERSAL_BUILD@
+
+/* Set the default --hash-style value */
+#cmakedefine DEFAULT_HASH_STYLE @DEFAULT_HASH_STYLE@
+
+/* Define to 1 if you want to enable -z relro in ELF linker by default. */
+#cmakedefine DEFAULT_LD_Z_RELRO @DEFAULT_LD_Z_RELRO@
+
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
+#cmakedefine ENABLE_NLS @ENABLE_NLS@
+
+/* Define to enable linker plugins */
+#cmakedefine ENABLE_PLUGINS @ENABLE_PLUGINS@
+
+/* Define to do multi-threaded linking */
+#cmakedefine ENABLE_THREADS @ENABLE_THREADS@
+
+/* Default big endian (true or false) */
+#define GOLD_DEFAULT_BIG_ENDIAN @GOLD_DEFAULT_BIG_ENDIAN@
+
+/* Default machine code */
+#cmakedefine GOLD_DEFAULT_MACHINE @GOLD_DEFAULT_MACHINE@
+
+/* Default OSABI code */
+#cmakedefine GOLD_DEFAULT_OSABI @GOLD_DEFAULT_OSABI@
+
+/* Default size (32 or 64) */
+#cmakedefine GOLD_DEFAULT_SIZE @GOLD_DEFAULT_SIZE@
+
+/* Define to 1 if you have the <byteswap.h> header file. */
+#cmakedefine HAVE_BYTESWAP_H @HAVE_BYTESWAP_H@
+
+/* Define to 1 if you have the `chsize' function. */
+#cmakedefine HAVE_CHSIZE @HAVE_CHSIZE@
+
+/* Define to 1 if you have the declaration of `asprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_ASPRINTF
+
+/* Define to 1 if you have the declaration of `basename', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_BASENAME
+
+/* Define to 1 if you have the declaration of `ffs', and to 0 if you don't. */
+#cmakedefine01 HAVE_DECL_FFS
+
+/* Define to 1 if you have the declaration of `memmem', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_MEMMEM
+
+/* Define to 1 if you have the declaration of `snprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_SNPRINTF
+
+/* Define to 1 if you have the declaration of `strndup', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_STRNDUP
+
+/* Define to 1 if you have the declaration of `strverscmp', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_STRVERSCMP
+
+/* Define to 1 if you have the declaration of `vasprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_VASPRINTF
+
+/* Define to 1 if you have the declaration of `vsnprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_VSNPRINTF
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define to 1 if you have the <ext/hash_map> header file. */
+#cmakedefine HAVE_EXT_HASH_MAP @HAVE_EXT_HASH_MAP@
+
+/* Define to 1 if you have the <ext/hash_set> header file. */
+#cmakedefine HAVE_EXT_HASH_SET @HAVE_EXT_HASH_SET@
+
+/* Define to 1 if you have the `fallocate' function. */
+#cmakedefine HAVE_FALLOCATE @HAVE_FALLOCATE@
+
+/* Define to 1 if you have the `ffsll' function. */
+#cmakedefine HAVE_FFSLL @HAVE_FFSLL@
+
+/* Define to 1 if you have the `ftruncate' function. */
+#cmakedefine HAVE_FTRUNCATE @HAVE_FTRUNCATE@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define if your <locale.h> file defines LC_MESSAGES. */
+#cmakedefine HAVE_LC_MESSAGES @HAVE_LC_MESSAGES@
+
+/* Define to 1 if you have the `link' function. */
+#cmakedefine HAVE_LINK @HAVE_LINK@
+
+/* Define to 1 if you have the <locale.h> header file. */
+#cmakedefine HAVE_LOCALE_H @HAVE_LOCALE_H@
+
+/* Define to 1 if you have the `mallinfo' function. */
+#cmakedefine HAVE_MALLINFO @HAVE_MALLINFO@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the `mkdtemp' function. */
+#cmakedefine HAVE_MKDTEMP @HAVE_MKDTEMP@
+
+/* Define to 1 if you have the `mmap' function. */
+#cmakedefine HAVE_MMAP @HAVE_MMAP@
+
+/* Define to 1 if you have the mremap function with MREMAP_MAYMOVE support */
+#cmakedefine HAVE_MREMAP @HAVE_MREMAP@
+
+/* Define if compiler supports #pragma omp threadprivate */
+#cmakedefine HAVE_OMP_SUPPORT @HAVE_OMP_SUPPORT@
+
+/* Define to 1 if you have the `posix_fallocate' function. */
+#cmakedefine HAVE_POSIX_FALLOCATE @HAVE_POSIX_FALLOCATE@
+
+/* Define to 1 if you have the `pread' function. */
+#cmakedefine HAVE_PREAD @HAVE_PREAD@
+
+/* Have PTHREAD_PRIO_INHERIT. */
+#cmakedefine HAVE_PTHREAD_PRIO_INHERIT @HAVE_PTHREAD_PRIO_INHERIT@
+
+/* Define to 1 if you have the `readv' function. */
+#cmakedefine HAVE_READV @HAVE_READV@
+
+/* Define to 1 if you have the `setlocale' function. */
+#cmakedefine HAVE_SETLOCALE @HAVE_SETLOCALE@
+
+/* Define if struct stat has a field st_mtim with timespec for mtime */
+#cmakedefine HAVE_STAT_ST_MTIM @HAVE_STAT_ST_MTIM@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the `sysconf' function. */
+#cmakedefine HAVE_SYSCONF @HAVE_SYSCONF@
+
+/* Define to 1 if you have the <sys/mman.h> header file. */
+#cmakedefine HAVE_SYS_MMAN_H @HAVE_SYS_MMAN_H@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to support 32-bit big-endian targets */
+#cmakedefine HAVE_TARGET_32_BIG @HAVE_TARGET_32_BIG@
+
+/* Define to support 32-bit little-endian targets */
+#cmakedefine HAVE_TARGET_32_LITTLE @HAVE_TARGET_32_LITTLE@
+
+/* Define to support 64-bit big-endian targets */
+#cmakedefine HAVE_TARGET_64_BIG @HAVE_TARGET_64_BIG@
+
+/* Define to support 64-bit little-endian targets */
+#cmakedefine HAVE_TARGET_64_LITTLE @HAVE_TARGET_64_LITTLE@
+
+/* Define if attributes work on C++ templates */
+#cmakedefine HAVE_TEMPLATE_ATTRIBUTES @HAVE_TEMPLATE_ATTRIBUTES@
+
+/* Define to 1 if you have the `times' function. */
+#cmakedefine HAVE_TIMES @HAVE_TIMES@
+
+/* Define if std::tr1::hash<off_t> is usable */
+#cmakedefine HAVE_TR1_HASH_OFF_T @HAVE_TR1_HASH_OFF_T@
+
+/* Define to 1 if you have the <tr1/unordered_map> header file. */
+#cmakedefine HAVE_TR1_UNORDERED_MAP @HAVE_TR1_UNORDERED_MAP@
+
+/* Define if ::std::tr1::unordered_map::rehash is usable */
+#cmakedefine HAVE_TR1_UNORDERED_MAP_REHASH @HAVE_TR1_UNORDERED_MAP_REHASH@
+
+/* Define to 1 if you have the <tr1/unordered_set> header file. */
+#cmakedefine HAVE_TR1_UNORDERED_SET @HAVE_TR1_UNORDERED_SET@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Define to 1 if you have the <unordered_map> header file. */
+#cmakedefine HAVE_UNORDERED_MAP @HAVE_UNORDERED_MAP@
+
+/* Define to 1 if you have the <unordered_set> header file. */
+#cmakedefine HAVE_UNORDERED_SET @HAVE_UNORDERED_SET@
+
+/* Define to 1 if you have the <windows.h> header file. */
+#cmakedefine HAVE_WINDOWS_H @HAVE_WINDOWS_H@
+
+/* Default library search path */
+#cmakedefine LIB_PATH @LIB_PATH@
+
+/* Whether configured as a native linker */
+#cmakedefine NATIVE_LINKER @NATIVE_LINKER@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* Define to necessary symbol if this constant uses a non-standard name on
+   your system. */
+#cmakedefine PTHREAD_CREATE_JOINABLE @PTHREAD_CREATE_JOINABLE@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* System root for target files */
+#cmakedefine TARGET_SYSTEM_ROOT @TARGET_SYSTEM_ROOT@
+
+/* Whether the system root can be relocated */
+#cmakedefine TARGET_SYSTEM_ROOT_RELOCATABLE @TARGET_SYSTEM_ROOT_RELOCATABLE@
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# define _ALL_SOURCE 1
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# define _GNU_SOURCE 1
+#endif
+/* Enable threading extensions on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# define _POSIX_PTHREAD_SEMANTICS 1
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# define _TANDEM_SOURCE 1
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# define __EXTENSIONS__ 1
+#endif
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+# cmakedefine WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Define to 1 if on MINIX. */
+#cmakedefine _MINIX @_MINIX@
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#cmakedefine _POSIX_1_SOURCE @_POSIX_1_SOURCE@
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#cmakedefine _POSIX_SOURCE @_POSIX_SOURCE@

@@ -1,0 +1,1372 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define to 1 if you have the `acosf' function. */
+#cmakedefine HAVE_ACOSF @HAVE_ACOSF@
+
+/* Define to 1 if you have the `acosl' function. */
+#cmakedefine HAVE_ACOSL @HAVE_ACOSL@
+
+/* Define to 1 if you have the `aligned_alloc' function. */
+#cmakedefine HAVE_ALIGNED_ALLOC @HAVE_ALIGNED_ALLOC@
+
+/* Define to 1 if you have the <arpa/inet.h> header file. */
+#cmakedefine HAVE_ARPA_INET_H @HAVE_ARPA_INET_H@
+
+/* Define to 1 if you have the `asinf' function. */
+#cmakedefine HAVE_ASINF @HAVE_ASINF@
+
+/* Define to 1 if you have the `asinl' function. */
+#cmakedefine HAVE_ASINL @HAVE_ASINL@
+
+/* Define to 1 if the target assembler supports .symver directive. */
+#cmakedefine HAVE_AS_SYMVER_DIRECTIVE @HAVE_AS_SYMVER_DIRECTIVE@
+
+/* Define to 1 if you have the `atan2f' function. */
+#cmakedefine HAVE_ATAN2F @HAVE_ATAN2F@
+
+/* Define to 1 if you have the `atan2l' function. */
+#cmakedefine HAVE_ATAN2L @HAVE_ATAN2L@
+
+/* Define to 1 if you have the `atanf' function. */
+#cmakedefine HAVE_ATANF @HAVE_ATANF@
+
+/* Define to 1 if you have the `atanl' function. */
+#cmakedefine HAVE_ATANL @HAVE_ATANL@
+
+/* Defined if shared_ptr reference counting should use atomic operations. */
+#cmakedefine HAVE_ATOMIC_LOCK_POLICY @HAVE_ATOMIC_LOCK_POLICY@
+
+/* Define to 1 if you have the `at_quick_exit' function. */
+#cmakedefine HAVE_AT_QUICK_EXIT @HAVE_AT_QUICK_EXIT@
+
+/* Define to 1 if the target assembler supports thread-local storage. */
+#cmakedefine HAVE_CC_TLS @HAVE_CC_TLS@
+
+/* Define to 1 if you have the `ceilf' function. */
+#cmakedefine HAVE_CEILF @HAVE_CEILF@
+
+/* Define to 1 if you have the `ceill' function. */
+#cmakedefine HAVE_CEILL @HAVE_CEILL@
+
+/* Define to 1 if you have the <complex.h> header file. */
+#cmakedefine HAVE_COMPLEX_H @HAVE_COMPLEX_H@
+
+/* Define to 1 if you have the `cosf' function. */
+#cmakedefine HAVE_COSF @HAVE_COSF@
+
+/* Define to 1 if you have the `coshf' function. */
+#cmakedefine HAVE_COSHF @HAVE_COSHF@
+
+/* Define to 1 if you have the `coshl' function. */
+#cmakedefine HAVE_COSHL @HAVE_COSHL@
+
+/* Define to 1 if you have the `cosl' function. */
+#cmakedefine HAVE_COSL @HAVE_COSL@
+
+/* Define to 1 if you have the <dirent.h> header file. */
+#cmakedefine HAVE_DIRENT_H @HAVE_DIRENT_H@
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define if EBADMSG exists. */
+#cmakedefine HAVE_EBADMSG @HAVE_EBADMSG@
+
+/* Define if ECANCELED exists. */
+#cmakedefine HAVE_ECANCELED @HAVE_ECANCELED@
+
+/* Define if ECHILD exists. */
+#cmakedefine HAVE_ECHILD @HAVE_ECHILD@
+
+/* Define if EIDRM exists. */
+#cmakedefine HAVE_EIDRM @HAVE_EIDRM@
+
+/* Define to 1 if you have the <endian.h> header file. */
+#cmakedefine HAVE_ENDIAN_H @HAVE_ENDIAN_H@
+
+/* Define if ENODATA exists. */
+#cmakedefine HAVE_ENODATA @HAVE_ENODATA@
+
+/* Define if ENOLINK exists. */
+#cmakedefine HAVE_ENOLINK @HAVE_ENOLINK@
+
+/* Define if ENOSPC exists. */
+#cmakedefine HAVE_ENOSPC @HAVE_ENOSPC@
+
+/* Define if ENOSR exists. */
+#cmakedefine HAVE_ENOSR @HAVE_ENOSR@
+
+/* Define if ENOSTR exists. */
+#cmakedefine HAVE_ENOSTR @HAVE_ENOSTR@
+
+/* Define if ENOTRECOVERABLE exists. */
+#cmakedefine HAVE_ENOTRECOVERABLE @HAVE_ENOTRECOVERABLE@
+
+/* Define if ENOTSUP exists. */
+#cmakedefine HAVE_ENOTSUP @HAVE_ENOTSUP@
+
+/* Define if EOVERFLOW exists. */
+#cmakedefine HAVE_EOVERFLOW @HAVE_EOVERFLOW@
+
+/* Define if EOWNERDEAD exists. */
+#cmakedefine HAVE_EOWNERDEAD @HAVE_EOWNERDEAD@
+
+/* Define if EPERM exists. */
+#cmakedefine HAVE_EPERM @HAVE_EPERM@
+
+/* Define if EPROTO exists. */
+#cmakedefine HAVE_EPROTO @HAVE_EPROTO@
+
+/* Define if ETIME exists. */
+#cmakedefine HAVE_ETIME @HAVE_ETIME@
+
+/* Define if ETIMEDOUT exists. */
+#cmakedefine HAVE_ETIMEDOUT @HAVE_ETIMEDOUT@
+
+/* Define if ETXTBSY exists. */
+#cmakedefine HAVE_ETXTBSY @HAVE_ETXTBSY@
+
+/* Define if EWOULDBLOCK exists. */
+#cmakedefine HAVE_EWOULDBLOCK @HAVE_EWOULDBLOCK@
+
+/* Define to 1 if GCC 4.6 supported std::exception_ptr for the target */
+#cmakedefine HAVE_EXCEPTION_PTR_SINCE_GCC46 @HAVE_EXCEPTION_PTR_SINCE_GCC46@
+
+/* Define to 1 if you have the <execinfo.h> header file. */
+#cmakedefine HAVE_EXECINFO_H @HAVE_EXECINFO_H@
+
+/* Define to 1 if you have the `expf' function. */
+#cmakedefine HAVE_EXPF @HAVE_EXPF@
+
+/* Define to 1 if you have the `expl' function. */
+#cmakedefine HAVE_EXPL @HAVE_EXPL@
+
+/* Define to 1 if you have the `fabsf' function. */
+#cmakedefine HAVE_FABSF @HAVE_FABSF@
+
+/* Define to 1 if you have the `fabsl' function. */
+#cmakedefine HAVE_FABSL @HAVE_FABSL@
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#cmakedefine HAVE_FCNTL_H @HAVE_FCNTL_H@
+
+/* Define to 1 if you have the <fenv.h> header file. */
+#cmakedefine HAVE_FENV_H @HAVE_FENV_H@
+
+/* Define to 1 if you have the `finite' function. */
+#cmakedefine HAVE_FINITE @HAVE_FINITE@
+
+/* Define to 1 if you have the `finitef' function. */
+#cmakedefine HAVE_FINITEF @HAVE_FINITEF@
+
+/* Define to 1 if you have the `finitel' function. */
+#cmakedefine HAVE_FINITEL @HAVE_FINITEL@
+
+/* Define to 1 if you have the <float.h> header file. */
+#cmakedefine HAVE_FLOAT_H @HAVE_FLOAT_H@
+
+/* Define to 1 if you have the `floorf' function. */
+#cmakedefine HAVE_FLOORF @HAVE_FLOORF@
+
+/* Define to 1 if you have the `floorl' function. */
+#cmakedefine HAVE_FLOORL @HAVE_FLOORL@
+
+/* Define to 1 if you have the `fmodf' function. */
+#cmakedefine HAVE_FMODF @HAVE_FMODF@
+
+/* Define to 1 if you have the `fmodl' function. */
+#cmakedefine HAVE_FMODL @HAVE_FMODL@
+
+/* Define to 1 if you have the `fpclass' function. */
+#cmakedefine HAVE_FPCLASS @HAVE_FPCLASS@
+
+/* Define to 1 if you have the <fp.h> header file. */
+#cmakedefine HAVE_FP_H @HAVE_FP_H@
+
+/* Define to 1 if you have the `frexpf' function. */
+#cmakedefine HAVE_FREXPF @HAVE_FREXPF@
+
+/* Define to 1 if you have the `frexpl' function. */
+#cmakedefine HAVE_FREXPL @HAVE_FREXPL@
+
+/* Define if _Unwind_GetIPInfo is available. */
+#cmakedefine HAVE_GETIPINFO @HAVE_GETIPINFO@
+
+/* Define if gets is available in <stdio.h> before C++14. */
+#cmakedefine HAVE_GETS @HAVE_GETS@
+
+/* Define to 1 if you have the `hypot' function. */
+#cmakedefine HAVE_HYPOT @HAVE_HYPOT@
+
+/* Define to 1 if you have the `hypotf' function. */
+#cmakedefine HAVE_HYPOTF @HAVE_HYPOTF@
+
+/* Define to 1 if you have the `hypotl' function. */
+#cmakedefine HAVE_HYPOTL @HAVE_HYPOTL@
+
+/* Define if you have the iconv() function. */
+#cmakedefine HAVE_ICONV @HAVE_ICONV@
+
+/* Define to 1 if you have the <ieeefp.h> header file. */
+#cmakedefine HAVE_IEEEFP_H @HAVE_IEEEFP_H@
+
+/* Define if int64_t is available in <stdint.h>. */
+#cmakedefine HAVE_INT64_T @HAVE_INT64_T@
+
+/* Define if int64_t is a long. */
+#cmakedefine HAVE_INT64_T_LONG @HAVE_INT64_T_LONG@
+
+/* Define if int64_t is a long long. */
+#cmakedefine HAVE_INT64_T_LONG_LONG @HAVE_INT64_T_LONG_LONG@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define to 1 if you have the `isinf' function. */
+#cmakedefine HAVE_ISINF @HAVE_ISINF@
+
+/* Define to 1 if you have the `isinff' function. */
+#cmakedefine HAVE_ISINFF @HAVE_ISINFF@
+
+/* Define to 1 if you have the `isinfl' function. */
+#cmakedefine HAVE_ISINFL @HAVE_ISINFL@
+
+/* Define to 1 if you have the `isnan' function. */
+#cmakedefine HAVE_ISNAN @HAVE_ISNAN@
+
+/* Define to 1 if you have the `isnanf' function. */
+#cmakedefine HAVE_ISNANF @HAVE_ISNANF@
+
+/* Define to 1 if you have the `isnanl' function. */
+#cmakedefine HAVE_ISNANL @HAVE_ISNANL@
+
+/* Defined if iswblank exists. */
+#cmakedefine HAVE_ISWBLANK @HAVE_ISWBLANK@
+
+/* Define if LC_MESSAGES is available in <locale.h>. */
+#cmakedefine HAVE_LC_MESSAGES @HAVE_LC_MESSAGES@
+
+/* Define to 1 if you have the `ldexpf' function. */
+#cmakedefine HAVE_LDEXPF @HAVE_LDEXPF@
+
+/* Define to 1 if you have the `ldexpl' function. */
+#cmakedefine HAVE_LDEXPL @HAVE_LDEXPL@
+
+/* Define to 1 if you have the <libintl.h> header file. */
+#cmakedefine HAVE_LIBINTL_H @HAVE_LIBINTL_H@
+
+/* Only used in build directory testsuite_hooks.h. */
+#cmakedefine HAVE_LIMIT_AS @HAVE_LIMIT_AS@
+
+/* Only used in build directory testsuite_hooks.h. */
+#cmakedefine HAVE_LIMIT_DATA @HAVE_LIMIT_DATA@
+
+/* Only used in build directory testsuite_hooks.h. */
+#cmakedefine HAVE_LIMIT_FSIZE @HAVE_LIMIT_FSIZE@
+
+/* Only used in build directory testsuite_hooks.h. */
+#cmakedefine HAVE_LIMIT_RSS @HAVE_LIMIT_RSS@
+
+/* Only used in build directory testsuite_hooks.h. */
+#cmakedefine HAVE_LIMIT_VMEM @HAVE_LIMIT_VMEM@
+
+/* Define if link is available in <unistd.h>. */
+#cmakedefine HAVE_LINK @HAVE_LINK@
+
+/* Define if futex syscall is available. */
+#cmakedefine HAVE_LINUX_FUTEX @HAVE_LINUX_FUTEX@
+
+/* Define to 1 if you have the <linux/random.h> header file. */
+#cmakedefine HAVE_LINUX_RANDOM_H @HAVE_LINUX_RANDOM_H@
+
+/* Define to 1 if you have the <linux/types.h> header file. */
+#cmakedefine HAVE_LINUX_TYPES_H @HAVE_LINUX_TYPES_H@
+
+/* Define to 1 if you have the <locale.h> header file. */
+#cmakedefine HAVE_LOCALE_H @HAVE_LOCALE_H@
+
+/* Define to 1 if you have the `log10f' function. */
+#cmakedefine HAVE_LOG10F @HAVE_LOG10F@
+
+/* Define to 1 if you have the `log10l' function. */
+#cmakedefine HAVE_LOG10L @HAVE_LOG10L@
+
+/* Define to 1 if you have the `logf' function. */
+#cmakedefine HAVE_LOGF @HAVE_LOGF@
+
+/* Define to 1 if you have the `logl' function. */
+#cmakedefine HAVE_LOGL @HAVE_LOGL@
+
+/* Define to 1 if you have the <machine/endian.h> header file. */
+#cmakedefine HAVE_MACHINE_ENDIAN_H @HAVE_MACHINE_ENDIAN_H@
+
+/* Define to 1 if you have the <machine/param.h> header file. */
+#cmakedefine HAVE_MACHINE_PARAM_H @HAVE_MACHINE_PARAM_H@
+
+/* Define if mbstate_t exists in wchar.h. */
+#cmakedefine HAVE_MBSTATE_T @HAVE_MBSTATE_T@
+
+/* Define to 1 if you have the `memalign' function. */
+#cmakedefine HAVE_MEMALIGN @HAVE_MEMALIGN@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the `modf' function. */
+#cmakedefine HAVE_MODF @HAVE_MODF@
+
+/* Define to 1 if you have the `modff' function. */
+#cmakedefine HAVE_MODFF @HAVE_MODFF@
+
+/* Define to 1 if you have the `modfl' function. */
+#cmakedefine HAVE_MODFL @HAVE_MODFL@
+
+/* Define to 1 if you have the <nan.h> header file. */
+#cmakedefine HAVE_NAN_H @HAVE_NAN_H@
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#cmakedefine HAVE_NETDB_H @HAVE_NETDB_H@
+
+/* Define to 1 if you have the <netinet/in.h> header file. */
+#cmakedefine HAVE_NETINET_IN_H @HAVE_NETINET_IN_H@
+
+/* Define to 1 if you have the <netinet/tcp.h> header file. */
+#cmakedefine HAVE_NETINET_TCP_H @HAVE_NETINET_TCP_H@
+
+/* Define if <math.h> defines obsolete isinf function. */
+#cmakedefine HAVE_OBSOLETE_ISINF @HAVE_OBSOLETE_ISINF@
+
+/* Define if <math.h> defines obsolete isnan function. */
+#cmakedefine HAVE_OBSOLETE_ISNAN @HAVE_OBSOLETE_ISNAN@
+
+/* Define if poll is available in <poll.h>. */
+#cmakedefine HAVE_POLL @HAVE_POLL@
+
+/* Define to 1 if you have the <poll.h> header file. */
+#cmakedefine HAVE_POLL_H @HAVE_POLL_H@
+
+/* Define to 1 if you have the `posix_memalign' function. */
+#cmakedefine HAVE_POSIX_MEMALIGN @HAVE_POSIX_MEMALIGN@
+
+/* Define to 1 if you have the `powf' function. */
+#cmakedefine HAVE_POWF @HAVE_POWF@
+
+/* Define to 1 if you have the `powl' function. */
+#cmakedefine HAVE_POWL @HAVE_POWL@
+
+/* Define to 1 if you have the `qfpclass' function. */
+#cmakedefine HAVE_QFPCLASS @HAVE_QFPCLASS@
+
+/* Define to 1 if you have the `quick_exit' function. */
+#cmakedefine HAVE_QUICK_EXIT @HAVE_QUICK_EXIT@
+
+/* Define if readlink is available in <unistd.h>. */
+#cmakedefine HAVE_READLINK @HAVE_READLINK@
+
+/* Define to 1 if you have the `setenv' function. */
+#cmakedefine HAVE_SETENV @HAVE_SETENV@
+
+/* Define to 1 if you have the `sincos' function. */
+#cmakedefine HAVE_SINCOS @HAVE_SINCOS@
+
+/* Define to 1 if you have the `sincosf' function. */
+#cmakedefine HAVE_SINCOSF @HAVE_SINCOSF@
+
+/* Define to 1 if you have the `sincosl' function. */
+#cmakedefine HAVE_SINCOSL @HAVE_SINCOSL@
+
+/* Define to 1 if you have the `sinf' function. */
+#cmakedefine HAVE_SINF @HAVE_SINF@
+
+/* Define to 1 if you have the `sinhf' function. */
+#cmakedefine HAVE_SINHF @HAVE_SINHF@
+
+/* Define to 1 if you have the `sinhl' function. */
+#cmakedefine HAVE_SINHL @HAVE_SINHL@
+
+/* Define to 1 if you have the `sinl' function. */
+#cmakedefine HAVE_SINL @HAVE_SINL@
+
+/* Defined if sleep exists. */
+#cmakedefine HAVE_SLEEP @HAVE_SLEEP@
+
+/* Define to 1 if you have the `sockatmark' function. */
+#cmakedefine HAVE_SOCKATMARK @HAVE_SOCKATMARK@
+
+/* Define to 1 if you have the `sqrtf' function. */
+#cmakedefine HAVE_SQRTF @HAVE_SQRTF@
+
+/* Define to 1 if you have the `sqrtl' function. */
+#cmakedefine HAVE_SQRTL @HAVE_SQRTL@
+
+/* Define to 1 if you have the <stdalign.h> header file. */
+#cmakedefine HAVE_STDALIGN_H @HAVE_STDALIGN_H@
+
+/* Define to 1 if you have the <stdbool.h> header file. */
+#cmakedefine HAVE_STDBOOL_H @HAVE_STDBOOL_H@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define if strerror_l is available in <string.h>. */
+#cmakedefine HAVE_STRERROR_L @HAVE_STRERROR_L@
+
+/* Define if strerror_r is available in <string.h>. */
+#cmakedefine HAVE_STRERROR_R @HAVE_STRERROR_R@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the `strtof' function. */
+#cmakedefine HAVE_STRTOF @HAVE_STRTOF@
+
+/* Define to 1 if you have the `strtold' function. */
+#cmakedefine HAVE_STRTOLD @HAVE_STRTOLD@
+
+/* Define to 1 if `d_type' is a member of `struct dirent'. */
+#cmakedefine HAVE_STRUCT_DIRENT_D_TYPE @HAVE_STRUCT_DIRENT_D_TYPE@
+
+/* Define if strxfrm_l is available in <string.h>. */
+#cmakedefine HAVE_STRXFRM_L @HAVE_STRXFRM_L@
+
+/* Define if symlink is available in <unistd.h>. */
+#cmakedefine HAVE_SYMLINK @HAVE_SYMLINK@
+
+/* Define to 1 if the target runtime linker supports binding the same symbol
+   to different versions. */
+#cmakedefine HAVE_SYMVER_SYMBOL_RENAMING_RUNTIME_SUPPORT @HAVE_SYMVER_SYMBOL_RENAMING_RUNTIME_SUPPORT@
+
+/* Define to 1 if you have the <sys/filio.h> header file. */
+#cmakedefine HAVE_SYS_FILIO_H @HAVE_SYS_FILIO_H@
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#cmakedefine HAVE_SYS_IOCTL_H @HAVE_SYS_IOCTL_H@
+
+/* Define to 1 if you have the <sys/ipc.h> header file. */
+#cmakedefine HAVE_SYS_IPC_H @HAVE_SYS_IPC_H@
+
+/* Define to 1 if you have the <sys/isa_defs.h> header file. */
+#cmakedefine HAVE_SYS_ISA_DEFS_H @HAVE_SYS_ISA_DEFS_H@
+
+/* Define to 1 if you have the <sys/machine.h> header file. */
+#cmakedefine HAVE_SYS_MACHINE_H @HAVE_SYS_MACHINE_H@
+
+/* Define to 1 if you have the <sys/param.h> header file. */
+#cmakedefine HAVE_SYS_PARAM_H @HAVE_SYS_PARAM_H@
+
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#cmakedefine HAVE_SYS_RESOURCE_H @HAVE_SYS_RESOURCE_H@
+
+/* Define to 1 if you have a suitable <sys/sdt.h> header file */
+#cmakedefine HAVE_SYS_SDT_H @HAVE_SYS_SDT_H@
+
+/* Define to 1 if you have the <sys/sem.h> header file. */
+#cmakedefine HAVE_SYS_SEM_H @HAVE_SYS_SEM_H@
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#cmakedefine HAVE_SYS_SOCKET_H @HAVE_SYS_SOCKET_H@
+
+/* Define to 1 if you have the <sys/statvfs.h> header file. */
+#cmakedefine HAVE_SYS_STATVFS_H @HAVE_SYS_STATVFS_H@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/sysinfo.h> header file. */
+#cmakedefine HAVE_SYS_SYSINFO_H @HAVE_SYS_SYSINFO_H@
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#cmakedefine HAVE_SYS_TIME_H @HAVE_SYS_TIME_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if you have the <sys/uio.h> header file. */
+#cmakedefine HAVE_SYS_UIO_H @HAVE_SYS_UIO_H@
+
+/* Define if S_IFREG is available in <sys/stat.h>. */
+#cmakedefine HAVE_S_IFREG @HAVE_S_IFREG@
+
+/* Define if S_ISREG is available in <sys/stat.h>. */
+#cmakedefine HAVE_S_ISREG @HAVE_S_ISREG@
+
+/* Define to 1 if you have the `tanf' function. */
+#cmakedefine HAVE_TANF @HAVE_TANF@
+
+/* Define to 1 if you have the `tanhf' function. */
+#cmakedefine HAVE_TANHF @HAVE_TANHF@
+
+/* Define to 1 if you have the `tanhl' function. */
+#cmakedefine HAVE_TANHL @HAVE_TANHL@
+
+/* Define to 1 if you have the `tanl' function. */
+#cmakedefine HAVE_TANL @HAVE_TANL@
+
+/* Define to 1 if you have the <tgmath.h> header file. */
+#cmakedefine HAVE_TGMATH_H @HAVE_TGMATH_H@
+
+/* Define to 1 if you have the `timespec_get' function. */
+#cmakedefine HAVE_TIMESPEC_GET @HAVE_TIMESPEC_GET@
+
+/* Define to 1 if the target supports thread-local storage. */
+#cmakedefine HAVE_TLS @HAVE_TLS@
+
+/* Define if truncate is available in <unistd.h>. */
+#cmakedefine HAVE_TRUNCATE @HAVE_TRUNCATE@
+
+/* Define to 1 if you have the <uchar.h> header file. */
+#cmakedefine HAVE_UCHAR_H @HAVE_UCHAR_H@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Defined if usleep exists. */
+#cmakedefine HAVE_USLEEP @HAVE_USLEEP@
+
+/* Define to 1 if you have the <utime.h> header file. */
+#cmakedefine HAVE_UTIME_H @HAVE_UTIME_H@
+
+/* Defined if vfwscanf exists. */
+#cmakedefine HAVE_VFWSCANF @HAVE_VFWSCANF@
+
+/* Defined if vswscanf exists. */
+#cmakedefine HAVE_VSWSCANF @HAVE_VSWSCANF@
+
+/* Defined if vwscanf exists. */
+#cmakedefine HAVE_VWSCANF @HAVE_VWSCANF@
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#cmakedefine HAVE_WCHAR_H @HAVE_WCHAR_H@
+
+/* Defined if wcstof exists. */
+#cmakedefine HAVE_WCSTOF @HAVE_WCSTOF@
+
+/* Define to 1 if you have the <wctype.h> header file. */
+#cmakedefine HAVE_WCTYPE_H @HAVE_WCTYPE_H@
+
+/* Defined if Sleep exists. */
+#cmakedefine HAVE_WIN32_SLEEP @HAVE_WIN32_SLEEP@
+
+/* Define if writev is available in <sys/uio.h>. */
+#cmakedefine HAVE_WRITEV @HAVE_WRITEV@
+
+/* Define to 1 if you have the `_acosf' function. */
+#cmakedefine HAVE__ACOSF @HAVE__ACOSF@
+
+/* Define to 1 if you have the `_acosl' function. */
+#cmakedefine HAVE__ACOSL @HAVE__ACOSL@
+
+/* Define to 1 if you have the `_aligned_malloc' function. */
+#cmakedefine HAVE__ALIGNED_MALLOC @HAVE__ALIGNED_MALLOC@
+
+/* Define to 1 if you have the `_asinf' function. */
+#cmakedefine HAVE__ASINF @HAVE__ASINF@
+
+/* Define to 1 if you have the `_asinl' function. */
+#cmakedefine HAVE__ASINL @HAVE__ASINL@
+
+/* Define to 1 if you have the `_atan2f' function. */
+#cmakedefine HAVE__ATAN2F @HAVE__ATAN2F@
+
+/* Define to 1 if you have the `_atan2l' function. */
+#cmakedefine HAVE__ATAN2L @HAVE__ATAN2L@
+
+/* Define to 1 if you have the `_atanf' function. */
+#cmakedefine HAVE__ATANF @HAVE__ATANF@
+
+/* Define to 1 if you have the `_atanl' function. */
+#cmakedefine HAVE__ATANL @HAVE__ATANL@
+
+/* Define to 1 if you have the `_ceilf' function. */
+#cmakedefine HAVE__CEILF @HAVE__CEILF@
+
+/* Define to 1 if you have the `_ceill' function. */
+#cmakedefine HAVE__CEILL @HAVE__CEILL@
+
+/* Define to 1 if you have the `_cosf' function. */
+#cmakedefine HAVE__COSF @HAVE__COSF@
+
+/* Define to 1 if you have the `_coshf' function. */
+#cmakedefine HAVE__COSHF @HAVE__COSHF@
+
+/* Define to 1 if you have the `_coshl' function. */
+#cmakedefine HAVE__COSHL @HAVE__COSHL@
+
+/* Define to 1 if you have the `_cosl' function. */
+#cmakedefine HAVE__COSL @HAVE__COSL@
+
+/* Define to 1 if you have the `_expf' function. */
+#cmakedefine HAVE__EXPF @HAVE__EXPF@
+
+/* Define to 1 if you have the `_expl' function. */
+#cmakedefine HAVE__EXPL @HAVE__EXPL@
+
+/* Define to 1 if you have the `_fabsf' function. */
+#cmakedefine HAVE__FABSF @HAVE__FABSF@
+
+/* Define to 1 if you have the `_fabsl' function. */
+#cmakedefine HAVE__FABSL @HAVE__FABSL@
+
+/* Define to 1 if you have the `_finite' function. */
+#cmakedefine HAVE__FINITE @HAVE__FINITE@
+
+/* Define to 1 if you have the `_finitef' function. */
+#cmakedefine HAVE__FINITEF @HAVE__FINITEF@
+
+/* Define to 1 if you have the `_finitel' function. */
+#cmakedefine HAVE__FINITEL @HAVE__FINITEL@
+
+/* Define to 1 if you have the `_floorf' function. */
+#cmakedefine HAVE__FLOORF @HAVE__FLOORF@
+
+/* Define to 1 if you have the `_floorl' function. */
+#cmakedefine HAVE__FLOORL @HAVE__FLOORL@
+
+/* Define to 1 if you have the `_fmodf' function. */
+#cmakedefine HAVE__FMODF @HAVE__FMODF@
+
+/* Define to 1 if you have the `_fmodl' function. */
+#cmakedefine HAVE__FMODL @HAVE__FMODL@
+
+/* Define to 1 if you have the `_fpclass' function. */
+#cmakedefine HAVE__FPCLASS @HAVE__FPCLASS@
+
+/* Define to 1 if you have the `_frexpf' function. */
+#cmakedefine HAVE__FREXPF @HAVE__FREXPF@
+
+/* Define to 1 if you have the `_frexpl' function. */
+#cmakedefine HAVE__FREXPL @HAVE__FREXPL@
+
+/* Define to 1 if you have the `_hypot' function. */
+#cmakedefine HAVE__HYPOT @HAVE__HYPOT@
+
+/* Define to 1 if you have the `_hypotf' function. */
+#cmakedefine HAVE__HYPOTF @HAVE__HYPOTF@
+
+/* Define to 1 if you have the `_hypotl' function. */
+#cmakedefine HAVE__HYPOTL @HAVE__HYPOTL@
+
+/* Define to 1 if you have the `_isinf' function. */
+#cmakedefine HAVE__ISINF @HAVE__ISINF@
+
+/* Define to 1 if you have the `_isinff' function. */
+#cmakedefine HAVE__ISINFF @HAVE__ISINFF@
+
+/* Define to 1 if you have the `_isinfl' function. */
+#cmakedefine HAVE__ISINFL @HAVE__ISINFL@
+
+/* Define to 1 if you have the `_isnan' function. */
+#cmakedefine HAVE__ISNAN @HAVE__ISNAN@
+
+/* Define to 1 if you have the `_isnanf' function. */
+#cmakedefine HAVE__ISNANF @HAVE__ISNANF@
+
+/* Define to 1 if you have the `_isnanl' function. */
+#cmakedefine HAVE__ISNANL @HAVE__ISNANL@
+
+/* Define to 1 if you have the `_ldexpf' function. */
+#cmakedefine HAVE__LDEXPF @HAVE__LDEXPF@
+
+/* Define to 1 if you have the `_ldexpl' function. */
+#cmakedefine HAVE__LDEXPL @HAVE__LDEXPL@
+
+/* Define to 1 if you have the `_log10f' function. */
+#cmakedefine HAVE__LOG10F @HAVE__LOG10F@
+
+/* Define to 1 if you have the `_log10l' function. */
+#cmakedefine HAVE__LOG10L @HAVE__LOG10L@
+
+/* Define to 1 if you have the `_logf' function. */
+#cmakedefine HAVE__LOGF @HAVE__LOGF@
+
+/* Define to 1 if you have the `_logl' function. */
+#cmakedefine HAVE__LOGL @HAVE__LOGL@
+
+/* Define to 1 if you have the `_modf' function. */
+#cmakedefine HAVE__MODF @HAVE__MODF@
+
+/* Define to 1 if you have the `_modff' function. */
+#cmakedefine HAVE__MODFF @HAVE__MODFF@
+
+/* Define to 1 if you have the `_modfl' function. */
+#cmakedefine HAVE__MODFL @HAVE__MODFL@
+
+/* Define to 1 if you have the `_powf' function. */
+#cmakedefine HAVE__POWF @HAVE__POWF@
+
+/* Define to 1 if you have the `_powl' function. */
+#cmakedefine HAVE__POWL @HAVE__POWL@
+
+/* Define to 1 if you have the `_qfpclass' function. */
+#cmakedefine HAVE__QFPCLASS @HAVE__QFPCLASS@
+
+/* Define to 1 if you have the `_sincos' function. */
+#cmakedefine HAVE__SINCOS @HAVE__SINCOS@
+
+/* Define to 1 if you have the `_sincosf' function. */
+#cmakedefine HAVE__SINCOSF @HAVE__SINCOSF@
+
+/* Define to 1 if you have the `_sincosl' function. */
+#cmakedefine HAVE__SINCOSL @HAVE__SINCOSL@
+
+/* Define to 1 if you have the `_sinf' function. */
+#cmakedefine HAVE__SINF @HAVE__SINF@
+
+/* Define to 1 if you have the `_sinhf' function. */
+#cmakedefine HAVE__SINHF @HAVE__SINHF@
+
+/* Define to 1 if you have the `_sinhl' function. */
+#cmakedefine HAVE__SINHL @HAVE__SINHL@
+
+/* Define to 1 if you have the `_sinl' function. */
+#cmakedefine HAVE__SINL @HAVE__SINL@
+
+/* Define to 1 if you have the `_sqrtf' function. */
+#cmakedefine HAVE__SQRTF @HAVE__SQRTF@
+
+/* Define to 1 if you have the `_sqrtl' function. */
+#cmakedefine HAVE__SQRTL @HAVE__SQRTL@
+
+/* Define to 1 if you have the `_tanf' function. */
+#cmakedefine HAVE__TANF @HAVE__TANF@
+
+/* Define to 1 if you have the `_tanhf' function. */
+#cmakedefine HAVE__TANHF @HAVE__TANHF@
+
+/* Define to 1 if you have the `_tanhl' function. */
+#cmakedefine HAVE__TANHL @HAVE__TANHL@
+
+/* Define to 1 if you have the `_tanl' function. */
+#cmakedefine HAVE__TANL @HAVE__TANL@
+
+/* Define to 1 if you have the `_wfopen' function. */
+#cmakedefine HAVE__WFOPEN @HAVE__WFOPEN@
+
+/* Define to 1 if you have the `__cxa_thread_atexit' function. */
+#cmakedefine HAVE___CXA_THREAD_ATEXIT @HAVE___CXA_THREAD_ATEXIT@
+
+/* Define to 1 if you have the `__cxa_thread_atexit_impl' function. */
+#cmakedefine HAVE___CXA_THREAD_ATEXIT_IMPL @HAVE___CXA_THREAD_ATEXIT_IMPL@
+
+/* Define as const if the declaration of iconv() needs const. */
+#cmakedefine ICONV_CONST @ICONV_CONST@
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* The size of `char', as computed by sizeof. */
+#cmakedefine SIZEOF_CHAR @SIZEOF_CHAR@
+
+/* The size of `int', as computed by sizeof. */
+#cmakedefine SIZEOF_INT @SIZEOF_INT@
+
+/* The size of `long', as computed by sizeof. */
+#cmakedefine SIZEOF_LONG @SIZEOF_LONG@
+
+/* The size of `short', as computed by sizeof. */
+#cmakedefine SIZEOF_SHORT @SIZEOF_SHORT@
+
+/* The size of `void *', as computed by sizeof. */
+#cmakedefine SIZEOF_VOID_P @SIZEOF_VOID_P@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+/* Define if C99 functions in <complex.h> should be used in <complex> for
+   C++11. Using compiler builtins for these functions requires corresponding
+   C99 library functions to be present. */
+#cmakedefine _GLIBCXX11_USE_C99_COMPLEX @_GLIBCXX11_USE_C99_COMPLEX@
+
+/* Define if C99 functions or macros in <math.h> should be imported in <cmath>
+   in namespace std for C++11. */
+#cmakedefine _GLIBCXX11_USE_C99_MATH @_GLIBCXX11_USE_C99_MATH@
+
+/* Define if C99 functions or macros in <stdio.h> should be imported in
+   <cstdio> in namespace std for C++11. */
+#cmakedefine _GLIBCXX11_USE_C99_STDIO @_GLIBCXX11_USE_C99_STDIO@
+
+/* Define if C99 functions or macros in <stdlib.h> should be imported in
+   <cstdlib> in namespace std for C++11. */
+#cmakedefine _GLIBCXX11_USE_C99_STDLIB @_GLIBCXX11_USE_C99_STDLIB@
+
+/* Define if C99 functions or macros in <wchar.h> should be imported in
+   <cwchar> in namespace std for C++11. */
+#cmakedefine _GLIBCXX11_USE_C99_WCHAR @_GLIBCXX11_USE_C99_WCHAR@
+
+/* Define if C99 functions in <complex.h> should be used in <complex> for
+   C++98. Using compiler builtins for these functions requires corresponding
+   C99 library functions to be present. */
+#cmakedefine _GLIBCXX98_USE_C99_COMPLEX @_GLIBCXX98_USE_C99_COMPLEX@
+
+/* Define if C99 functions or macros in <math.h> should be imported in <cmath>
+   in namespace std for C++98. */
+#cmakedefine _GLIBCXX98_USE_C99_MATH @_GLIBCXX98_USE_C99_MATH@
+
+/* Define if C99 functions or macros in <stdio.h> should be imported in
+   <cstdio> in namespace std for C++98. */
+#cmakedefine _GLIBCXX98_USE_C99_STDIO @_GLIBCXX98_USE_C99_STDIO@
+
+/* Define if C99 functions or macros in <stdlib.h> should be imported in
+   <cstdlib> in namespace std for C++98. */
+#cmakedefine _GLIBCXX98_USE_C99_STDLIB @_GLIBCXX98_USE_C99_STDLIB@
+
+/* Define if C99 functions or macros in <wchar.h> should be imported in
+   <cwchar> in namespace std for C++98. */
+#cmakedefine _GLIBCXX98_USE_C99_WCHAR @_GLIBCXX98_USE_C99_WCHAR@
+
+/* Define if the compiler supports C++11 atomics. */
+#cmakedefine _GLIBCXX_ATOMIC_BUILTINS @_GLIBCXX_ATOMIC_BUILTINS@
+
+/* Define to use concept checking code from the boost libraries. */
+#cmakedefine _GLIBCXX_CONCEPT_CHECKS @_GLIBCXX_CONCEPT_CHECKS@
+
+/* Define to 1 if a fully dynamic basic_string is wanted, 0 to disable,
+   undefined for platform defaults */
+#cmakedefine _GLIBCXX_FULLY_DYNAMIC_STRING @_GLIBCXX_FULLY_DYNAMIC_STRING@
+
+/* Define if gthreads library is available. */
+#cmakedefine _GLIBCXX_HAS_GTHREADS @_GLIBCXX_HAS_GTHREADS@
+
+/* Define to 1 if a full hosted library is built, or 0 if freestanding. */
+#cmakedefine _GLIBCXX_HOSTED @_GLIBCXX_HOSTED@
+
+/* Define if compatibility should be provided for -mlong-double-64. */
+#cmakedefine _GLIBCXX_LONG_DOUBLE_COMPAT @_GLIBCXX_LONG_DOUBLE_COMPAT@
+
+/* Define to the letter to which size_t is mangled. */
+#cmakedefine _GLIBCXX_MANGLE_SIZE_T @_GLIBCXX_MANGLE_SIZE_T@
+
+/* Define if C99 llrint and llround functions are missing from <math.h>. */
+#cmakedefine _GLIBCXX_NO_C99_ROUNDING_FUNCS @_GLIBCXX_NO_C99_ROUNDING_FUNCS@
+
+/* Define if ptrdiff_t is int. */
+#cmakedefine _GLIBCXX_PTRDIFF_T_IS_INT @_GLIBCXX_PTRDIFF_T_IS_INT@
+
+/* Define if using setrlimit to set resource limits during "make check" */
+#cmakedefine _GLIBCXX_RES_LIMITS @_GLIBCXX_RES_LIMITS@
+
+/* Define if size_t is unsigned int. */
+#cmakedefine _GLIBCXX_SIZE_T_IS_UINT @_GLIBCXX_SIZE_T_IS_UINT@
+
+/* Define to the value of the EOF integer constant. */
+#cmakedefine _GLIBCXX_STDIO_EOF @_GLIBCXX_STDIO_EOF@
+
+/* Define to the value of the SEEK_CUR integer constant. */
+#cmakedefine _GLIBCXX_STDIO_SEEK_CUR @_GLIBCXX_STDIO_SEEK_CUR@
+
+/* Define to the value of the SEEK_END integer constant. */
+#cmakedefine _GLIBCXX_STDIO_SEEK_END @_GLIBCXX_STDIO_SEEK_END@
+
+/* Define to use symbol versioning in the shared library. */
+#cmakedefine _GLIBCXX_SYMVER @_GLIBCXX_SYMVER@
+
+/* Define to use darwin versioning in the shared library. */
+#cmakedefine _GLIBCXX_SYMVER_DARWIN @_GLIBCXX_SYMVER_DARWIN@
+
+/* Define to use GNU versioning in the shared library. */
+#cmakedefine _GLIBCXX_SYMVER_GNU @_GLIBCXX_SYMVER_GNU@
+
+/* Define to use GNU namespace versioning in the shared library. */
+#cmakedefine _GLIBCXX_SYMVER_GNU_NAMESPACE @_GLIBCXX_SYMVER_GNU_NAMESPACE@
+
+/* Define to use Sun versioning in the shared library. */
+#cmakedefine _GLIBCXX_SYMVER_SUN @_GLIBCXX_SYMVER_SUN@
+
+/* Define if C11 functions in <uchar.h> should be imported into namespace std
+   in <cuchar>. */
+#cmakedefine _GLIBCXX_USE_C11_UCHAR_CXX11 @_GLIBCXX_USE_C11_UCHAR_CXX11@
+
+/* Define if C99 functions or macros from <wchar.h>, <math.h>, <complex.h>,
+   <stdio.h>, and <stdlib.h> can be used or exposed. */
+#cmakedefine _GLIBCXX_USE_C99 @_GLIBCXX_USE_C99@
+
+/* Define if C99 functions in <complex.h> should be used in <tr1/complex>.
+   Using compiler builtins for these functions requires corresponding C99
+   library functions to be present. */
+#cmakedefine _GLIBCXX_USE_C99_COMPLEX_TR1 @_GLIBCXX_USE_C99_COMPLEX_TR1@
+
+/* Define if C99 functions in <ctype.h> should be imported in <tr1/cctype> in
+   namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_CTYPE_TR1 @_GLIBCXX_USE_C99_CTYPE_TR1@
+
+/* Define if C99 functions in <fenv.h> should be imported in <tr1/cfenv> in
+   namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_FENV_TR1 @_GLIBCXX_USE_C99_FENV_TR1@
+
+/* Define if C99 functions in <inttypes.h> should be imported in
+   <tr1/cinttypes> in namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_INTTYPES_TR1 @_GLIBCXX_USE_C99_INTTYPES_TR1@
+
+/* Define if wchar_t C99 functions in <inttypes.h> should be imported in
+   <tr1/cinttypes> in namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_INTTYPES_WCHAR_T_TR1 @_GLIBCXX_USE_C99_INTTYPES_WCHAR_T_TR1@
+
+/* Define if C99 functions or macros in <math.h> should be imported in
+   <tr1/cmath> in namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_MATH_TR1 @_GLIBCXX_USE_C99_MATH_TR1@
+
+/* Define if C99 types in <stdint.h> should be imported in <tr1/cstdint> in
+   namespace std::tr1. */
+#cmakedefine _GLIBCXX_USE_C99_STDINT_TR1 @_GLIBCXX_USE_C99_STDINT_TR1@
+
+/* Defined if clock_gettime syscall has monotonic and realtime clock support.
+   */
+#cmakedefine _GLIBCXX_USE_CLOCK_GETTIME_SYSCALL @_GLIBCXX_USE_CLOCK_GETTIME_SYSCALL@
+
+/* Defined if clock_gettime has monotonic clock support. */
+#cmakedefine _GLIBCXX_USE_CLOCK_MONOTONIC @_GLIBCXX_USE_CLOCK_MONOTONIC@
+
+/* Defined if clock_gettime has realtime clock support. */
+#cmakedefine _GLIBCXX_USE_CLOCK_REALTIME @_GLIBCXX_USE_CLOCK_REALTIME@
+
+/* Define if ISO/IEC TR 24733 decimal floating point types are supported on
+   this host. */
+#cmakedefine _GLIBCXX_USE_DECIMAL_FLOAT @_GLIBCXX_USE_DECIMAL_FLOAT@
+
+/* Define if /dev/random and /dev/urandom are available for
+   std::random_device. */
+#cmakedefine _GLIBCXX_USE_DEV_RANDOM @_GLIBCXX_USE_DEV_RANDOM@
+
+/* Define if fchmod is available in <sys/stat.h>. */
+#cmakedefine _GLIBCXX_USE_FCHMOD @_GLIBCXX_USE_FCHMOD@
+
+/* Define if fchmodat is available in <sys/stat.h>. */
+#cmakedefine _GLIBCXX_USE_FCHMODAT @_GLIBCXX_USE_FCHMODAT@
+
+/* Defined if gettimeofday is available. */
+#cmakedefine _GLIBCXX_USE_GETTIMEOFDAY @_GLIBCXX_USE_GETTIMEOFDAY@
+
+/* Define if get_nprocs is available in <sys/sysinfo.h>. */
+#cmakedefine _GLIBCXX_USE_GET_NPROCS @_GLIBCXX_USE_GET_NPROCS@
+
+/* Define if __int128 is supported on this host. */
+#cmakedefine _GLIBCXX_USE_INT128 @_GLIBCXX_USE_INT128@
+
+/* Define if LFS support is available. */
+#cmakedefine _GLIBCXX_USE_LFS @_GLIBCXX_USE_LFS@
+
+/* Define if code specialized for long long should be used. */
+#cmakedefine _GLIBCXX_USE_LONG_LONG @_GLIBCXX_USE_LONG_LONG@
+
+/* Define if lstat is available in <sys/stat.h>. */
+#cmakedefine _GLIBCXX_USE_LSTAT @_GLIBCXX_USE_LSTAT@
+
+/* Defined if nanosleep is available. */
+#cmakedefine _GLIBCXX_USE_NANOSLEEP @_GLIBCXX_USE_NANOSLEEP@
+
+/* Define if NLS translations are to be used. */
+#cmakedefine _GLIBCXX_USE_NLS @_GLIBCXX_USE_NLS@
+
+/* Define if pthreads_num_processors_np is available in <pthread.h>. */
+#cmakedefine _GLIBCXX_USE_PTHREADS_NUM_PROCESSORS_NP @_GLIBCXX_USE_PTHREADS_NUM_PROCESSORS_NP@
+
+/* Define if POSIX read/write locks are available in <gthr.h>. */
+#cmakedefine _GLIBCXX_USE_PTHREAD_RWLOCK_T @_GLIBCXX_USE_PTHREAD_RWLOCK_T@
+
+/* Define if /dev/random and /dev/urandom are available for the random_device
+   of TR1 (Chapter 5.1). */
+#cmakedefine _GLIBCXX_USE_RANDOM_TR1 @_GLIBCXX_USE_RANDOM_TR1@
+
+/* Define if usable realpath is available in <stdlib.h>. */
+#cmakedefine _GLIBCXX_USE_REALPATH @_GLIBCXX_USE_REALPATH@
+
+/* Defined if sched_yield is available. */
+#cmakedefine _GLIBCXX_USE_SCHED_YIELD @_GLIBCXX_USE_SCHED_YIELD@
+
+/* Define if _SC_NPROCESSORS_ONLN is available in <unistd.h>. */
+#cmakedefine _GLIBCXX_USE_SC_NPROCESSORS_ONLN @_GLIBCXX_USE_SC_NPROCESSORS_ONLN@
+
+/* Define if _SC_NPROC_ONLN is available in <unistd.h>. */
+#cmakedefine _GLIBCXX_USE_SC_NPROC_ONLN @_GLIBCXX_USE_SC_NPROC_ONLN@
+
+/* Define if sendfile is available in <sys/sendfile.h>. */
+#cmakedefine _GLIBCXX_USE_SENDFILE @_GLIBCXX_USE_SENDFILE@
+
+/* Define if struct stat has timespec members. */
+#cmakedefine _GLIBCXX_USE_ST_MTIM @_GLIBCXX_USE_ST_MTIM@
+
+/* Define if sysctl(), CTL_HW and HW_NCPU are available in <sys/sysctl.h>. */
+#cmakedefine _GLIBCXX_USE_SYSCTL_HW_NCPU @_GLIBCXX_USE_SYSCTL_HW_NCPU@
+
+/* Define if obsolescent tmpnam is available in <stdio.h>. */
+#cmakedefine _GLIBCXX_USE_TMPNAM @_GLIBCXX_USE_TMPNAM@
+
+/* Define if utime is available in <utime.h>. */
+#cmakedefine _GLIBCXX_USE_UTIME @_GLIBCXX_USE_UTIME@
+
+/* Define if utimensat and UTIME_OMIT are available in <sys/stat.h> and
+   AT_FDCWD in <fcntl.h>. */
+#cmakedefine _GLIBCXX_USE_UTIMENSAT @_GLIBCXX_USE_UTIMENSAT@
+
+/* Define if code specialized for wchar_t should be used. */
+#cmakedefine _GLIBCXX_USE_WCHAR_T @_GLIBCXX_USE_WCHAR_T@
+
+/* Define to 1 if a verbose library is built, or 0 otherwise. */
+#cmakedefine _GLIBCXX_VERBOSE @_GLIBCXX_VERBOSE@
+
+/* Defined if as can handle rdrand. */
+#cmakedefine _GLIBCXX_X86_RDRAND @_GLIBCXX_X86_RDRAND@
+
+/* Define to 1 if mutex_timedlock is available. */
+#cmakedefine _GTHREAD_USE_MUTEX_TIMEDLOCK @_GTHREAD_USE_MUTEX_TIMEDLOCK@
+
+/* Define if all C++11 floating point overloads are available in <math.h>.  */
+#if __cplusplus >= 201103L
+#cmakedefine __CORRECT_ISO_CPP11_MATH_H_PROTO_FP @__CORRECT_ISO_CPP11_MATH_H_PROTO_FP@
+#endif
+
+/* Define if all C++11 integral type overloads are available in <math.h>.  */
+#if __cplusplus >= 201103L
+#cmakedefine __CORRECT_ISO_CPP11_MATH_H_PROTO_INT @__CORRECT_ISO_CPP11_MATH_H_PROTO_INT@
+#endif
+
+#if defined (HAVE__ACOSF) && ! defined (HAVE_ACOSF)
+# define HAVE_ACOSF 1
+# define acosf _acosf
+#endif
+
+#if defined (HAVE__ACOSL) && ! defined (HAVE_ACOSL)
+# define HAVE_ACOSL 1
+# define acosl _acosl
+#endif
+
+#if defined (HAVE__ASINF) && ! defined (HAVE_ASINF)
+# define HAVE_ASINF 1
+# define asinf _asinf
+#endif
+
+#if defined (HAVE__ASINL) && ! defined (HAVE_ASINL)
+# define HAVE_ASINL 1
+# define asinl _asinl
+#endif
+
+#if defined (HAVE__ATAN2F) && ! defined (HAVE_ATAN2F)
+# define HAVE_ATAN2F 1
+# define atan2f _atan2f
+#endif
+
+#if defined (HAVE__ATAN2L) && ! defined (HAVE_ATAN2L)
+# define HAVE_ATAN2L 1
+# define atan2l _atan2l
+#endif
+
+#if defined (HAVE__ATANF) && ! defined (HAVE_ATANF)
+# define HAVE_ATANF 1
+# define atanf _atanf
+#endif
+
+#if defined (HAVE__ATANL) && ! defined (HAVE_ATANL)
+# define HAVE_ATANL 1
+# define atanl _atanl
+#endif
+
+#if defined (HAVE__CEILF) && ! defined (HAVE_CEILF)
+# define HAVE_CEILF 1
+# define ceilf _ceilf
+#endif
+
+#if defined (HAVE__CEILL) && ! defined (HAVE_CEILL)
+# define HAVE_CEILL 1
+# define ceill _ceill
+#endif
+
+#if defined (HAVE__COSF) && ! defined (HAVE_COSF)
+# define HAVE_COSF 1
+# define cosf _cosf
+#endif
+
+#if defined (HAVE__COSHF) && ! defined (HAVE_COSHF)
+# define HAVE_COSHF 1
+# define coshf _coshf
+#endif
+
+#if defined (HAVE__COSHL) && ! defined (HAVE_COSHL)
+# define HAVE_COSHL 1
+# define coshl _coshl
+#endif
+
+#if defined (HAVE__COSL) && ! defined (HAVE_COSL)
+# define HAVE_COSL 1
+# define cosl _cosl
+#endif
+
+#if defined (HAVE__EXPF) && ! defined (HAVE_EXPF)
+# define HAVE_EXPF 1
+# define expf _expf
+#endif
+
+#if defined (HAVE__EXPL) && ! defined (HAVE_EXPL)
+# define HAVE_EXPL 1
+# define expl _expl
+#endif
+
+#if defined (HAVE__FABSF) && ! defined (HAVE_FABSF)
+# define HAVE_FABSF 1
+# define fabsf _fabsf
+#endif
+
+#if defined (HAVE__FABSL) && ! defined (HAVE_FABSL)
+# define HAVE_FABSL 1
+# define fabsl _fabsl
+#endif
+
+#if defined (HAVE__FINITE) && ! defined (HAVE_FINITE)
+# define HAVE_FINITE 1
+# define finite _finite
+#endif
+
+#if defined (HAVE__FINITEF) && ! defined (HAVE_FINITEF)
+# define HAVE_FINITEF 1
+# define finitef _finitef
+#endif
+
+#if defined (HAVE__FINITEL) && ! defined (HAVE_FINITEL)
+# define HAVE_FINITEL 1
+# define finitel _finitel
+#endif
+
+#if defined (HAVE__FLOORF) && ! defined (HAVE_FLOORF)
+# define HAVE_FLOORF 1
+# define floorf _floorf
+#endif
+
+#if defined (HAVE__FLOORL) && ! defined (HAVE_FLOORL)
+# define HAVE_FLOORL 1
+# define floorl _floorl
+#endif
+
+#if defined (HAVE__FMODF) && ! defined (HAVE_FMODF)
+# define HAVE_FMODF 1
+# define fmodf _fmodf
+#endif
+
+#if defined (HAVE__FMODL) && ! defined (HAVE_FMODL)
+# define HAVE_FMODL 1
+# define fmodl _fmodl
+#endif
+
+#if defined (HAVE__FPCLASS) && ! defined (HAVE_FPCLASS)
+# define HAVE_FPCLASS 1
+# define fpclass _fpclass
+#endif
+
+#if defined (HAVE__FREXPF) && ! defined (HAVE_FREXPF)
+# define HAVE_FREXPF 1
+# define frexpf _frexpf
+#endif
+
+#if defined (HAVE__FREXPL) && ! defined (HAVE_FREXPL)
+# define HAVE_FREXPL 1
+# define frexpl _frexpl
+#endif
+
+#if defined (HAVE__HYPOT) && ! defined (HAVE_HYPOT)
+# define HAVE_HYPOT 1
+# define hypot _hypot
+#endif
+
+#if defined (HAVE__HYPOTF) && ! defined (HAVE_HYPOTF)
+# define HAVE_HYPOTF 1
+# define hypotf _hypotf
+#endif
+
+#if defined (HAVE__HYPOTL) && ! defined (HAVE_HYPOTL)
+# define HAVE_HYPOTL 1
+# define hypotl _hypotl
+#endif
+
+#if defined (HAVE__ISINF) && ! defined (HAVE_ISINF)
+# define HAVE_ISINF 1
+# define isinf _isinf
+#endif
+
+#if defined (HAVE__ISINFF) && ! defined (HAVE_ISINFF)
+# define HAVE_ISINFF 1
+# define isinff _isinff
+#endif
+
+#if defined (HAVE__ISINFL) && ! defined (HAVE_ISINFL)
+# define HAVE_ISINFL 1
+# define isinfl _isinfl
+#endif
+
+#if defined (HAVE__ISNAN) && ! defined (HAVE_ISNAN)
+# define HAVE_ISNAN 1
+# define isnan _isnan
+#endif
+
+#if defined (HAVE__ISNANF) && ! defined (HAVE_ISNANF)
+# define HAVE_ISNANF 1
+# define isnanf _isnanf
+#endif
+
+#if defined (HAVE__ISNANL) && ! defined (HAVE_ISNANL)
+# define HAVE_ISNANL 1
+# define isnanl _isnanl
+#endif
+
+#if defined (HAVE__LDEXPF) && ! defined (HAVE_LDEXPF)
+# define HAVE_LDEXPF 1
+# define ldexpf _ldexpf
+#endif
+
+#if defined (HAVE__LDEXPL) && ! defined (HAVE_LDEXPL)
+# define HAVE_LDEXPL 1
+# define ldexpl _ldexpl
+#endif
+
+#if defined (HAVE__LOG10F) && ! defined (HAVE_LOG10F)
+# define HAVE_LOG10F 1
+# define log10f _log10f
+#endif
+
+#if defined (HAVE__LOG10L) && ! defined (HAVE_LOG10L)
+# define HAVE_LOG10L 1
+# define log10l _log10l
+#endif
+
+#if defined (HAVE__LOGF) && ! defined (HAVE_LOGF)
+# define HAVE_LOGF 1
+# define logf _logf
+#endif
+
+#if defined (HAVE__LOGL) && ! defined (HAVE_LOGL)
+# define HAVE_LOGL 1
+# define logl _logl
+#endif
+
+#if defined (HAVE__MODF) && ! defined (HAVE_MODF)
+# define HAVE_MODF 1
+# define modf _modf
+#endif
+
+#if defined (HAVE__MODFF) && ! defined (HAVE_MODFF)
+# define HAVE_MODFF 1
+# define modff _modff
+#endif
+
+#if defined (HAVE__MODFL) && ! defined (HAVE_MODFL)
+# define HAVE_MODFL 1
+# define modfl _modfl
+#endif
+
+#if defined (HAVE__POWF) && ! defined (HAVE_POWF)
+# define HAVE_POWF 1
+# define powf _powf
+#endif
+
+#if defined (HAVE__POWL) && ! defined (HAVE_POWL)
+# define HAVE_POWL 1
+# define powl _powl
+#endif
+
+#if defined (HAVE__QFPCLASS) && ! defined (HAVE_QFPCLASS)
+# define HAVE_QFPCLASS 1
+# define qfpclass _qfpclass
+#endif
+
+#if defined (HAVE__SINCOS) && ! defined (HAVE_SINCOS)
+# define HAVE_SINCOS 1
+# define sincos _sincos
+#endif
+
+#if defined (HAVE__SINCOSF) && ! defined (HAVE_SINCOSF)
+# define HAVE_SINCOSF 1
+# define sincosf _sincosf
+#endif
+
+#if defined (HAVE__SINCOSL) && ! defined (HAVE_SINCOSL)
+# define HAVE_SINCOSL 1
+# define sincosl _sincosl
+#endif
+
+#if defined (HAVE__SINF) && ! defined (HAVE_SINF)
+# define HAVE_SINF 1
+# define sinf _sinf
+#endif
+
+#if defined (HAVE__SINHF) && ! defined (HAVE_SINHF)
+# define HAVE_SINHF 1
+# define sinhf _sinhf
+#endif
+
+#if defined (HAVE__SINHL) && ! defined (HAVE_SINHL)
+# define HAVE_SINHL 1
+# define sinhl _sinhl
+#endif
+
+#if defined (HAVE__SINL) && ! defined (HAVE_SINL)
+# define HAVE_SINL 1
+# define sinl _sinl
+#endif
+
+#if defined (HAVE__SQRTF) && ! defined (HAVE_SQRTF)
+# define HAVE_SQRTF 1
+# define sqrtf _sqrtf
+#endif
+
+#if defined (HAVE__SQRTL) && ! defined (HAVE_SQRTL)
+# define HAVE_SQRTL 1
+# define sqrtl _sqrtl
+#endif
+
+#if defined (HAVE__STRTOF) && ! defined (HAVE_STRTOF)
+# define HAVE_STRTOF 1
+# define strtof _strtof
+#endif
+
+#if defined (HAVE__STRTOLD) && ! defined (HAVE_STRTOLD)
+# define HAVE_STRTOLD 1
+# define strtold _strtold
+#endif
+
+#if defined (HAVE__TANF) && ! defined (HAVE_TANF)
+# define HAVE_TANF 1
+# define tanf _tanf
+#endif
+
+#if defined (HAVE__TANHF) && ! defined (HAVE_TANHF)
+# define HAVE_TANHF 1
+# define tanhf _tanhf
+#endif
+
+#if defined (HAVE__TANHL) && ! defined (HAVE_TANHL)
+# define HAVE_TANHL 1
+# define tanhl _tanhl
+#endif
+
+#if defined (HAVE__TANL) && ! defined (HAVE_TANL)
+# define HAVE_TANL 1
+# define tanl _tanl
+#endif

@@ -1,0 +1,413 @@
+/* config.in.  Generated from configure.ac by autoheader.  */
+
+/* Check that config.h is #included before system headers
+   (this works only for glibc, but that should be enough).  */
+#if defined(__GLIBC__) && !defined(__FreeBSD_kernel__) && !defined(__CONFIG_H__)
+#  error config.h must be #included before system headers
+#endif
+#define __CONFIG_H__ 1
+
+/* Define if building universal (internal helper macro) */
+#cmakedefine AC_APPLE_UNIVERSAL_BUILD @AC_APPLE_UNIVERSAL_BUILD@
+
+/* Define if using AIX 5.2 value for C_WEAKEXT. */
+#cmakedefine AIX_WEAK_SUPPORT @AIX_WEAK_SUPPORT@
+
+/* assert broken? */
+#cmakedefine BROKEN_ASSERT @BROKEN_ASSERT@
+
+/* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
+   systems. This function is required for `alloca.c' support on those systems.
+   */
+#cmakedefine CRAY_STACKSEG_END @CRAY_STACKSEG_END@
+
+/* Compiling cross-assembler? */
+#cmakedefine CROSS_COMPILE @CROSS_COMPILE@
+
+/* Define to 1 if using `alloca.c'. */
+#cmakedefine C_ALLOCA @C_ALLOCA@
+
+/* Default architecture. */
+#cmakedefine DEFAULT_ARCH @DEFAULT_ARCH@
+
+/* Default CRIS architecture. */
+#cmakedefine DEFAULT_CRIS_ARCH @DEFAULT_CRIS_ARCH@
+
+/* Default emulation. */
+#cmakedefine DEFAULT_EMULATION @DEFAULT_EMULATION@
+
+/* Define if you want compressed debug sections by default. */
+#cmakedefine DEFAULT_FLAG_COMPRESS_DEBUG @DEFAULT_FLAG_COMPRESS_DEBUG@
+
+/* Define to 1 if you want to generate GNU Build attribute notes by default,
+   if none are contained in the input. */
+#cmakedefine01 DEFAULT_GENERATE_BUILD_NOTES
+
+/* Define to 1 if you want to generate ELF common symbols with the STT_COMMON
+   type by default. */
+#cmakedefine01 DEFAULT_GENERATE_ELF_STT_COMMON
+
+/* Define to 1 if you want to generate x86 relax relocations by default. */
+#cmakedefine01 DEFAULT_GENERATE_X86_RELAX_RELOCATIONS
+
+/* Define to 1 if you want to generate RISC-V arch attribute by default. */
+#cmakedefine01 DEFAULT_RISCV_ATTR
+
+/* Define to 1 if you want to generate GNU x86 used ISA and feature properties
+   by default. */
+#cmakedefine01 DEFAULT_X86_USED_NOTE
+
+/* Supported emulations. */
+#cmakedefine EMULATIONS @EMULATIONS@
+
+/* Define if you want run-time sanity checks. */
+#cmakedefine ENABLE_CHECKING @ENABLE_CHECKING@
+
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
+#cmakedefine ENABLE_NLS @ENABLE_NLS@
+
+/* Define to 1 if you have `alloca', as a function or macro. */
+#cmakedefine HAVE_ALLOCA @HAVE_ALLOCA@
+
+/* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
+   */
+#cmakedefine HAVE_ALLOCA_H @HAVE_ALLOCA_H@
+
+/* Define to 1 if you have the declaration of `asprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_ASPRINTF
+
+/* Define to 1 if you have the declaration of `free', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_FREE
+
+/* Define to 1 if you have the declaration of `getenv', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_GETENV
+
+/* Is the prototype for getopt in <unistd.h> in the expected format? */
+#cmakedefine01 HAVE_DECL_GETOPT
+
+/* Define to 1 if you have the declaration of `malloc', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_MALLOC
+
+/* Define to 1 if you have the declaration of `mempcpy', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_MEMPCPY
+
+/* Define to 1 if you have the declaration of `realloc', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_REALLOC
+
+/* Define to 1 if you have the declaration of `stpcpy', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_STPCPY
+
+/* Define to 1 if you have the declaration of `strstr', and to 0 if you don't.
+   */
+#cmakedefine01 HAVE_DECL_STRSTR
+
+/* Define to 1 if you have the declaration of `vsnprintf', and to 0 if you
+   don't. */
+#cmakedefine01 HAVE_DECL_VSNPRINTF
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define to 1 if you have the <errno.h> header file. */
+#cmakedefine HAVE_ERRNO_H @HAVE_ERRNO_H@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define if your <locale.h> file defines LC_MESSAGES. */
+#cmakedefine HAVE_LC_MESSAGES @HAVE_LC_MESSAGES@
+
+/* Define to 1 if you have the <limits.h> header file. */
+#cmakedefine HAVE_LIMITS_H @HAVE_LIMITS_H@
+
+/* Define to 1 if you have the <locale.h> header file. */
+#cmakedefine HAVE_LOCALE_H @HAVE_LOCALE_H@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the `remove' function. */
+#cmakedefine HAVE_REMOVE @HAVE_REMOVE@
+
+/* Define to 1 if you have the `sbrk' function. */
+#cmakedefine HAVE_SBRK @HAVE_SBRK@
+
+/* Define to 1 if you have the `setlocale' function. */
+#cmakedefine HAVE_SETLOCALE @HAVE_SETLOCALE@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the `strsignal' function. */
+#cmakedefine HAVE_STRSIGNAL @HAVE_STRSIGNAL@
+
+/* Define if <sys/stat.h> has struct stat.st_mtim.tv_nsec */
+#cmakedefine HAVE_ST_MTIM_TV_NSEC @HAVE_ST_MTIM_TV_NSEC@
+
+/* Define if <sys/stat.h> has struct stat.st_mtim.tv_sec */
+#cmakedefine HAVE_ST_MTIM_TV_SEC @HAVE_ST_MTIM_TV_SEC@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if you have the <time.h> header file. */
+#cmakedefine HAVE_TIME_H @HAVE_TIME_H@
+
+/* Define if <time.h> has struct tm.tm_gmtoff. */
+#cmakedefine HAVE_TM_GMTOFF @HAVE_TM_GMTOFF@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Define to 1 if you have the `unlink' function. */
+#cmakedefine HAVE_UNLINK @HAVE_UNLINK@
+
+/* Define to 1 if you have the <windows.h> header file. */
+#cmakedefine HAVE_WINDOWS_H @HAVE_WINDOWS_H@
+
+/* Using i386 COFF? */
+#cmakedefine I386COFF @I386COFF@
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Default CPU for MIPS targets. */
+#cmakedefine MIPS_CPU_STRING_DEFAULT @MIPS_CPU_STRING_DEFAULT@
+
+/* Generate 64-bit code by default on MIPS targets. */
+#cmakedefine MIPS_DEFAULT_64BIT @MIPS_DEFAULT_64BIT@
+
+/* Choose a default ABI for MIPS targets. */
+#cmakedefine MIPS_DEFAULT_ABI @MIPS_DEFAULT_ABI@
+
+/* Define value for nds32_arch_name */
+#cmakedefine NDS32_DEFAULT_ARCH_NAME @NDS32_DEFAULT_ARCH_NAME@
+
+/* Define default value for nds32_audio_ext */
+#cmakedefine NDS32_DEFAULT_AUDIO_EXT @NDS32_DEFAULT_AUDIO_EXT@
+
+/* Define default value for nds32_dsp_ext */
+#cmakedefine NDS32_DEFAULT_DSP_EXT @NDS32_DEFAULT_DSP_EXT@
+
+/* Define default value for nds32_dx_regs */
+#cmakedefine NDS32_DEFAULT_DX_REGS @NDS32_DEFAULT_DX_REGS@
+
+/* Define default value for nds32_perf_ext */
+#cmakedefine NDS32_DEFAULT_PERF_EXT @NDS32_DEFAULT_PERF_EXT@
+
+/* Define default value for nds32_perf_ext2 */
+#cmakedefine NDS32_DEFAULT_PERF_EXT2 @NDS32_DEFAULT_PERF_EXT2@
+
+/* Define default value for nds32_string_ext */
+#cmakedefine NDS32_DEFAULT_STRING_EXT @NDS32_DEFAULT_STRING_EXT@
+
+/* Define default value for nds32_zol_ext */
+#cmakedefine NDS32_DEFAULT_ZOL_EXT @NDS32_DEFAULT_ZOL_EXT@
+
+/* Define default value for nds32_linux_toolchain */
+#cmakedefine NDS32_LINUX_TOOLCHAIN @NDS32_LINUX_TOOLCHAIN@
+
+/* Define if environ is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_ENVIRON @NEED_DECLARATION_ENVIRON@
+
+/* Define if errno is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_ERRNO @NEED_DECLARATION_ERRNO@
+
+/* Define if ffs is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_FFS @NEED_DECLARATION_FFS@
+
+/* Define if free is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_FREE @NEED_DECLARATION_FREE@
+
+/* Define if malloc is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_MALLOC @NEED_DECLARATION_MALLOC@
+
+/* Define if sbrk is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_SBRK @NEED_DECLARATION_SBRK@
+
+/* Define if strstr is not declared in system header files. */
+#cmakedefine NEED_DECLARATION_STRSTR @NEED_DECLARATION_STRSTR@
+
+/* a.out support? */
+#cmakedefine OBJ_MAYBE_AOUT @OBJ_MAYBE_AOUT@
+
+/* COFF support? */
+#cmakedefine OBJ_MAYBE_COFF @OBJ_MAYBE_COFF@
+
+/* ECOFF support? */
+#cmakedefine OBJ_MAYBE_ECOFF @OBJ_MAYBE_ECOFF@
+
+/* ELF support? */
+#cmakedefine OBJ_MAYBE_ELF @OBJ_MAYBE_ELF@
+
+/* generic support? */
+#cmakedefine OBJ_MAYBE_GENERIC @OBJ_MAYBE_GENERIC@
+
+/* SOM support? */
+#cmakedefine OBJ_MAYBE_SOM @OBJ_MAYBE_SOM@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* If using the C implementation of alloca, define if you know the
+   direction of stack growth for your system; otherwise it will be
+   automatically deduced at runtime.
+	STACK_DIRECTION > 0 => grows toward higher addresses
+	STACK_DIRECTION < 0 => grows toward lower addresses
+	STACK_DIRECTION = 0 => direction of growth unknown */
+#cmakedefine STACK_DIRECTION @STACK_DIRECTION@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* Using strict COFF? */
+#cmakedefine STRICTCOFF @STRICTCOFF@
+
+/* Define if you can safely include both <string.h> and <strings.h>. */
+#cmakedefine STRING_WITH_STRINGS @STRING_WITH_STRINGS@
+
+/* Target alias. */
+#cmakedefine TARGET_ALIAS @TARGET_ALIAS@
+
+/* Define as 1 if big endian. */
+#cmakedefine TARGET_BYTES_BIG_ENDIAN @TARGET_BYTES_BIG_ENDIAN@
+
+/* Canonical target. */
+#cmakedefine TARGET_CANONICAL @TARGET_CANONICAL@
+
+/* Target CPU. */
+#cmakedefine TARGET_CPU @TARGET_CPU@
+
+/* Target OS. */
+#cmakedefine TARGET_OS @TARGET_OS@
+
+/* Define if default target is PowerPC Solaris. */
+#cmakedefine TARGET_SOLARIS_COMMENT @TARGET_SOLARIS_COMMENT@
+
+/* Target vendor. */
+#cmakedefine TARGET_VENDOR @TARGET_VENDOR@
+
+/* Target specific CPU. */
+#cmakedefine TARGET_WITH_CPU @TARGET_WITH_CPU@
+
+/* Use b modifier when opening binary files? */
+#cmakedefine USE_BINARY_FOPEN @USE_BINARY_FOPEN@
+
+/* Use emulation support? */
+#cmakedefine USE_EMULATIONS @USE_EMULATIONS@
+
+/* Allow use of E_MIPS_ABI_O32 on MIPS targets. */
+#cmakedefine USE_E_MIPS_ABI_O32 @USE_E_MIPS_ABI_O32@
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# define _ALL_SOURCE 1
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# define _GNU_SOURCE 1
+#endif
+/* Enable threading extensions on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# define _POSIX_PTHREAD_SEMANTICS 1
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# define _TANDEM_SOURCE 1
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# define __EXTENSIONS__ 1
+#endif
+
+
+/* Using cgen code? */
+#cmakedefine USING_CGEN @USING_CGEN@
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+# cmakedefine WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
+   `char[]'. */
+#cmakedefine YYTEXT_POINTER @YYTEXT_POINTER@
+
+/* Enable large inode numbers on Mac OS X 10.5.  */
+#ifndef _DARWIN_USE_64_BIT_INODE
+# define _DARWIN_USE_64_BIT_INODE 1
+#endif
+
+/* Number of bits in a file offset, on hosts where this is settable. */
+#cmakedefine _FILE_OFFSET_BITS @_FILE_OFFSET_BITS@
+
+/* Define for large files, on AIX-style hosts. */
+#cmakedefine _LARGE_FILES @_LARGE_FILES@
+
+/* Define to 1 if on MINIX. */
+#cmakedefine _MINIX @_MINIX@
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#cmakedefine _POSIX_1_SOURCE @_POSIX_1_SOURCE@
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#cmakedefine _POSIX_SOURCE @_POSIX_SOURCE@
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#cmakedefine inline @inline@
+#endif
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#cmakedefine size_t @size_t@

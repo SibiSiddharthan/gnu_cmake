@@ -1,0 +1,13 @@
+#! sh
+
+(for f in `echo " " ei386pep.o ei386pe.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "extern ld_emulation_xfer_type ld_${f}_emulation;"; \
+done;\
+echo "";\
+echo "#define EMULATION_LIST \\";\
+for f in `echo " " ei386pep.o ei386pe.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "  &ld_${f}_emulation, \\"; \
+done;\
+echo "  0") > @CMAKE_CURRENT_BINARY_DIR@/ld/ldemul-list.h

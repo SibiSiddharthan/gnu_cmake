@@ -1,0 +1,214 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define to 1 if you have the `aligned_alloc' function. */
+#cmakedefine HAVE_ALIGNED_ALLOC @HAVE_ALIGNED_ALLOC@
+
+/* Define to 1 if the target assembler supports .symver directive. */
+#cmakedefine HAVE_AS_SYMVER_DIRECTIVE @HAVE_AS_SYMVER_DIRECTIVE@
+
+/* Define to 1 if the target supports __attribute__((alias(...))). */
+#cmakedefine HAVE_ATTRIBUTE_ALIAS @HAVE_ATTRIBUTE_ALIAS@
+
+/* Define to 1 if the target supports __attribute__((dllexport)). */
+#cmakedefine HAVE_ATTRIBUTE_DLLEXPORT @HAVE_ATTRIBUTE_DLLEXPORT@
+
+/* Define to 1 if the target supports __attribute__((visibility(...))). */
+#cmakedefine HAVE_ATTRIBUTE_VISIBILITY @HAVE_ATTRIBUTE_VISIBILITY@
+
+/* Define if the POSIX Semaphores do not work on your system. */
+#cmakedefine HAVE_BROKEN_POSIX_SEMAPHORES @HAVE_BROKEN_POSIX_SEMAPHORES@
+
+/* Define to 1 if the target assembler supports thread-local storage. */
+#cmakedefine HAVE_CC_TLS @HAVE_CC_TLS@
+
+/* Define to 1 if you have the `clock_gettime' function. */
+#cmakedefine HAVE_CLOCK_GETTIME @HAVE_CLOCK_GETTIME@
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define to 1 if you have the `getegid' function. */
+#cmakedefine HAVE_GETEGID @HAVE_GETEGID@
+
+/* Define to 1 if you have the `geteuid' function. */
+#cmakedefine HAVE_GETEUID @HAVE_GETEUID@
+
+/* Define to 1 if you have the `getgid' function. */
+#cmakedefine HAVE_GETGID @HAVE_GETGID@
+
+/* Define if gethostname is supported. */
+#cmakedefine HAVE_GETHOSTNAME @HAVE_GETHOSTNAME@
+
+/* Define to 1 if you have the `getloadavg' function. */
+#cmakedefine HAVE_GETLOADAVG @HAVE_GETLOADAVG@
+
+/* Define if getpid is supported. */
+#cmakedefine HAVE_GETPID @HAVE_GETPID@
+
+/* Define to 1 if you have the `getuid' function. */
+#cmakedefine HAVE_GETUID @HAVE_GETUID@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define to 1 if you have the `dl' library (-ldl). */
+#cmakedefine HAVE_LIBDL @HAVE_LIBDL@
+
+/* Define to 1 if you have the `memalign' function. */
+#cmakedefine HAVE_MEMALIGN @HAVE_MEMALIGN@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the `posix_memalign' function. */
+#cmakedefine HAVE_POSIX_MEMALIGN @HAVE_POSIX_MEMALIGN@
+
+/* Define if pthread_{,attr_}{g,s}etaffinity_np is supported. */
+#cmakedefine HAVE_PTHREAD_AFFINITY_NP @HAVE_PTHREAD_AFFINITY_NP@
+
+/* Define to 1 if you have the <pthread.h> header file. */
+#cmakedefine HAVE_PTHREAD_H @HAVE_PTHREAD_H@
+
+/* Define to 1 if you have the `secure_getenv' function. */
+#cmakedefine HAVE_SECURE_GETENV @HAVE_SECURE_GETENV@
+
+/* Define to 1 if you have the <semaphore.h> header file. */
+#cmakedefine HAVE_SEMAPHORE_H @HAVE_SEMAPHORE_H@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the `strtoull' function. */
+#cmakedefine HAVE_STRTOULL @HAVE_STRTOULL@
+
+/* Define to 1 if the system has the type `struct _Mutex_Control'. */
+#cmakedefine HAVE_STRUCT__MUTEX_CONTROL @HAVE_STRUCT__MUTEX_CONTROL@
+
+/* Define to 1 if the target runtime linker supports binding the same symbol
+   to different versions. */
+#cmakedefine HAVE_SYMVER_SYMBOL_RENAMING_RUNTIME_SUPPORT @HAVE_SYMVER_SYMBOL_RENAMING_RUNTIME_SUPPORT@
+
+/* Define to 1 if the target supports __sync_*_compare_and_swap */
+#cmakedefine HAVE_SYNC_BUILTINS @HAVE_SYNC_BUILTINS@
+
+/* Define to 1 if you have the <sys/loadavg.h> header file. */
+#cmakedefine HAVE_SYS_LOADAVG_H @HAVE_SYS_LOADAVG_H@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/sysctl.h> header file. */
+#cmakedefine HAVE_SYS_SYSCTL_H @HAVE_SYS_SYSCTL_H@
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#cmakedefine HAVE_SYS_TIME_H @HAVE_SYS_TIME_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if the target supports thread-local storage. */
+#cmakedefine HAVE_TLS @HAVE_TLS@
+
+/* Define if uname is supported and struct utsname has nodename field. */
+#cmakedefine HAVE_UNAME @HAVE_UNAME@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Define to 1 if you have the `_aligned_malloc' function. */
+#cmakedefine HAVE__ALIGNED_MALLOC @HAVE__ALIGNED_MALLOC@
+
+/* Define to 1 if you have the `__secure_getenv' function. */
+#cmakedefine HAVE___SECURE_GETENV @HAVE___SECURE_GETENV@
+
+/* Define path to HSA runtime. */
+#cmakedefine HSA_RUNTIME_LIB @HSA_RUNTIME_LIB@
+
+/* Define to 1 if GNU symbol versioning is used for libgomp. */
+#cmakedefine LIBGOMP_GNU_SYMBOL_VERSIONING @LIBGOMP_GNU_SYMBOL_VERSIONING@
+
+/* Define to 1 if building libgomp for an accelerator-only target. */
+#cmakedefine LIBGOMP_OFFLOADED_ONLY @LIBGOMP_OFFLOADED_ONLY@
+
+/* Define to 1 if libgomp should use POSIX threads. */
+#cmakedefine LIBGOMP_USE_PTHREADS @LIBGOMP_USE_PTHREADS@
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Define to offload plugins, separated by commas. */
+#cmakedefine OFFLOAD_PLUGINS @OFFLOAD_PLUGINS@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* Define to 1 if the HSA plugin is built, 0 if not. */
+#cmakedefine PLUGIN_HSA @PLUGIN_HSA@
+
+/* Define to 1 if the NVIDIA plugin is built, 0 if not. */
+#cmakedefine01 PLUGIN_NVPTX
+
+/* Define to 1 if the NVIDIA plugin should dlopen libcuda.so.1, 0 if it should
+   be linked against it. */
+#cmakedefine01 PLUGIN_NVPTX_DYNAMIC
+
+/* Define if all infrastructure, needed for plugins, is supported. */
+#cmakedefine PLUGIN_SUPPORT @PLUGIN_SUPPORT@
+
+/* The size of `char', as computed by sizeof. */
+#cmakedefine SIZEOF_CHAR @SIZEOF_CHAR@
+
+/* The size of `int', as computed by sizeof. */
+#cmakedefine SIZEOF_INT @SIZEOF_INT@
+
+/* The size of `long', as computed by sizeof. */
+#cmakedefine SIZEOF_LONG @SIZEOF_LONG@
+
+/* The size of `short', as computed by sizeof. */
+#cmakedefine SIZEOF_SHORT @SIZEOF_SHORT@
+
+/* The size of `void *', as computed by sizeof. */
+#cmakedefine SIZEOF_VOID_P @SIZEOF_VOID_P@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* Define if you can safely include both <string.h> and <strings.h>. */
+#cmakedefine STRING_WITH_STRINGS @STRING_WITH_STRINGS@
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#cmakedefine TIME_WITH_SYS_TIME @TIME_WITH_SYS_TIME@
+
+/* Define to 1 if the target use emutls for thread-local storage. */
+#cmakedefine USE_EMUTLS @USE_EMUTLS@
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@

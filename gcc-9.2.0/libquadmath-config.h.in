@@ -1,0 +1,166 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* libm includes cbrtl */
+#cmakedefine HAVE_CBRTL @HAVE_CBRTL@
+
+/* Define to 1 if you have the <ctype.h> header file. */
+#cmakedefine HAVE_CTYPE_H @HAVE_CTYPE_H@
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H @HAVE_DLFCN_H@
+
+/* Define to 1 if you have the <errno.h> header file. */
+#cmakedefine HAVE_ERRNO_H @HAVE_ERRNO_H@
+
+/* libm includes feholdexcept */
+#cmakedefine HAVE_FEHOLDEXCEPT @HAVE_FEHOLDEXCEPT@
+
+/* Define to 1 if you have the <fenv.h> header file. */
+#cmakedefine HAVE_FENV_H @HAVE_FENV_H@
+
+/* libm includes fesetenv */
+#cmakedefine HAVE_FESETENV @HAVE_FESETENV@
+
+/* libm includes fesetround */
+#cmakedefine HAVE_FESETROUND @HAVE_FESETROUND@
+
+/* libm includes fetestexcept */
+#cmakedefine HAVE_FETESTEXCEPT @HAVE_FETESTEXCEPT@
+
+/* libm includes feupdateenv */
+#cmakedefine HAVE_FEUPDATEENV @HAVE_FEUPDATEENV@
+
+/* __attribute__((visibility ("hidden"))) supported */
+#cmakedefine HAVE_HIDDEN_VISIBILITY @HAVE_HIDDEN_VISIBILITY@
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H @HAVE_INTTYPES_H@
+
+/* Define to 1 if you have the <langinfo.h> header file. */
+#cmakedefine HAVE_LANGINFO_H @HAVE_LANGINFO_H@
+
+/* Define to 1 if you have the <limits.h> header file. */
+#cmakedefine HAVE_LIMITS_H @HAVE_LIMITS_H@
+
+/* Define to 1 if you have the <locale.h> header file. */
+#cmakedefine HAVE_LOCALE_H @HAVE_LOCALE_H@
+
+/* Define to 1 if the math.h includes POSIX's signgam. */
+#cmakedefine HAVE_MATH_H_SIGNGAM @HAVE_MATH_H_SIGNGAM@
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H @HAVE_MEMORY_H@
+
+/* Define to 1 if you have the <printf.h> header file. */
+#cmakedefine HAVE_PRINTF_H @HAVE_PRINTF_H@
+
+/* GNU C Library stype printf hooks supported */
+#cmakedefine HAVE_PRINTF_HOOKS @HAVE_PRINTF_HOOKS@
+
+/* libm includes sqrtl */
+#cmakedefine HAVE_SQRTL @HAVE_SQRTL@
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H @HAVE_STDINT_H@
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H @HAVE_STDLIB_H@
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H @HAVE_STRINGS_H@
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H @HAVE_STRING_H@
+
+/* Define to 1 if you have the `strtoull' function. */
+#cmakedefine HAVE_STRTOULL @HAVE_STRTOULL@
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H @HAVE_SYS_STAT_H@
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H @HAVE_SYS_TYPES_H@
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H @HAVE_UNISTD_H@
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#cmakedefine HAVE_WCHAR_H @HAVE_WCHAR_H@
+
+/* Define to 1 if you have the <wctype.h> header file. */
+#cmakedefine HAVE_WCTYPE_H @HAVE_WCTYPE_H@
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#cmakedefine LT_OBJDIR @LT_OBJDIR@
+
+/* Name of package */
+#cmakedefine PACKAGE @PACKAGE@
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT @PACKAGE_BUGREPORT@
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME @PACKAGE_NAME@
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING @PACKAGE_STRING@
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME @PACKAGE_TARNAME@
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL @PACKAGE_URL@
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION @PACKAGE_VERSION@
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS @STDC_HEADERS@
+
+/* whether i18n number rewriting can be supported */
+#cmakedefine USE_I18N_NUMBER_H @USE_I18N_NUMBER_H@
+
+/* whether localeconv should be used */
+#cmakedefine USE_LOCALECONV @USE_LOCALECONV@
+
+/* whether nl_langinfo should be used */
+#cmakedefine USE_NL_LANGINFO @USE_NL_LANGINFO@
+
+/* whether nl_langinfo should be used for wide char locale info */
+#cmakedefine USE_NL_LANGINFO_WC @USE_NL_LANGINFO_WC@
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+/* Enable threading extensions on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+
+
+/* Version number of package */
+#cmakedefine VERSION @VERSION@
+
+/* Define to 1 if on MINIX. */
+#cmakedefine _MINIX @_MINIX@
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#cmakedefine _POSIX_1_SOURCE @_POSIX_1_SOURCE@
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#cmakedefine _POSIX_SOURCE @_POSIX_SOURCE@

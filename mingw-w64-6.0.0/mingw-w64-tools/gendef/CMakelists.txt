@@ -1,0 +1,64 @@
+cmake_minimum_required(VERSION 3.13)
+project(gendef C)
+INCLUDE(CheckIncludeFile)
+INCLUDE(CheckFunctionExists)
+INCLUDE(CheckCSourceCompiles)
+if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
+	message(FATAL_ERROR "In-source builds not allowed. Please make a new directory")
+endif()
+
+set(PACKAGE \"mingw-w64-gendef\")
+set(PACKAGE_BUGREPORT \"mingw-w64-public@lists.sourceforge.net\")
+set(PACKAGE_NAME \"gendef\")
+set(PACKAGE_STRING \"gendef 1.0\")
+set(PACKAGE_TARNAME "")
+set(PACKAGE_URL \"mingw-w64-public@lists.sourceforge.net\")
+set(PACKAGE_VERSION \"1.0\")
+set(VERSION \"1.0\")
+
+
+#is true for gcc,clang and msvc on windows
+set(STDC_HEADERS 1)
+
+
+function(check_headers headers) 
+foreach(i ${${headers}})
+set(var ${i})
+string(REPLACE "/" "_" var ${var})
+string(REPLACE "." "_" var ${var})
+string(TOUPPER ${var} var)
+string(PREPEND var "HAVE_")
+check_include_file(${i} ${var})
+	if(${var})
+	set(${var} 1)
+	set(${var} PARENT_SCOPE)
+	endif()	
+endforeach()
+endfunction()
+
+function(check_functions funcs) 
+foreach(i ${${funcs}})
+set(var ${i})
+string(TOUPPER ${var} var)
+string(PREPEND var "HAVE_")
+check_function_exists(${i} ${var})
+	if(${var})
+	set(${var} 1)
+	endif()	
+endforeach()
+endfunction()
+
+set(header inttypes.h memory.h stdint.h stdlib.h strings.h sys/stat.h sys/types.h unistd.h)
+check_headers(header)
+
+set(functions memset strdup strrchr strlwr)
+check_functions(functions)
+
+configure_file(gendef-config.h.in config.h)
+
+set(gendef_SOURCES
+	src/gendef.h src/compat_string.h src/gendef.c src/gendef_def.c src/compat_string.c 
+    src/fsredir.c src/fsredir.h)
+
+add_executable(gendef ${gendef_SOURCES})
+target_include_directories(gendef PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
