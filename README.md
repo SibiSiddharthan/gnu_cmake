@@ -1,0 +1,2 @@
+This is an attempt to write CMake scripts for building software, which were previously built using the GNU Autotools.
+The purpose of this project is to support Windows(primarily) and Linux Distros with the flexibility of CMake for building legacy, yet widely used software.
